@@ -96,14 +96,18 @@ figcaption {
 ul {
   padding: 0 5px;
   list-style-type: none;
+  list-style-image: none;
   li {
-    padding: 3px 0;
+    padding: 5px 0;
     a {
-      font-size: 1.7rem;
+      font-size: 1.4rem !important;
       text-decoration: none;
       color: $dark-cyan;
       &:hover {
         font-weight: 700;
+      }
+      &:visited {
+        color: $dark-cyan;
       }
     }
     &.active {

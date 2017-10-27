@@ -23,7 +23,6 @@ body {
 #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5, #bodyContent p, #bodyContent a, #bodyContent li, #bodyContent pre, #HQ_page h1, #HQ_page h2, #HQ_page h3, #HQ_page h4, #HQ_page h5, #HQ_page p, #HQ_page a, #HQ_page li, #HQ_page pre, #mw-content-text h1, #mw-content-text h2, #mw-content-text h3, #mw-content-text h4, #mw-content-text h5, #mw-content-text p, #mw-content-text a, #mw-content-text li, #mw-content-text pre {
   padding: 0;
   border: none;
-  line-height: normal;
   text-align: unset;
   background: none; }
 
@@ -37,6 +36,12 @@ body {
 
 #globalWrapper {
   font-size: 100%; }
+
+.mw-content-ltr ol, .mw-content-rtl .mw-content-ltr ol {
+  margin: 0; }
+
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+  margin: 0; }
 
 /**************************************************************** MENU ***************************************************************/
 #top_menu_14 {
@@ -447,15 +452,18 @@ figcaption {
 
 ul {
   padding: 0 5px;
-  list-style-type: none; }
+  list-style-type: none;
+  list-style-image: none; }
   ul li {
-    padding: 3px 0; }
+    padding: 5px 0; }
     ul li a {
-      font-size: 1.7rem;
+      font-size: 1.4rem !important;
       text-decoration: none;
       color: #0f415c; }
       ul li a:hover {
         font-weight: 700; }
+      ul li a:visited {
+        color: #0f415c; }
     ul li.active a {
       font-weight: 900; }
 

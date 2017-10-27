@@ -28,7 +28,6 @@ body {
 	h1,h2,h3,h4,h5,p,a,li,pre {
 		padding: 0;
 		border: none;
-		line-height: normal;
 		text-align: unset;
 		background: none;
 	}
@@ -44,6 +43,12 @@ body {
 }
 #globalWrapper {
 	font-size: 100%;
+}
+.mw-content-ltr ol, .mw-content-rtl .mw-content-ltr ol {
+	margin: 0;
+}
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+	margin: 0;
 }
 /**************************************************************** MENU ***************************************************************/
 #top_menu_14 {

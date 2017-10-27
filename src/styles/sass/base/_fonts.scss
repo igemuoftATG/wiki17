@@ -50,14 +50,17 @@ button {
   font-size: 1.5rem !important;
 }
 
+blockquote {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  border-left: 5px solid $cyan !important;
+}
+
 blockquote.regular {
   font-size: 2rem !important;
   font-style: italic !important;
-  border-left: 5px solid $cyan !important;
   margin-left: 0 !important;
   padding: 5px 10px !important;
-  margin-top: 1em !important;
-  margin-bottom: 1em !important;
 }
 
 blockquote.sequence {
@@ -66,9 +69,9 @@ blockquote.sequence {
   margin-left: 0 !important;
   padding: 5px 10px !important;
   font-family: $font-mono !important;
-  color: $faded-dark-cyan !important;
   pre {
     margin: 0 !important;
+    color: $faded-dark-cyan !important;
   }
 }
 
@@ -78,10 +81,10 @@ blockquote.code {
   margin-left: 0 !important;
   padding: 5px 10px !important;
   font-family: $font-mono !important;
-  color: $faded-dark-cyan !important;
   pre {
     margin: 0 !important;
     background-color: none !important;
+    color: $faded-dark-cyan !important;
   }
 }
 

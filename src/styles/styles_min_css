@@ -23,7 +23,9 @@ body {
 #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5, #bodyContent p, #bodyContent a, #bodyContent li, #bodyContent pre, #HQ_page h1, #HQ_page h2, #HQ_page h3, #HQ_page h4, #HQ_page h5, #HQ_page p, #HQ_page a, #HQ_page li, #HQ_page pre, #mw-content-text h1, #mw-content-text h2, #mw-content-text h3, #mw-content-text h4, #mw-content-text h5, #mw-content-text p, #mw-content-text a, #mw-content-text li, #mw-content-text pre {
   padding: 0;
   border: none;
-  line-height: normal; }
+  line-height: normal;
+  text-align: unset;
+  background: none; }
 
 #HQ_page table {
   border: none;
@@ -407,35 +409,37 @@ sup a {
 button {
   font-size: 1.5rem !important; }
 
+blockquote {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  border-left: 5px solid #40b2bc !important; }
+
 blockquote.regular {
   font-size: 2rem !important;
   font-style: italic !important;
-  border-left: 5px solid #40b2bc !important;
   margin-left: 0 !important;
-  padding: 5px 10px !important;
-  margin-top: 1em !important;
-  margin-bottom: 1em !important; }
+  padding: 5px 10px !important; }
 
 blockquote.sequence {
   font-size: 1.5rem !important;
   border-left: 5px solid #40b2bc !important;
   margin-left: 0 !important;
   padding: 5px 10px !important;
-  font-family: "Inconsolata", serif !important;
-  color: rgba(15, 65, 92, 0.7) !important; }
+  font-family: "Inconsolata", serif !important; }
   blockquote.sequence pre {
-    margin: 0 !important; }
+    margin: 0 !important;
+    color: rgba(15, 65, 92, 0.7) !important; }
 
 blockquote.code {
   font-size: 1.5rem !important;
   border-left: 5px solid #40b2bc !important;
   margin-left: 0 !important;
   padding: 5px 10px !important;
-  font-family: "Inconsolata", serif !important;
-  color: rgba(15, 65, 92, 0.7) !important; }
+  font-family: "Inconsolata", serif !important; }
   blockquote.code pre {
     margin: 0 !important;
-    background-color: none !important; }
+    background-color: none !important;
+    color: rgba(15, 65, 92, 0.7) !important; }
 
 figcaption {
   font-size: 1.3rem !important;

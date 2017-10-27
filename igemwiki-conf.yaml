@@ -1,0 +1,10 @@
+templates:
+    - ./src/templates/*.html
+stylesheets:
+    - ./src/styles/*_css
+scripts:
+    - ./src/js/*_js
+pages:
+    - ./src/pages/*.html
+images:
+    - ./images/*.{png,jpg,svg}

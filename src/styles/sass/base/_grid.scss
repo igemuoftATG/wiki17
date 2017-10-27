@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+}
+
+.section#animation {
+  height: 600px;
+}
+
+.container {
+  width: 100%;
+  padding: 50px 10%;
+  @media (max-width: $media_width) {
+    padding: 50px 2%;
+  }
+  &.header {
+    min-height: 400px;
+    display: block;
+    text-align: center;
+    // background: $yellow
+    background: url("https://www.aiche.org/sites/default/files/images/courses/lab_safety_ssk_33970144.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: $white;
+    @media (min-width: $media_width) {
+      padding-right: 30%;
+      padding-left: 30%;
+    }
+  }
+  &.row {
+    display: flex;
+    flex-direction: row;
+    .block {
+      margin: 0 40px;
+    }
+    @media (max-width: $media_width) {
+      flex-direction: column;
+    }
+  }
+  &.col {
+    display: flex;
+    flex-direction: column;
+  }
+  &.main-page {
+    min-height: 400px;
+    .block.image {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      margin: 0 auto;
+      @media (max-width: $media_width) {
+        order: 0;
+      }
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    .block.content {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      @media (max-width: $media_width) {
+        order: 1;
+      }
+    }
+  }
+  &.content-page {
+    min-height: 400px;
+    justify-content: center;
+    .block.content {
+      max-width: 750px;
+      flex: 3;
+      .subsection {
+        margin-bottom: 50px;
+      }
+    }
+    .block.sidebar {
+      max-width: 200px;
+      flex: 1;
+    }
+  }
+  &.suggestions {
+    .block.suggestions-header {
+      text-align: center;
+      h3 {
+        margin: 2px;
+        color: $dark-torquoise !important;
+      }
+    }
+    .block.page-suggestions {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin: 0 50px;
+      div {
+        width: 200px;
+        ul li a {
+          color: $dark-torquoise;
+          &:hover {
+            font-weight: 400;
+            color: $dark-cyan;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.sidebar {
+  #sidebar-box {
+    width: 100%;
+    background: $light-cyan;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    box-shadow: 5px 5px 0 $grey;
+    @media (max-width: $media_width) {
+      display: none;
+    }
+    h3 {
+      margin: 0;
+    }
+    .sidebar-minibox {
+      margin: 10px 0 20px 0;
+      background: white;
+      padding: 5px 10px;
+      ul li a {
+        font-size: 1.5em;
+      }
+    }
+    &.fixed {
+      position: fixed;
+      top: 50px;
+    }
+  }
+}

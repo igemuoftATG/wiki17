@@ -1,0 +1,47 @@
+// 	COLORS VARAIBLES
+$dark-cyan: #0f415c;
+$faded-dark-cyan: rgba(#0f415c, 0.7);
+$white: white;
+$cyan: #40b2bc;
+$light-cyan: lighten($cyan, 40%);
+$light-light-cyan: lighten($cyan, 45%);
+$red: #e94c54;
+$yellow: #f4ce3f;
+$dark-torquoise: #367b8c;
+$grey: #f6f6f6;
+$light-grey: #fdfdfd;
+
+// MEDIA SIZES
+$media_width: 800px;
+
+// BACKGROUND COLOR CLASSES
+.bg-dark-cyan {
+  background-color: $dark-cyan;
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+  color: $dark-cyan;
+}
+
+// FONT COLOR CLASSES
+.text-yellow {
+  color: $yellow;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-cyan {
+  color: $cyan;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-grey {
+  color: lighten(black, 60);
+}

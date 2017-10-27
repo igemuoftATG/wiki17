@@ -1,0 +1,36 @@
+a button.btn-primary {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin: 20px 0;
+  transition: background 0.2s ease-in-out;
+  cursor: crosshair;
+  &.dark-cyan {
+    color: $white;
+    background: $dark-cyan;
+    &:hover {
+      background: darken($cyan, 10);
+    }
+  }
+  &.cyan {
+    color: $dark-cyan;
+    background: $cyan;
+    &:hover {
+      background: lighten($cyan, 20);
+    }
+  }
+  &.red {
+    color: $white;
+    background: $red;
+    &:hover {
+      background: lighten($red, 10);
+    }
+  }
+  &.yellow {
+    color: $dark-cyan;
+    background: $yellow;
+    &:hover {
+      background: lighten($yellow, 20);
+    }
+  }
+}

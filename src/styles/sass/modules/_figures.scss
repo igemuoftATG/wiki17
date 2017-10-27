@@ -1,0 +1,79 @@
+// Figures
+figure {
+  margin: 25px 0 !important;
+  width: 100% !important;
+  // Types of figurse
+}
+
+figure .figures {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 0 0 5px 0 !important;
+  & > :nth-child(n) {
+    margin: 0 5px 5px 0 !important;
+    box-shadow: 2px 2px 0 $grey !important;
+  }
+  // 3Dmoljs containers
+  .mol-container {
+    min-width: 300px !important;
+    height: 300px !important;
+    position: relative !important;
+  }
+  // Images
+  .image {
+    max-width: 80% !important;
+    box-shadow: none !important;
+    img {
+      min-width: 300px !important;
+      max-width: 100% !important;
+      object-fit: contain !important;
+      box-shadow: 2px 2px 0 $grey !important;
+      @media (max-width: $media_width) {
+        width: 100% !important;
+      }
+    }
+  }
+  // Tables
+  table {
+    background: white !important;
+    border-collapse: collapse !important;
+    margin: auto !important;
+    th, td {
+      min-width: 60px !important;
+    }
+    thead {
+      tr th {
+        background: $light-cyan !important;
+        color: $dark-cyan !important;
+        border-bottom: 2px solid lighten($cyan, 20) !important;
+        border-right: 1px solid $light-light-cyan !important;
+        &:last-child {
+          border-right: none !important;
+        }
+        padding: 10px !important;
+        text-align: left !important;
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background: $light-grey !important;
+        }
+        &:nth-child(even) {
+          background: lighten($light-grey, 1) !important;
+        }
+        &:hover {
+          background: $light-light-cyan !important;
+        }
+      }
+      tr td {
+        padding: 10px !important;
+        border-right: 1px solid $grey !important;
+        &:last-child {
+          border-right: none !important;
+        }
+        border-bottom: 1px solid $grey !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+#animation {
+	background: #11415B;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	h3 {font-size: auto; font-weight: normal;}
+}
+
+#text {
+	display: inline-flex;
+	// flex-direction: row;
+	align-items: baseline;
+	justify-content: center;
+}
+
+#circle {
+	border-radius: 50%;
+	position: absolute;
+}
+
+#scrollWords {
+	height: 2.1em;
+	overflow: hidden;
+  text-align: left;
+}
+
+#scrollWords h3 {
+	animation: scrollup 10s 2s infinite ease;
+	margin: 1px 0px;
+	position: relative;
+}
+
+@keyframes scrollup {
+	0% {top: 0em;}
+	15% {top: -1.20em;}
+	20% {top: -1.20em;}
+	35% {top: -2.3em;}
+	40% {top: -2.3em;}
+	55% {top: -3.4em;}
+	60% {top: -3.4em;}
+	80% {top: 0em;}
+	100% {top: 0em;}
+}
+
+#pink-orb, #mustard-orb, #turquois-orb, #darkTurquois-orb {position: absolute; top: 0; height: 100vh; width: 100%; z-index: 1;}

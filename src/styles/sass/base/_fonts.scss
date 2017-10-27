@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900|Inconsolata");
+
+$font-primary: "Lato", serif;
+$font-mono: "Inconsolata", serif;
+
+h1, h2, h3, h4, h5, p, a, blockquote, figcaption, li, th, td {
+  font-family: $font-primary !important;
+  margin: 1rem 0 !important;
+  -webkit-margin-before: 0 !important;
+  -webkit-margin-after: 0 !important;
+  -webkit-margin-start: 0 !important;
+  -webkit-margin-end: 0 !important;
+}
+
+h1 {
+  font-size: 9rem !important;
+}
+
+h2 {
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  margin: 0.5em 0 !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+}
+
+h4 {
+  font-size: 1.8rem !important;
+}
+
+p {
+  font-size: 1.7rem !important;
+  margin: 0.5em 0 !important;
+}
+
+a {
+  font-size: 1.7rem !important;
+  text-decoration: none !important;
+}
+
+sup a {
+  color: $red !important;
+  font-size: 0.9rem !important;
+}
+
+button {
+  font-size: 1.5rem !important;
+}
+
+blockquote.regular {
+  font-size: 2rem !important;
+  font-style: italic !important;
+  border-left: 5px solid $cyan !important;
+  margin-left: 0 !important;
+  padding: 5px 10px !important;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+blockquote.sequence {
+  font-size: 1.5rem !important;
+  border-left: 5px solid $cyan !important;
+  margin-left: 0 !important;
+  padding: 5px 10px !important;
+  font-family: $font-mono !important;
+  color: $faded-dark-cyan !important;
+  pre {
+    margin: 0 !important;
+  }
+}
+
+blockquote.code {
+  font-size: 1.5rem !important;
+  border-left: 5px solid $cyan !important;
+  margin-left: 0 !important;
+  padding: 5px 10px !important;
+  font-family: $font-mono !important;
+  color: $faded-dark-cyan !important;
+  pre {
+    margin: 0 !important;
+    background-color: none !important;
+  }
+}
+
+figcaption {
+  font-size: 1.3rem !important;
+  color: $faded-dark-cyan !important;
+}
+
+ul {
+  padding: 0 5px;
+  list-style-type: none;
+  li {
+    padding: 3px 0;
+    a {
+      font-size: 1.7rem;
+      text-decoration: none;
+      color: $dark-cyan;
+      &:hover {
+        font-weight: 700;
+      }
+    }
+    &.active {
+      a {
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+ol {
+  padding: 0 30px !important;
+  li {
+    font-size: 1.5rem !important;
+    color: $faded-dark-cyan !important;
+  }
+}
+
+th, td {
+  font-size: 1.5rem !important;
+}
+
+hr {
+  border: none !important;
+  border-bottom: 2px solid $light-cyan !important;
+}

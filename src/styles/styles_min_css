@@ -486,6 +486,14 @@ body {
 .section#animation {
   height: 600px; }
 
+.container-home {
+  display: flex;
+  flex-direction: row; }
+  .container-home .home-left {
+    width: 50%; }
+  .container-home .home-right {
+    width: 50%; }
+
 .container {
   width: 100%;
   padding: 50px 10%; }

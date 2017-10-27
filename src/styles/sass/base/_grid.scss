@@ -9,8 +9,10 @@ body {
 .container-home {
   display: flex;
   flex-direction: row;
-  .home-left {width: 50%;}
-  .home-right {width: 50%;}
+  box-sizing: border-box;
+  .home-left {width: 50%; box-sizing: border-box;}
+  .home-right {width: 50%; box-sizing: border-box;}
+
 }
 
 .container {

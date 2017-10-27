@@ -6,6 +6,13 @@ body {
   height: 600px;
 }
 
+.container-home {
+  display: flex;
+  flex-direction: row;
+  .home-left {width: 50%;}
+  .home-right {width: 50%;}
+}
+
 .container {
   width: 100%;
   padding: 50px 10%;

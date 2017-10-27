@@ -35,7 +35,6 @@
 //     font-size: $font-size;
 //   }
 // }
-$font-size: 16px;
 #navbarSearch {
   padding: 0 0.75em;
   input {
@@ -43,7 +42,7 @@ $font-size: 16px;
     border-radius: 50px 50px;
     border: 1px solid blue;
     color: #fff;
-    font-size: $font-size;
+    font-size: 1.2rem;
     width: 100%;
     background: blue;
   }

@@ -1,10 +1,25 @@
+.buttons {
+  margin-top: 15px;
+  > a button:nth-child(n) {
+    margin-right: 20px;
+  }
+  a button {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+}
 a button.btn-primary {
   border: none;
   padding: 10px 30px;
   border-radius: 20px;
   margin: 20px 0;
+  min-width: 180px;
   transition: background 0.2s ease-in-out;
   cursor: crosshair;
+
+  /* Different Button Sizes */
+
+  /* Different Button Colors */
   &.dark-cyan {
     color: $white;
     background: $dark-cyan;

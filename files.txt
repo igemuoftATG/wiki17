@@ -8,3 +8,4 @@ uploaded[1916ms] ./src/images/pnp-camp.svg -> http://2017.igem.org/wiki/images/7
 uploaded[2010ms] ./src/images/drylab-ode.svg -> http://2017.igem.org/wiki/images/7/7c/T--Toronto--2017_drylab-ode.svg
 uploaded[2065ms] ./src/images/drylab-modelling.svg -> http://2017.igem.org/wiki/images/b/b4/T--Toronto--2017_drylab-modelling.svg
 uploaded[2005ms] ./src/images/drylab-matlab.svg -> http://2017.igem.org/wiki/images/5/5a/T--Toronto--2017_drylab-matlab.svg
+uploaded[2379ms] ./src/images/pnp-interview.svg -> http://2017.igem.org/wiki/images/9/9c/T--Toronto--2017_pnp-interview.svg

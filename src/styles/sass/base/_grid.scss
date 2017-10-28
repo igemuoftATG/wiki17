@@ -10,10 +10,19 @@ body {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  .home-left {width: 50%; box-sizing: border-box;}
-  .home-right {width: 50%; box-sizing: border-box;}
-
+  .home-left {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .home-right {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .lg-height {height: 100vh;}
+  .text-right {text-align: right;}
 }
+
+
 
 .container {
   width: 100%;

@@ -496,6 +496,10 @@ body {
   .container-home .home-right {
     width: 50%;
     box-sizing: border-box; }
+  .container-home .lg-height {
+    height: 100vh; }
+  .container-home .text-right {
+    text-align: right; }
 
 .container {
   width: 100%;
@@ -847,16 +851,17 @@ svg {
   to {
     transform: rotateZ(1turn); } }
 #navbarSearch {
-  padding: 0 0.75em; }
+  padding: 0; }
   #navbarSearch input {
     padding: 5px 10px;
     border-radius: 50px 50px;
-    border: 1px solid blue;
-    color: #fff;
+    border: 1px solid #367b8c;
+    color: #367b8c;
     font-size: 1.2rem;
     width: 100%;
-    background: blue; }
+    background: #fff;
+    outline: none; }
   #navbarSearch input::-webkit-input-placeholder {
-    color: blue; }
+    color: #367b8c; }
 
 /*# sourceMappingURL=styles_min_css.map */

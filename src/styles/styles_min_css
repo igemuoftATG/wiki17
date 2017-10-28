@@ -850,6 +850,36 @@ svg {
     transform: rotateZ(0); }
   to {
     transform: rotateZ(1turn); } }
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 5%;
+  background: #d7eff1; }
+
+#logo, #navigation {
+  display: flex; }
+
+#logo {
+  flex: 1;
+  justify-content: center;
+  padding-bottom: 10px; }
+  #logo img {
+    height: 40px; }
+
+#navigation {
+  flex: 3;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center; }
+  #navigation ul {
+    list-style-type: circle; }
+  #navigation li {
+    display: inline-block;
+    padding: 5px 0.75em 0 0.75em;
+    margin-top: 5px;
+    font-size: 16px; }
+
 #navbarSearch {
   padding: 0; }
   #navbarSearch input {

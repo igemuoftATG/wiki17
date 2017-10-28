@@ -503,7 +503,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 50px 10%; }
+  padding: 50px 15%; }
   @media (max-width: 800px) {
     .container {
       padding: 50px 2%; } }
@@ -713,13 +713,24 @@ figure .figures {
       figure .figures table tbody tr td:last-child {
         border-right: none !important; }
 
+.buttons {
+  margin-top: 15px; }
+  .buttons > a button:nth-child(n) {
+    margin-right: 20px; }
+  .buttons a button {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important; }
+
 a button.btn-primary {
   border: none;
   padding: 10px 30px;
   border-radius: 20px;
   margin: 20px 0;
+  min-width: 180px;
   transition: background 0.2s ease-in-out;
-  cursor: crosshair; }
+  cursor: crosshair;
+  /* Different Button Sizes */
+  /* Different Button Colors */ }
   a button.btn-primary.dark-cyan {
     color: white;
     background: #0f415c; }

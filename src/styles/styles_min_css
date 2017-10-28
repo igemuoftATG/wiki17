@@ -385,7 +385,8 @@ h1, h2, h3, h4, h5, p, a, blockquote, figcaption, li, th, td {
   -webkit-margin-end: 0 !important; }
 
 h1 {
-  font-size: 9rem !important; }
+  font-size: 9rem !important;
+  margin: 0.5em 0 !important; }
 
 h2 {
   font-size: 3.5rem !important;
@@ -401,7 +402,7 @@ h4 {
 
 p {
   font-size: 1.7rem !important;
-  margin: 0.5em 0 !important; }
+  margin: 1em 0 !important; }
 
 a {
   font-size: 1.7rem !important;
@@ -511,10 +512,9 @@ body {
     min-height: 400px;
     display: block;
     text-align: center;
-    background: url("https://www.aiche.org/sites/default/files/images/courses/lab_safety_ssk_33970144.jpg");
-    background-size: cover;
-    background-position: center center;
-    color: white; }
+    color: white;
+    background-position: center center !important;
+    background-size: cover !important; }
     @media (min-width: 800px) {
       .container.header {
         padding-right: 30%;
@@ -658,6 +658,11 @@ body {
   .sidebar #sidebar-box.fixed {
     position: fixed;
     top: 50px; }
+
+.container.header#wetlab {
+  background: url("https://www.aiche.org/sites/default/files/images/courses/lab_safety_ssk_33970144.jpg"); }
+.container.header#design {
+  background: #e94c54; }
 
 figure {
   margin: 25px 0 !important;

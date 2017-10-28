@@ -34,11 +34,9 @@ body {
     min-height: 400px;
     display: block;
     text-align: center;
-    // background: $yellow
-    background: url("https://www.aiche.org/sites/default/files/images/courses/lab_safety_ssk_33970144.jpg");
-    background-size: cover;
-    background-position: center center;
     color: $white;
+    background-position: center center !important;
+    background-size: cover !important;
     @media (min-width: $media_width) {
       padding-right: 30%;
       padding-left: 30%;

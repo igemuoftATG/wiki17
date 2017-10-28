@@ -38,9 +38,6 @@ body {
   &.row {
     display: flex;
     flex-direction: row;
-    .block {
-      margin: 0 40px;
-    }
     @media (max-width: $media_width) {
       flex-direction: column;
     }
@@ -51,13 +48,15 @@ body {
   }
   &.main-page {
     min-height: 400px;
+    > .block:first-child{
+      margin-right: 80px;
+    }
     .block.image {
       flex: 1;
       text-align: center;
       display: flex;
       justify-content: center;
       flex-flow: column wrap;
-      margin: 0 auto;
       @media (max-width: $media_width) {
         order: 0;
       }

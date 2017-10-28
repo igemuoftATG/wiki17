@@ -7,4 +7,4 @@ scripts:
 pages:
     - ./src/pages/*.html
 images:
-    - ./images/*.{png,jpg,svg}
+    - ./src/images/*.{png,jpg,svg}

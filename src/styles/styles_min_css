@@ -518,8 +518,6 @@ body {
   .container.row {
     display: flex;
     flex-direction: row; }
-    .container.row .block {
-      margin: 0 40px; }
     @media (max-width: 800px) {
       .container.row {
         flex-direction: column; } }
@@ -528,13 +526,14 @@ body {
     flex-direction: column; }
   .container.main-page {
     min-height: 400px; }
+    .container.main-page > .block:first-child {
+      margin-right: 80px; }
     .container.main-page .block.image {
       flex: 1;
       text-align: center;
       display: flex;
       justify-content: center;
-      flex-flow: column wrap;
-      margin: 0 auto; }
+      flex-flow: column wrap; }
       @media (max-width: 800px) {
         .container.main-page .block.image {
           order: 0; } }

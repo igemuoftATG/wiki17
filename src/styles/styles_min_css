@@ -517,8 +517,8 @@ body {
     background-size: cover !important; }
     @media (min-width: 800px) {
       .container.header {
-        padding-right: 30%;
-        padding-left: 30%; } }
+        padding-right: 25%;
+        padding-left: 25%; } }
   .container.row {
     display: flex;
     flex-direction: row; }
@@ -662,8 +662,16 @@ body {
 
 .container.header#wetlab {
   background: url("https://www.aiche.org/sites/default/files/images/courses/lab_safety_ssk_33970144.jpg"); }
+.container.header#pnp {
+  background: #40b2bc; }
 .container.header#design {
   background: #e94c54; }
+.container.header#experiments {
+  background: #e94c54; }
+.container.header#bioinformatics-workshop {
+  background: #40b2bc; }
+.container.header#icon-a-thon {
+  background: #40b2bc; }
 
 figure {
   margin: 25px 0 !important;

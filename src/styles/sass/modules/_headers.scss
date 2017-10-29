@@ -1,8 +1,20 @@
 .container.header{
-	&#wetlab{
+	&#wetlab {
     background: url("https://www.aiche.org/sites/default/files/images/courses/lab_safety_ssk_33970144.jpg");
 	}
-	&#design{
+	&#pnp {
+		background: $cyan;
+	}
+	&#design {
 		background: $red;
+	}
+	&#experiments {
+		background: $red;
+	}
+	&#bioinformatics-workshop {
+		background: $cyan;
+	}
+	&#icon-a-thon {
+		background: $cyan;
 	}
 }

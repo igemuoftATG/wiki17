@@ -1,5 +1,8 @@
 language: node_js
+branches:
+  only:
+    - live
 node_js:
   - "6"
 script:
-  - npm run upload:preview
+  - npm run upload

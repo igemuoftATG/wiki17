@@ -943,5 +943,3 @@ svg {
       #navbarSearch.navbar-animation input[type=text]:focus {
         width: 400px;
         padding-left: 30px; }
-
-/*# sourceMappingURL=styles_min_css.map */

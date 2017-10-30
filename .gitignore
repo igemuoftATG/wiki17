@@ -1,6 +1,4 @@
 .sass-cache/
 styles_min_css.map
 .DS_Store
-psd/
-ai/
-
+node_modules

@@ -1,0 +1,24 @@
+{
+  "name": "wiki17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload:preview": "igemwiki upload-conf -n Toronto --conf ./igemwiki-conf.yaml --preview",
+    "upload": "igemwiki upload-conf -n Toronto --conf ./igemwiki-conf.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igemuoftATG/wiki17.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igemuoftATG/wiki17/issues"
+  },
+  "homepage": "https://github.com/igemuoftATG/wiki17#readme",
+  "devDependencies": {
+    "igemwiki-api": "^1.1.1"
+  }
+}

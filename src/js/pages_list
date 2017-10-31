@@ -1,5 +1,3 @@
-alert("asdfad");
-
 var availableTags = [
   "ActionScript",
   "AppleScript",

@@ -1,9 +1,11 @@
+audio {
+  width: 80%;
+}
 .audio.audio-player {
   width: 80%;
   min-width: 300px;
   margin: 20px 0;
   height: 56px;
-  /* box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .07); */
   box-shadow: 2px 2px 0 $grey;
   border: 1px solid $grey;
   display: flex;
@@ -18,6 +20,9 @@
   .play-pause-btn {
     display: none;
     cursor: pointer;
+  }
+  .open::before {
+    display: none;
   }
   .spinner {
     width: 18px;
@@ -59,6 +64,9 @@
     align-items: center;
     margin-left: 24px;
     margin-right: 24px;
+    span.current-time {
+      width: 40px;
+    }
     .slider {
       margin-left: 16px;
       margin-right: 16px;
@@ -82,7 +90,7 @@
     .volume-btn {
       cursor: pointer;
       &.open path {
-        fill: $cyan;
+        fill: #44BFA3;
       }
     }
     .volume-controls {
@@ -108,6 +116,7 @@
           bottom: 0;
           height: 100%;
           width: 6px;
+          margin-bottom: 0px;
           .pin {
             left: -5px;
             top: -8px;
@@ -117,7 +126,7 @@
     }
   }
 }
-svg{
+svg, img {
   display: block;
 }
 

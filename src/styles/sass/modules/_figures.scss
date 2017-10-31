@@ -5,6 +5,11 @@ figure {
   // Types of figurse
 }
 
+// plotly charts
+.js-plotly-plot .plotly .modebar {
+  display: none;
+}
+
 figure .figures {
   display: flex !important;
   flex-wrap: wrap !important;

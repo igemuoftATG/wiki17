@@ -128,6 +128,9 @@ sidebarFixed();
 
 buildNav();
 
+
+// 3dMOLjs initialization function
+
 function insertStructure(container, structureUrl, settingsFunction){
   let element = $(container);
   let config = { backgroundColor: '#0d0d0d' };
@@ -157,9 +160,9 @@ var settingsList = {
   }
 };
 
-insertStructure("#container-01", 'https://files.rcsb.org/view/3CPO.pdb', settingsList.settings1);
+insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings1);
 
-insertStructure("#container-02", 'https://files.rcsb.org/view/3CPO.pdb', settingsList.settings2);
+insertStructure("#container-02", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
 
 
 'use strict';

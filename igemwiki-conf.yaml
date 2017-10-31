@@ -6,5 +6,8 @@ scripts:
     - ./src/js/*_js
 pages:
     - ./src/pages/*.html
+    - ./src/pages/Team-Toronto.html:INDEX
+    - ./src/pages/HP-Silver.html:HP/Silver
+    - ./src/pages/HP-Gold.html:HP/Gold
 images:
     - ./src/images/*.{png,jpg,svg}

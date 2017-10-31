@@ -693,6 +693,9 @@ figure {
   margin: 25px 0 !important;
   width: 100% !important; }
 
+.js-plotly-plot .plotly .modebar {
+  display: none; }
+
 figure .figures {
   display: flex !important;
   flex-wrap: wrap !important;

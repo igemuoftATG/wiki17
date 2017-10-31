@@ -361,22 +361,6 @@ body {
   background-color: white;
   color: #0f415c; }
 
-.bg-dark-red {
-  background-color: #f19095;
-  color: white; }
-
-.bg-darkish-cyan {
-  background-color: #78cad1;
-  color: white; }
-
-.bg-dark-yellow {
-  background-color: #f8e087;
-  color: white; }
-
-.bg-light-cyan {
-  background-color: #d7eff1;
-  color: white; }
-
 .text-yellow {
   color: #f4ce3f; }
 
@@ -391,6 +375,9 @@ body {
 
 .text-grey {
   color: #999999; }
+
+.text-dark-cyan {
+  color: #0f415c; }
 
 h1, h2, h3, h4, h5, p, a, blockquote, figcaption, li, th, td {
   font-family: "Lato", serif !important;
@@ -509,14 +496,21 @@ body {
   box-sizing: border-box; }
   .container-home .home-left {
     width: 50%;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    display: flex; }
   .container-home .home-right {
     width: 50%;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    display: flex; }
   .container-home .lg-height {
     height: 100vh; }
   .container-home .text-right {
     text-align: right; }
+  .container-home li {
+    display: inline-block;
+    padding: 5px 0.75em 0 0.75em;
+    margin-top: 5px;
+    font-size: 16px; }
 
 .container {
   width: 100%;
@@ -533,8 +527,8 @@ body {
     background-size: cover !important; }
     @media (min-width: 800px) {
       .container.header {
-        padding-right: 25%;
-        padding-left: 25%; } }
+        padding-right: 30%;
+        padding-left: 30%; } }
   .container.row {
     display: flex;
     flex-direction: row; }
@@ -597,6 +591,15 @@ body {
         .container.suggestions .block.page-suggestions div ul li a:hover {
           font-weight: 400;
           color: #0f415c; }
+
+.center-align {
+  margin: auto; }
+
+.justify-center {
+  justify-content: center; }
+
+.text-center {
+  text-align: center; }
 
 #animation {
   background: #11415B;
@@ -921,27 +924,85 @@ svg {
     font-size: 16px; }
 
 #navbarSearch {
-  padding: 0; }
+  padding: 0;
+  margin: 10px 0;
+  position: relative; }
   #navbarSearch input {
     display: block;
     padding: 5px 10px;
     padding-left: 30px;
     border-radius: 50px 50px;
-    border: 1px solid #367b8c;
-    color: #367b8c;
-    font-size: 1.2rem;
-    width: 100%;
+    border: 3px solid #e9e9e9;
+    font-size: 2rem;
+    width: 75%;
     background: #fff url("http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 5px center;
     outline: none;
-    margin: 0; }
+    margin: auto; }
+    #navbarSearch input::-webkit-input-placeholder {
+      color: #0f415c; }
   #navbarSearch.navbar-animation input {
     display: block;
-    width: 30px;
+    width: 10px;
     padding: 5px 10px; }
     #navbarSearch.navbar-animation input[type=text] {
       transition: 0.5s; }
       #navbarSearch.navbar-animation input[type=text]:focus {
         width: 400px;
         padding-left: 30px; }
+
+#search {
+  text-align: left;
+  z-index: 20;
+  display: none;
+  background: #0f415c;
+  opacity: 0.9;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 1px 0; }
+  #search ul {
+    margin: 0;
+    padding: 0; }
+  #search li {
+    display: block;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0;
+    border-bottom: 1px solid #666; }
+    #search li:hover {
+      background: #40b2bc; }
+  #search a {
+    color: #fff;
+    width: 100%; }
+  #search::-webkit-scrollbar {
+    width: 5px; }
+  #search::-webkit-scrollbar-track-piece {
+    background: none; }
+  #search::-webkit-scrollbar-thumb {
+    background: #f4ce3f;
+    border-radius: 5px; }
+
+.bg-home {
+  animation: colourChange 20s alternate infinite; }
+
+.home-logo {
+  height: 75px; }
+
+@keyframes colourChange {
+  0% {
+    background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), #0f415c;
+    background-size: cover; }
+  50% {
+    background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), #e94c54;
+    background-size: cover; }
+  75% {
+    background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), #f4ce3f;
+    background-size: cover; }
+  100% {
+    background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), #40b2bc;
+    background-size: cover; } }
 
 /*# sourceMappingURL=styles_min_css.map */

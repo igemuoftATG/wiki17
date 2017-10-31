@@ -10,10 +10,7 @@ $yellow: #f4ce3f;
 $dark-torquoise: #367b8c;
 $grey: #f6f6f6;
 $light-grey: #fdfdfd;
-
-$dark-red: lighten($red, 15%);
-$darkish-cyan: lighten($cyan, 15%);
-$dark-yellow: lighten($yellow, 15%);
+$dark-grey: darken($grey, 5%);
 
 // MEDIA SIZES
 $media_width: 800px;
@@ -27,26 +24,6 @@ $media_width: 800px;
 .bg-white {
   background-color: $white;
   color: $dark-cyan;
-}
-
-.bg-dark-red {
-  background-color: $dark-red;
-  color: $white;
-}
-
-.bg-darkish-cyan {
-  background-color: $darkish-cyan;
-  color: $white;
-}
-
-.bg-dark-yellow {
-  background-color: $dark-yellow;
-  color: $white;
-}
-
-.bg-light-cyan {
-  background-color: $light-cyan;
-  color: $white;
 }
 
 // FONT COLOR CLASSES
@@ -68,4 +45,8 @@ $media_width: 800px;
 
 .text-grey {
   color: lighten(black, 60);
+}
+
+.text-dark-cyan {
+  color: $dark-cyan;
 }

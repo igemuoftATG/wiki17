@@ -1,0 +1,14 @@
+.bg-home {
+  animation: colourChange 20s alternate infinite;
+}
+
+.home-logo {
+  height: 75px;
+}
+
+@keyframes colourChange {
+  0% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $dark-cyan; background-size:cover;}
+  50% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $red;background-size:cover;}
+  75% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $yellow;background-size:cover;}
+  100% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $cyan;background-size:cover;}
+}

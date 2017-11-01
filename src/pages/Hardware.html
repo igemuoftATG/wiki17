@@ -14,201 +14,214 @@
 <html>
 
 <div class="section">
-	<div class="container header">
-		<h1>Dry Lab</h1>
-		<div id="searchfield">
-			<form>
-				<input id="autocomplete" name="wiki-search" type="text" class="big-input">
-			</form>
-		</div>
-		<p>Hello Hello Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
+	<div class="container header" id="red">
+		<h1>Hardware</h1>
 	</div>
 </div>
 <div class="section bg-white">
 	<div class="container content-page row">
 		<div class="block content">
+
+			<!-- subsection 1 -->
 			<div id="content-red" class="subsection">
-				<h2 class="text-red">content-red</h2>
-				<p>
+				<h2 class="text-red">Introduction</h2>
+				<p>As soon as we decided to embark on a project that utilized the blue light sensitive LOV domain, it became clear that our project, as well as  all future extensions of our project, would require some kind of hardware component. Over the course of the project, we developed and tested three different versions of our hardware device. V1.0 (Lionel), V2.0 (Ludwig). V3.0 (Loki). We briefly describe these devices, and provide information as to their purpose and usage, as well as design and assembly files - ultimately enabling future recapitulation of our work. Furthermore, we demonstrate how we incorporated user feedback as we progressed along our project - notably in the case of the design for V4.0 (Lancelot). In conjunction with our human practices initiative, we had the opportunity to interview various stakeholders and ask for feedback regarding our hardware, and about how our design could be altered in order to integrate it into gene editing applications.</p>
 
-					Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque <b>illum</b>nobis, <i>non </i>neque reprehenderit consequatur ipsam ullam perferendis magni.<sup><a href="#ref1">[1]</a></sup>
-				</p>
+				<h3>General criteria considered when designing our devices</h3>
+				<ul class="bullets">
+					<li>A device that would deliver solely blue light at wavelength 465nm</li>
+					<li>A device that would insulate against ambient light and therefore minimize experimental error.</li>
+					<li>
+						A device that would be compatible with standard vessels used for experimentation
+						<ul class="bullets">
+							<li>15ml tubes</li>
+							<li>60mm x 15mm petri plates</li>
+						</ul>
+					</li>
+					<li>A device that could enable the user to easily regulate:</li>
+					<li>A device that allows for multiple samples to be housed in order to allow for appropriate experimental controls to be employed</li>
+					<li>A device that is compatible with growth conditions - this means that the device can be kept sterile, stored within incubators or orbital shakers, and should be usable at 37C</li>
+					<li>Fit within our budget constraints</li>
+				</ul>
 
-				<div class="audio audio-player">
-					<div class="loading">
-						<div class="spinner"></div>
-					</div>
-					<div class="play-pause-btn">
-						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewbox="0 0 18 24">
-							<path id="playPause" fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon"></path>
-						</svg>
-					</div>
-					<div class="controls"><span class="current-time">0:00</span>
-						<div data-direction="horizontal" class="slider">
-							<div class="progress">
-								<div id="progress-pin" data-method="rewind" class="pin"></div>
-							</div>
-						</div><span class="total-time">0:00</span>
-					</div>
-					<div class="volume">
-						<div class="volume-btn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
-								<path id="speaker" fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"></path>
-							</svg>
-						</div>
-						<div class="volume-controls hidden">
-							<div data-direction="vertical" class="slider">
-								<div class="progress">
-									<div id="volume-pin" data-method="changeVolume" class="pin"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<audio>
-						<source src="http://2017.igem.org/wiki/images/9/93/T--Toronto--Podcast-ep1-intro.mp3" type="audio/mpeg">
-					</audio>
-				</div>
+				<p><a href="#">Download Link for Ludwig and Loki (STLs, Arduino Code, Laser cut plans)</a></p>
 
-
-				<audio controls>
-					<source src="http://2017.igem.org/wiki/images/9/93/T--Toronto--Podcast-ep1-intro.mp3" type="audio/mpeg">
-				</audio>
-
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<div lang="latex">1+sin(x)^2+3</div>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<figure>
-					<div class="figures">
-						<div id="container-01" class="mol-container"></div>
-						<div id="container-02" class="mol-container"></div>
-					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
-				</figure>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
 			</div>
-			<div id="content-cyan" class="subsection">
-				<h2 class="text-cyan">content-cyan</h2>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<blockquote class="regular">Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</blockquote>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<blockquote class="sequence">
-					<pre>>SEQUENCE THAT CREATES THE ALPHA HELIX
-	--------10--------20--------30--------40--------50
-1 MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKA
-51 LVSVKVSDDFTILSYEDLDMTF<span class="text-red">AAMRPSY</span>VENEYKALVAELEKENEERR
-101 IPQFASRKQLSDAILKEAEEKIKEELKAQGKPEKIWDNIIPGKMNSFIA
-151 MGQFYVMDDKKTVEQVIAEKEKEFGGKIKIVEFICFEVGEGLEKKTEDA</pre>
-				</blockquote>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<blockquote class="code">
-					<pre>// Some dry lab code?
-function setActive(elem) {
-var sideNav = document.getElementsByClassName('sidebar-minibox');
-// console.log(sideNav);
-var ul = sideNav[0].getElementsByTagName('ul');
-console.log(ul);
-var li = ul[0].getElementsByTagName('li');
-for (i=0; i < li.length; i++) {
-	li[i].classList.remove('active');
-}
-elem.classList.add('active');
-}</pre>
-				</blockquote>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-			</div>
-			<div id="one" class="subsection">
-				<h2 class="text-yellow">content-yellow</h2>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
+			<!-- subsection 1 END -->
 
-				<!-- Single image figure -->
-				<figure>
-					<div class="figures">
-						<div class="image"><img src="http://www.excel-easy.com/data-analysis/images/charts/column-chart.png" alt="data"></div>
-					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
-				</figure>
-				<!-- Single image figure END -->
+
+			<!-- subsection 2 -->
+			<div id="content-red" class="subsection">
+
+				<h2 class="text-red">V1.0 - LIONEL</h2>
+
+				<p>When an array was needed urgently for testing our parts (link to design), we scavenged materials from the lab to develop the first iteration of our device. V1.0 LIONEL is a simple solution to the need for a proof-of-concept device, and requires around 1-2 hours to make, and costs around $15(CAD). Lionel has been constructed onto a lightweight styrofoam rack, with a simple circuit built incorporating a 9V battery and LEDs with a breadboard. For the desired number of LEDs, circular holes were created at the bottom of the styrofoam rack in order to leave space for the LEDs to be inserted so that light could be delivered from below the tubes. The device is turned on and off by manually connecting the circuit, and samples must be covered in tinfoil in order to insulate them from ambient light and prevent LOV activity outside of experimental parameters. As can be seen from x, the device can be secured to an orbital shaker using a coil.</p>
 
 				<figure>
 					<div class="figures">
-						<div class="image"><img src="http://www.excel-easy.com/data-analysis/images/charts/column-chart.png" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/a/a1/T--Toronto--2017_hardware-1.jpg" alt="data"></div>
 					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
 				</figure>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
+
+				<h3>List of Materials</h3>
+
+				<h3>Circuit Diagram</h3>
 
 				<!-- Multiple figure  -->
 				<figure>
 					<div class="figures">
-						<div class="image"><img src="https://zippy.gfycat.com/MedicalAdventurousCanine.gif" alt="data" width="200px"></div>
-						<div class="image"><img src="https://media.giphy.com/media/R6vXyeo7NA0gg/giphy.gif" alt="data" width="200px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/2/2e/T--Toronto--2017_hardware-2a.jpg" alt="data" width="200px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/2/24/T--Toronto--2017_hardware-2b.jpg" alt="data" width="200px"></div>
 					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
+					<figcaption>Figure 1: (a) Top view of Lionel in action. (b) Side view of Lionel in the lab</figcaption>
 				</figure>
 				<!-- Multiple figure END -->
 
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.						</p>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-
-				<!-- Figure start -->
 				<figure>
 					<div class="figures">
-						<table>
-							<thead>
-								<tr>
-									<th>Time</th>
-									<th>Quantity</th>
-									<th>iunno</th>
-								</tr>
-							</thead>
-							<tbody class="table-hover">
-								<tr>
-									<td>Hello</td>
-									<td>9adsf asd</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2 ads fads fdsa s </td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>Hello</td>
-									<td>911 asd afd </td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/b/ba/T--Toronto--2017_hardware-2c.jpg" alt="data"></div>
 					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
+					<figcaption>Figure 1c. Lionel in action, attached to an orbital shaker</figcaption>
 				</figure>
-				<!-- figure end -->
 
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<a><button class="btn-primary red">More Info</button></a>
+				<h3>Areas of Improvement:</h3>
+				<p>While simple, efficient, and cheap the first iteration was not aesthetically pleasing (to some) nor easy to use due to exposed circuitry. Based on user feedback by the lab team, we received some feedback that was used when moving forward to version 2.0:</p>
+
+				<ul class="bullets">
+					<li>Exposed circuitry makes it unpleasant to work with, method of wiring at the bottom of the device for the LEDs is suboptimal.</li>
+					<li>More control of the individual LEDs was desired (such as time and intensity of delivered light).</li>
+					<li>Incorporation of a larger number of samples to facilitate controls.</li>
+					<li>Easier and more reliable way of insulating against ambient light.</li>
+				</ul>
+
 			</div>
-			<hr>
-			<div id="content-yellow" class="subsection">
-				<h2 class="text-cyan">References</h2>
-				<ol>
-					<li id="ref1">Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam</li>
-				</ol>
+			<!-- subsection 2 END -->
+
+
+			<!-- subsection 3 -->
+			<div id="content-red" class="subsection">
+
+				<h2 class="text-red">V2.0 - LUDWIG</h2>
+
+				<p>v2.0 Ludwig presents an elegant laser-cut design, with a simple arduino based microcontroller wired to a 9V battery and user interface and a greater versatility in LED and ambient light control. The purpose of v2.0 Ludwig was to build off of feedback from V1.0 Lionel, and therefore we improved upon the following properties:</p>
+
+				<ul class="bullets">
+					<li>Includes a user interface consists of a screen coupled to buttons that allow users to select which LEDs to light, the duration, intensity (on a scale of 1 to 10), and delay of illumination.</li>
+					<li>Is compatible with more samples, with a maximum capacity of of 16 x 15mL tubes.</li>
+					<li>Offers greater insulation from ambient light compared to V1.0 Lionel, with an outer shell laser-cut from acrylic and covered with light-proof tape. Light-proof tape was used upon the discovery that black acrylic is not sufficient to block ambient light.</li>
+					<li>Can be secured to orbital shakers to enable overnight growth assays. Design of circuitry and overall design is more secure.</li>
+					<li>Slots at the side enable parchment paper to be inserted in in order to diffuse the light and facilitate even distribution of light illumination.</li>
+				</ul>
+
+				<h3>List of Materials</h3>
+
+				<h3>Circuit</h3>
+
+				<!-- Multiple figure  -->
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/5/52/T--Toronto--2017_hardware-3.png" alt="data" width="200px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/5/5a/T--Toronto--2017_hardware-4.png" alt="data" width="200px"></div>
+					</div>
+					<figcaption>Figure 2: Ludwig designs. (a) The inner structure. (b) Enclosure. (c) </figcaption>
+				</figure>
+				<!-- Multiple figure END -->
+
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/9/97/T--Toronto--2017_hardware-5.jpg" alt="data" width="150px"></div>
+					</div>
+					<figcaption>Figure 3. Assembled Ludwig in action in the lab.</figcaption>
+				</figure>
+
+				<h3>Areas of Improvement:</h3>
+
+				<ul class="bullets">
+					<li>Currently Ludwig is secured to a styrofoam base, which is then secured to an orbital shaker using a coil, much like in the case of V1.0 Lionel. In the future, designs that are meant to be used in orbital shakers could include screws for securing the entire device directly.</li>
+					<li>Not as useful as stem cells and mammalian cells as they are typically not grown in suspension culture, but usually on feeder cells.</li>
+				</ul>
+
+				<p><a href="#">Download Link for Ludwig and Loki V2.0(STLs, Arduino Code, Laser cut plans)</a></p>
+
 			</div>
+			<!-- subsection 3 END -->
+
+
+			<!-- subsection 4 -->
+			<div id="content-red" class="subsection">
+
+				<h2 class="text-red">V3.0 - LOKI</h2>
+
+				<p>V3.0 Loki is designed to expand the types of assays that we were able to perform using light-sensitive proteins. Similar to V2.0 Ludwig, Loki offers a sleek design laser-cut from clear acrylic, held together using 3D printed hinges. In order to insulate from ambient light, Loki has also been proofed using light-resistant tape.</p>
+
+				<ul class="bullets">
+					<li>We needed a design that was compatible with multiple petri plates, and therefore we decided to construct a device that would allow for controlled illumination of up to 8 standard (60mm x 15mm) petri plates.</li>
+					<li>Two sliding doors on either side allow for easy access to the plates.</li>
+					<li>Buttons connected to the arduino circuit board wired to a 9V battery  allow the user to select which plates to illuminate in binary, providing an easy user interface.</li>
+					<li>The plates can also be fitted with parchment paper allowing  diffusion of  the light onto the plates.</li>
+					<li>Loki is also compatible with standard incubators, and it is easy to sterilize.</li>
+				</ul>
+
+				<!-- Multiple figure  -->
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/8/83/T--Toronto--2017_hardware-6.png" alt="data" width="130px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/2/25/T--Toronto--2017_hardware-7.png" alt="data" width="130px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/4/47/T--Toronto--2017_hardware-8.png" alt="data" width="130px"></div>
+					</div>
+					<figcaption>Figure 4. Loki designs. (a) shows the design of one level for 4 petri plates. (b) Shows the complete internal structure (c) Shows the final enclosure.</figcaption>
+				</figure>
+				<!-- Multiple figure END -->
+
+				<!-- Multiple figure  -->
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/5/57/T--Toronto--2017_hardware-9.gif" alt="data" width="200px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/c/c4/T--Toronto--2017_hardware-10.jpg" alt="data" width="200px"></div>
+					</div>
+					<figcaption>Figure 5. Loki in action</figcaption>
+				</figure>
+				<!-- Multiple figure END -->
+
+				<h3>List of Material</h3>
+
+				<h3>Circuit Diagram</h3>
+
+				<h3>Areas of Improvement</h3>
+
+				<ul class="bullets">
+					<li>Note that future designs can be easily modified to include 100 x 15mm petri dishes/</li>
+				</ul>
+
+				<p><a href="#">Download Link for Ludwig and Loki V3.0(STLs, Arduino Code, Laser cut plans)</a></p>
+
+			</div>
+			<!-- subsection 4 END -->
+
+
+			<!-- subsection 5 -->
+			<div id="content-red" class="subsection">
+
+				<h2 class="text-red">V4.0 - LANCELOT</h2>
+
+				<!-- Multiple figure  -->
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/3/3b/T--Toronto--2017_hardware-11.jpg" alt="data" width="130px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/f/fd/T--Toronto--2017_hardware-12.jpg" alt="data" width="130px"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/9/96/T--Toronto--2017_hardware-13.jpg" alt="data" width="130px"></div>
+					</div>
+					<figcaption>Figure 6 Lancelot Design. (a) shows the design of one level for a 12 wellplate. (b) Shows complete internal structure. (c) Shows the final enclosure, minus sliding panel and circuit.</figcaption>
+				</figure>
+				<!-- Multiple figure END -->
+
+				<p>V4.0 Lancelot is a conceptual design intended to be compatible with gene editing applications in mammalian cells. When designing our CRISPR switch, we considered that the ultimate downstream application of such a tool would necessitate a re-design of our hardware, ensuring that our tool could be integrated into the target environment seamlessly. Throughout our interview series that constituted a part of our integrated human practices initiative, we consulted with stakeholders and received feedback on the design of previous versions of our hardware, with the aim to identify the features of a device that would make them compatible with mammalian gene editing applications.</p>
+				<p>Building off of V2.0 Ludwig and v3.0 Loki, we determined that various criteria of such a device were already being met - notably, our device was already compatible with various incubators commonly used for mammalian gene editing, and therefore certain needs (such as maintaining a sterile environment, regulating CO2 levels) were already being met.</p>
+				<p>Our stakeholders noted that while v3.0 Loki could also be used for mammalian gene editing applications, v2.0 Ludwig would be less useful, as 15ml tubes are not commonly employed when culturing or testing mammalian cells. The main criteria that inspired the design of v4.0 Lancelot was a need for a device that could be compatible with certain plate formats (either 6, 12, 24, or 96 well plates). As can be seen from the figure, Lancelot is compatible with 12 plate format, however we note that altering the design to 6 or 24 well plates is not difficult should the need arise.</p>
+				<p>Similar to v2.0 Ludwig and v3.0 Loki, v4.0 Lancelot would be cut from acrylic and light-proofed using tape. LEDs at the specific wavelength of LacILOV (465nm) are wired at the bottom, and would be controlled using an arduino microcontroller, with a simple user interface akin to prior versions. The plate would slide into the slot between dividers at the top and bottom, which would serve to isolate the light produced by LEDs to the well of the user’s choosing. The dividers therefore allow the user to confidently include samples that are meant to be kept in the dark into their experimental design. Similar to v3.0 Loki, v4.0 Lancelot would include a sliding panel that is kept secure by 3D printed hinges (not shown in figure). Ultimately, based from the feedback we received from our advisors, if constructed v4.0 Lancelot would serve as a valuable device that would aid the transition of LacILOV, and tools such as our switch, into mammalian gene editing applications.</p>
+			</div>
+			<!-- subsection 5 END -->
+
 		</div>
 		<div class="block sidebar">
 			<div id="sidebar-box">

@@ -33,3 +33,19 @@ http://2017.igem.org/wiki/images/9/91/T--Toronto--2017_wetlab-header.jpg
 
 http://2017.igem.org/wiki/images/9/90/T--Toronto--2017_logo.svg
 http://2017.igem.org/wiki/images/a/a4/T--Toronto--2017_tagline.svg
+
+uploaded[2260ms] ./src/images/hardware-8.png -> http://2017.igem.org/wiki/images/4/47/T--Toronto--2017_hardware-8.png
+uploaded[3127ms] ./src/images/hardware-7.png -> http://2017.igem.org/wiki/images/2/25/T--Toronto--2017_hardware-7.png
+uploaded[2267ms] ./src/images/hardware-6.png -> http://2017.igem.org/wiki/images/8/83/T--Toronto--2017_hardware-6.png
+uploaded[7177ms] ./src/images/hardware-5.jpg -> http://2017.igem.org/wiki/images/9/97/T--Toronto--2017_hardware-5.jpg
+uploaded[2236ms] ./src/images/hardware-4.png -> http://2017.igem.org/wiki/images/5/5a/T--Toronto--2017_hardware-4.png
+uploaded[2751ms] ./src/images/hardware-3.png -> http://2017.igem.org/wiki/images/5/52/T--Toronto--2017_hardware-3.png
+uploaded[2678ms] ./src/images/hardware-2c.jpg -> http://2017.igem.org/wiki/images/b/ba/T--Toronto--2017_hardware-2c.jpg
+uploaded[8277ms] ./src/images/hardware-2b.jpg -> http://2017.igem.org/wiki/images/2/24/T--Toronto--2017_hardware-2b.jpg
+uploaded[2052ms] ./src/images/hardware-2a.jpg -> http://2017.igem.org/wiki/images/2/2e/T--Toronto--2017_hardware-2a.jpg
+uploaded[2309ms] ./src/images/hardware-13.jpg -> http://2017.igem.org/wiki/images/9/96/T--Toronto--2017_hardware-13.jpg
+uploaded[2406ms] ./src/images/hardware-12.jpg -> http://2017.igem.org/wiki/images/f/fd/T--Toronto--2017_hardware-12.jpg
+uploaded[2155ms] ./src/images/hardware-11.jpg -> http://2017.igem.org/wiki/images/3/3b/T--Toronto--2017_hardware-11.jpg
+uploaded[2631ms] ./src/images/hardware-10.jpg -> http://2017.igem.org/wiki/images/c/c4/T--Toronto--2017_hardware-10.jpg
+uploaded[8089ms] ./src/images/hardware-1.jpg -> http://2017.igem.org/wiki/images/a/a1/T--Toronto--2017_hardware-1.jpg
+http://2017.igem.org/wiki/images/5/57/T--Toronto--2017_hardware-9.gif

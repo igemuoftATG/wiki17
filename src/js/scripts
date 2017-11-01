@@ -296,7 +296,7 @@ var settingsList = {
   }
 };
 
-insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings1);
+insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
 
 insertStructure("#container-02", 'http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_2v1a.txt', settingsList.settings2);
 

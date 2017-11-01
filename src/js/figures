@@ -114,15 +114,14 @@ var interlab = function() {
 
 	var data = [negativeControl, positiveControl, testDevice1, testDevice2, testDevice3, testDevice4, testDevice5, testDevice6];
 
-
 	var layout = {
-	title: 'iGEM Interlab Data 2017',
-	xaxis: {
-		title: 'Hour'
-	},
-	yaxis: {
-		title: 'uM Fluorescein / OD600'
-	}
+		title: 'iGEM Interlab Data 2017',
+		xaxis: {
+			title: 'Hour'
+		},
+		yaxis: {
+			title: 'uM Fluorescein / OD600'
+		}
 	};
 
 	Plotly.newPlot('interlab', data, layout);
@@ -142,7 +141,7 @@ var mcherry1 = function() {
 	      visible: true
 	    },
 	    mode: 'lines+markers',
-	    name: 'Negative Control',
+	    name: 'Light',
 	    line: {shape: 'spline'},
 	    type: 'scatter'
 	  };
@@ -156,7 +155,7 @@ var mcherry1 = function() {
 	      visible: true
 	    },
 	    mode: 'lines+markers',
-	    name: 'Positive Control',
+	    name: 'Dark',
 	    line: {shape: 'spline'},
 	    type: 'scatter'
 	  };
@@ -165,9 +164,9 @@ var mcherry1 = function() {
 
 
 	var layout = {
-	  title: 'RFU / OD600',
+	  title: 'Normalized Fluorescence over Time',
 	  xaxis: {
-	    title: 'Time Point'
+	    title: 'Hours'
 	  },
 	  yaxis: {
 	    title: 'RFU / OD600'

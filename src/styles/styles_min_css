@@ -539,8 +539,10 @@ body {
     background-size: cover !important; }
     @media (min-width: 800px) {
       .container.header {
-        padding-right: 30%;
-        padding-left: 30%; } }
+        padding-right: 20%;
+        padding-left: 20%;
+        padding-top: 10%;
+        padding-bottom: 10%; } }
   .container.row {
     display: flex;
     flex-direction: row; }
@@ -950,18 +952,21 @@ svg, img {
   #navigation ul {
     list-style-type: circle; }
   #navigation li {
-    color: white;
     display: inline-block;
     padding: 5px 0.75em 0 0.75em;
     margin-top: 5px;
     font-size: 16px; }
-    #navigation li a {
-      color: white; }
 
 #navbarSearch {
   padding: 0;
   margin: 10px 0;
   position: relative; }
+  #navbarSearch a {
+    color: white; }
+    #navbarSearch a:visited {
+      color: white !important; }
+    #navbarSearch a:hover {
+      color: white !important; }
   #navbarSearch input {
     display: block;
     padding: 5px 10px;
@@ -1011,8 +1016,13 @@ svg, img {
     #search li:hover {
       background: #40b2bc; }
   #search a {
+    display: inline-block;
     color: #fff;
     width: 100%; }
+    #search a:visited {
+      color: white; }
+    #search a:hover {
+      color: white; }
   #search::-webkit-scrollbar {
     width: 5px; }
   #search::-webkit-scrollbar-track-piece {

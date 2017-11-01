@@ -34,6 +34,11 @@ $font-size: 16px;
   padding: 0;
   margin: 10px 0;
   position: relative;
+  a {
+    color: $white;
+    &:visited {color: $white !important;}
+    &:hover {color: $white !important;}
+  }
   input {
     display: block;
     padding: 5px 10px;
@@ -90,10 +95,12 @@ $font-size: 16px;
     }
   }
   a {
+    display: inline-block;
     color: #fff;
     width: 100%;
+    &:visited {color: $white;}
+    &:hover {color: $white;}
   }
-
   &::-webkit-scrollbar {width: 5px;}
   &::-webkit-scrollbar-track-piece {background: none;}
   &::-webkit-scrollbar-thumb {background: $yellow; border-radius: 5px;}

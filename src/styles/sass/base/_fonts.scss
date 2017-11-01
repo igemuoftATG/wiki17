@@ -41,6 +41,9 @@ p {
 a {
   font-size: 1.7rem !important;
   text-decoration: none !important;
+  &:visited {
+    color: inherit !important;
+  }
 }
 
 sup a {

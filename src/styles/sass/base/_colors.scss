@@ -64,3 +64,17 @@ $media_width: 800px;
 .text-dark-cyan {
   color: $dark-cyan;
 }
+
+/* hover color changes */
+a#grey-hover:hover {
+  color: lighten(black, 85) !important;
+}
+a#red-hover:hover {
+  color: lighten($red, 10) !important;
+}
+a#yellow-hover:hover {
+  color: lighten($yellow, 20) !important;
+}
+a#cyan-hover:hover {
+  color: lighten($cyan, 20) !important;
+}

@@ -26,3 +26,10 @@ uploaded[2594ms] ./src/images/Iconathon-1.jpg -> http://2017.igem.org/wiki/image
 
 uploaded[3040ms] ./src/images/workshop-2.jpg -> http://2017.igem.org/wiki/images/7/7d/T--Toronto--2017_workshop-2.jpg
 uploaded[4115ms] ./src/images/workshop-1.jpg -> http://2017.igem.org/wiki/images/c/c8/T--Toronto--2017_workshop-1.jpg
+
+http://2017.igem.org/wiki/images/0/0e/T--Toronto--2017_safety-3.jpg
+http://2017.igem.org/wiki/images/e/ec/T--Toronto--2017_safety-4.jpg
+http://2017.igem.org/wiki/images/9/91/T--Toronto--2017_wetlab-header.jpg
+
+http://2017.igem.org/wiki/images/9/90/T--Toronto--2017_logo.svg
+http://2017.igem.org/wiki/images/a/a4/T--Toronto--2017_tagline.svg

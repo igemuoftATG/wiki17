@@ -1,3 +1,36 @@
+.container-home {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  .home-left {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    background: $dark-cyan;
+  }
+  .home-right {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+  }
+  .lg-height {height: 100vh;}
+  .text-right {text-align: right;}
+
+  ul li {
+    display: inline-block;
+    padding: 5px 0.75em 0 0.75em;
+    margin-top: 5px;
+    a {
+      font-weight: 400;
+      color: white !important;
+      font-size: 1.7rem !important;
+      transition: color 200ms linear;
+      -webkit-transition: color 200ms linear;
+    }
+  }
+}
+
 .bg-home {
   animation: colourChange 20s alternate infinite;
 }
@@ -7,8 +40,7 @@
 }
 
 @keyframes colourChange {
-  0% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $dark-cyan; background-size:cover;}
-  50% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $red;background-size:cover;}
-  75% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $yellow;background-size:cover;}
+  0% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $red;background-size:cover;}
+  50% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $yellow;background-size:cover;}
   100% {background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), $cyan;background-size:cover;}
 }

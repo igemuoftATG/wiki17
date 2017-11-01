@@ -356,10 +356,21 @@ body {
 .bg-dark-cyan {
   background-color: #0f415c;
   color: white; }
+  .bg-dark-cyan li a {
+    color: white; }
 
 .bg-white {
   background-color: white;
   color: #0f415c; }
+
+.bg-cyan {
+  background: #40b2bc; }
+
+.bg-yellow {
+  background: #f4ce3f; }
+
+.bg-red {
+  background: #e94c54; }
 
 .text-yellow {
   color: #f4ce3f; }
@@ -939,10 +950,13 @@ svg, img {
   #navigation ul {
     list-style-type: circle; }
   #navigation li {
+    color: white;
     display: inline-block;
     padding: 5px 0.75em 0 0.75em;
     margin-top: 5px;
     font-size: 16px; }
+    #navigation li a {
+      color: white; }
 
 #navbarSearch {
   padding: 0;
@@ -954,6 +968,7 @@ svg, img {
     padding-left: 30px;
     border-radius: 50px 50px;
     border: 3px solid #e9e9e9;
+    color: #367b8c;
     font-size: 2rem;
     width: 75%;
     background: #fff url("http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 5px center;

@@ -124,6 +124,10 @@ ul {
   }
 }
 
+table tbody tr td a {
+  font-color: $dark-cyan;
+  text-decoration: underline;
+}
 ol {
   padding: 0 30px !important;
   li {

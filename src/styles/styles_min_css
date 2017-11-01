@@ -486,6 +486,10 @@ ul {
     ul li.active a {
       font-weight: 900; }
 
+table tbody tr td a {
+  font-color: #0f415c;
+  text-decoration: underline; }
+
 ol {
   padding: 0 30px !important; }
   ol li {
@@ -953,13 +957,10 @@ svg, img {
   #navigation ul {
     list-style-type: circle; }
   #navigation li {
-    color: white;
     display: inline-block;
     padding: 5px 0.75em 0 0.75em;
     margin-top: 5px;
     font-size: 16px; }
-    #navigation li a {
-      color: white; }
 
 #navbarSearch {
   padding: 0;

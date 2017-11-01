@@ -16,58 +16,166 @@
 <!-- Header div -->
 <div class="section">
 	<div class="container header" id="dark-cyan">
-		<h1>Safety</h1>
-		<p>Safety is the number one priority</p>
+		<h1>Parts</h1>
 	</div>
 </div>
 
 <!-- Content div -->
 <div class="section bg-white">
 	<div class="container content-page row">
-		<div class="block content">
+		<div class="block content" style="max-width: 1000px;">
 
 			<!-- subsection 1 -->
 			<div class="subsection">
 
-				<h2>General Lab Safety</h2>
+				<h2>Submitted Parts</h2>
 
-				<p>Before starting the project, our team completed the biosafety and the biosecurity trainings provided by the University of Toronto Biosafety office, and our project supervisor, Dr. Radhakrishnan Mahadevan. The training modules completed include lab access and rules, biosafety levels and equipment, emergency procedures etc.</p>
-				<p>Overall, our team adhered to the Canadian Biosafety Standards and Guidelines.<sup><a href="#ref1">[1]</a></sup> The biosafety of our lab was overseen by the University's Institutional Biosafety Committee, with administrative and technical support provided by the Biosafety Team in the Office of Environmental Health and Safety.<sup><a href="#ref2">[2]</a></sup></p>
+				<!-- Figure start -->
+				<figure>
+					<div class="figures">
+						<table>
+						 <thead>
+					   <tr>
+					      <th>pSB1C3</th>
+					      <th>Registry number </th>
+					      <th>Type</th>
+					      <th>Length (bp)</th>
+					      <th>Function </th>
+					      <th>Assembly Method</th>
+					      <th>UNS</th>
+					   </tr>
+						 </thead>
+						 <tbody class="table-hover">
+					   <tr>
+					      <td>LacILOV-mCherry </td>
+					      <td><a href="http://parts.igem.org/Part:BBa_K2469003">BBa_K2469003</a></td>
+					      <td>Composite </td>
+					      <td>1615</td>
+					      <td>Light regulated reporter </td>
+					      <td>Digestion and ligation </td>
+					      <td>2, 3</td>
+					   </tr>
+					   <tr>
+					      <td>HIS-AcrIIA4</td>
+					      <td><a href="http://parts.igem.org/Part:BBa_K2469002">BBa_K2469002</a></td>
+					      <td>Basic</td>
+					      <td>398</td>
+					      <td>Inhibits the function of S. pyogenes Cas9 and dCas9.</td>
+					      <td>Gibson assembly of amplified AcrIIA4 from G-block and amplified pSB1C3 backbone from LacILOV-mCherry Construct in pSB1C3</td>
+					      <td>2, 3</td>
+					   </tr>
+					   <tr>
+					      <td>LacILOV</td>
+					      <td><a href="http://parts.igem.org/Part:BBa_K2469001">BBa_K2469001</a></td>
+					      <td>Basic</td>
+					      <td>728</td>
+					      <td>A fusion protein of the light, oxygen and voltage-sensitive domain of the Avena Sativa phototropin 1 (LOV2) and the LacI domain. This transcriptional regulator represses promoters under control of LacI. In the presence of blue light this protein will act as a repressor, and in its absence the protein will dissociate from the promoter </td>
+					      <td>Gibson assembly of amplified LacILOV part from LacILOV-mCherry construct in pKDL071 and pSB1C3 backbone from LacILOV-mCherrt construct in pSCB1C3</td>
+					      <td>2, 3</td>
+					   </tr>
+					   <tr>
+					      <td>reporter construct </td>
+					      <td><a href="http://parts.igem.org/Part:BBa_K2469004">BBa_K2469004</a></td>
+					      <td>Composite </td>
+					      <td>3253</td>
+					      <td>Light regulated reporter switch, alternating between mCherry and YFP flourescence </td>
+					      <td>Gibson assembly of amplified reporter construct out of pkDL071 and amplified pSB1C3 backbone from the LacILOV-mCherry construct in pSB1C3 </td>
+					      <td>2, 3</td>
+					   </tr>
+					 </tbody>
+					</table>
+					</div>
+					<figcaption>Figure 1.1: Parts</figcaption>
+				</figure>
+				<!-- figure end -->
+
 			</div>
-			<!-- subsection 3 END -->
+			<!-- subsection 1 END -->
+
+
+			<!-- subsection 2 -->
+			<div class="subsection">
+
+				<h2>Other Parts</h2>
+
+				<!-- Figure start -->
+				<figure>
+					<div class="figures">
+						<table>
+							 <thead>
+						   <tr>
+						      <th>pKDLO71</th>
+						      <th>Type </th>
+						      <th>Length</th>
+						      <th>Function</th>
+						      <th>Assembly Method</th>
+						      <th>UNS</th>
+						   </tr>
+							 </thead>
+							 <tbody class="table-hover">
+						   <tr>
+						      <td>LacILOV-mCherry</td>
+						      <td>Composite </td>
+						      <td>1615</td>
+						      <td>Light regulated reporter </td>
+						      <td>Gibson g-Block + Backbone with UNS</td>
+						      <td>2, 3</td>
+						   </tr>
+						   <tr>
+						      <td>reporter mCherry</td>
+						      <td></td>
+						      <td></td>
+						      <td>reporter construct, consisting of the CI repressor (with LVA degradation tag) and mCherry under the control of the Ptrc-2 promoter; used as a negative control in the sgRNA assay </td>
+						      <td>Gibson g-Block + Backbone with UNS</td>
+						      <td>2, 4</td>
+						   </tr>
+						   <tr>
+						      <td>reporter mCherry + sgRNA </td>
+						      <td></td>
+						      <td></td>
+						      <td>Half of the full construct, to test the function of the sgRNA (ensure it is targetting the correct sequence) </td>
+						      <td>Gibson assembly of sgRNA g-Block into reporter mCherry, with UNS 5 extension on backbone </td>
+						      <td>4, 5</td>
+						   </tr>
+						   <tr>
+						      <td>reporter mCherry + sgRNA+ AcrIIA4 </td>
+						      <td></td>
+						      <td></td>
+						      <td>Incorporation of the Anti-CRISPR protein into the sgRNA construct to have both expressed simultaneously and test the function of the Anti-CRISPR </td>
+						      <td>Gibson assemly of AcrIIA4 g-block into reporter mCherry + sgRNA, with UNS 6 extension on backbone </td>
+						      <td>4, 6</td>
+						   </tr>
+						   <tr>
+						      <td>reporter construct </td>
+						      <td>Composite </td>
+						      <td>3253</td>
+						      <td>Light regulated reporter switch, alternating between mCherry and YFP flourescence </td>
+						      <td>Gibson assembly of reporter YFP (LacILOV + YFP) into reporter mCherry with UNS 3 extension on backbone </td>
+						      <td>3, 2</td>
+						   </tr>
+						   <tr>
+						      <td>full construct </td>
+						      <td></td>
+						      <td></td>
+						      <td>Light-regulated switch controlling the activity of the CRISPR-Cas9 system. </td>
+						      <td>Gibson assembly of AcrIIA4 subpart (LacILOV + AcrIIA4 + YFP) into reporter mCherry + sgRNA, with UNS 3 extension on bacbone  </td>
+						      <td>3, 6</td>
+						   </tr>
+						 </tbody>
+						</table>
+					</div>
+					<figcaption>Figure 1.1: Other parts</figcaption>
+				</figure>
+				<!-- figure end -->
+
+			</div>
+			<!-- subsection 2 END -->
+
 
 			<hr>
-			<!-- Reference Subsection -->
-			<div id="content-yellow" class="subsection">
-				<h2 class="text-cyan">References</h2>
-				<ol>
-					<li id="ref1">Canadian Biosafety Standards and Guidelines - <a href="https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html">https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html</a></li>
-					<li id="ref2">Biosafety Team in the Office of Environmental Health and Safety - <a href="https://ehs.utoronto.ca/our-services/biosafety/">https://ehs.utoronto.ca/our-services/biosafety/</a></li>
-					<li id="ref3">NIH Guidelines - <a href="https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html">https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html</a></li>
-					<li id="ref4">iGEM Risk Groups - <a href="http://2017.igem.org/Safety/Risk_Groups">http://2017.igem.org/Safety/Risk_Groups</a></li>
-				</ol>
-			</div>
-			<!-- Reference Subsection END -->
 
 		</div>
 
-		<!-- Sidebar -->
-		<div class="block sidebar">
-			<div id="sidebar-box">
-				<h3>Contents</h3>
-				<div class="sidebar-minibox">
-					<ul></ul>
-				</div>
-				<h3>Related Pages</h3>
-				<div class="sidebar-minibox">
-					<ul>
-						<li> <a href="#">Content 1</a></li>
-						<li> <a href="#">Content 2</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- Sidebar END -->
 
 	</div>
 </div>

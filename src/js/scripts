@@ -292,13 +292,21 @@ var settingsList = {
     v.setStyle({}, {cartoon: {color: 'yellow'}});
   },
   settings2: function(v){
-    v.setStyle({}, {cartoon: {color: 'blue'}});
+    v.setStyle({}, {cartoon: {color: 'spectrum'}});
   }
 };
 
 insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings1);
 
-insertStructure("#container-02", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
+insertStructure("#container-02", 'http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_2v1a.txt', settingsList.settings2);
+
+insertStructure("#container-03", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
+
+insertStructure("#container-04", 'http://2017.igem.org/wiki/images/5/58/T--Toronto--2017_final_lacilov_g58_del.txt', settingsList.settings2);
+
+insertStructure("#container-05", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
+
+insertStructure("#container-06", 'http://2017.igem.org/wiki/images/1/1c/T--Toronto--2017_final_lacilov_t60t61_del.txt', settingsList.settings2);
 
 
 'use strict';

@@ -99,6 +99,10 @@ ul {
   padding: 0 5px;
   list-style-type: none;
   list-style-image: none;
+  &.bullets {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
   li {
     padding: 5px 0;
     a {

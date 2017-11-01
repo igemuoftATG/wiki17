@@ -41,6 +41,9 @@ p {
 a {
   font-size: 1.7rem !important;
   text-decoration: none !important;
+  &:visited {
+    color: inherit !important;
+  }
 }
 
 sup a {
@@ -99,6 +102,10 @@ ul {
   padding: 0 5px;
   list-style-type: none;
   list-style-image: none;
+  &.bullets {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
   li {
     padding: 5px 0;
     a {
@@ -120,6 +127,10 @@ ul {
   }
 }
 
+table tbody tr td a {
+  font-color: $dark-cyan;
+  text-decoration: underline;
+}
 ol {
   padding: 0 30px !important;
   li {

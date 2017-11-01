@@ -15,3 +15,21 @@ http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt
 http://2017.igem.org/wiki/images/b/b3/T--Toronto--2017_arts_transcript.txt
 http://2017.igem.org/wiki/images/b/b1/T--Toronto--2017_arts_business.txt
 http://2017.igem.org/wiki/images/d/d4/T--Toronto--2017_engineering_transcript.txt
+
+uploaded[2667ms] ./src/images/engagement-3.jpg -> http://2017.igem.org/wiki/images/0/0d/T--Toronto--2017_engagement-3.jpg
+uploaded[2642ms] ./src/images/engagement-2.jpg -> http://2017.igem.org/wiki/images/8/8c/T--Toronto--2017_engagement-2.jpg
+uploaded[2700ms] ./src/images/engagement-1.jpg -> http://2017.igem.org/wiki/images/1/1c/T--Toronto--2017_engagement-1.jpg
+
+uploaded[2745ms] ./src/images/Iconathon-3.jpg -> http://2017.igem.org/wiki/images/5/58/T--Toronto--2017_Iconathon-3.jpg
+uploaded[2742ms] ./src/images/Iconathon-2.jpg -> http://2017.igem.org/wiki/images/5/56/T--Toronto--2017_Iconathon-2.jpg
+uploaded[2594ms] ./src/images/Iconathon-1.jpg -> http://2017.igem.org/wiki/images/e/e6/T--Toronto--2017_Iconathon-1.jpg
+
+uploaded[3040ms] ./src/images/workshop-2.jpg -> http://2017.igem.org/wiki/images/7/7d/T--Toronto--2017_workshop-2.jpg
+uploaded[4115ms] ./src/images/workshop-1.jpg -> http://2017.igem.org/wiki/images/c/c8/T--Toronto--2017_workshop-1.jpg
+
+http://2017.igem.org/wiki/images/0/0e/T--Toronto--2017_safety-3.jpg
+http://2017.igem.org/wiki/images/e/ec/T--Toronto--2017_safety-4.jpg
+http://2017.igem.org/wiki/images/9/91/T--Toronto--2017_wetlab-header.jpg
+
+http://2017.igem.org/wiki/images/9/90/T--Toronto--2017_logo.svg
+http://2017.igem.org/wiki/images/a/a4/T--Toronto--2017_tagline.svg

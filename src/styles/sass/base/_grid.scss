@@ -30,7 +30,7 @@ body {
     margin-top: 5px;
     font-size: 16px;
   }
-  
+
 }
 
 .container {
@@ -40,7 +40,7 @@ body {
     padding: 50px 2%;
   }
   &.header {
-    min-height: 400px;
+    min-height: 450px;
     display: block;
     text-align: center;
     color: $white;
@@ -133,5 +133,17 @@ body {
         }
       }
     }
+  }
+}
+
+
+/* Footer */
+.section #footer {
+  background: darken($dark-cyan, 10);
+  .block.image {
+    flex: 1;
+  }
+  .block.content {
+    flex: 5;
   }
 }

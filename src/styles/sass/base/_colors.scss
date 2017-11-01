@@ -19,11 +19,25 @@ $media_width: 800px;
 .bg-dark-cyan {
   background-color: $dark-cyan;
   color: $white;
+  li a {color: $white;}
 }
 
 .bg-white {
   background-color: $white;
   color: $dark-cyan;
+}
+
+.bg-cyan {
+  background: $cyan;
+  // color: $white;
+}
+
+.bg-yellow {
+  background: $yellow,
+}
+
+.bg-red {
+  background: $red;
 }
 
 // FONT COLOR CLASSES

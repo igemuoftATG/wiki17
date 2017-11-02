@@ -24,13 +24,15 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem !important;
+  font-size: 2.2rem !important;
   font-weight: 700 !important;
   margin: 0.5em 0 !important;
 }
 
 h4 {
-  font-size: 1.8rem !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin: 0.5em 0 !important;
 }
 
 p {
@@ -134,7 +136,7 @@ ol {
   padding: 0 30px !important;
   li {
     font-size: 1.5rem !important;
-    color: $faded-dark-cyan !important;
+    color: $dark-cyan !important;
   }
 }
 

@@ -16,7 +16,7 @@
 <!-- Header div -->
 <div class="section">
 	<div class="container header" id="yellow">
-		<h1>Description</h1>
+		<h1>ODE</h1>
 	</div>
 </div>
 
@@ -32,9 +32,19 @@
 
         <p>Our project this year is to quantitatively model out lacILov system with ODE’s. It follows the methodology applied in Timoth S gardners paper “A genetic toggle switch in ecoli” 2005. We began by abstracting away the details of specific promoters and repressors (figure 1) to get a simplified view of the interactions of our system. Afterwards we modeled the interactions through a set of first order ordinary differential equations. Using various assumptions to reduce the number of equations and parameters, along with the application of nondimensionalization we obtained our final result:</p>
 
-				<p>iunno.svg</p>
+				<figure>
+				  <div class="figures">
+				    <div class="image"><img src="http://2017.igem.org/wiki/images/2/2e/T--Toronto--2017_odeswitch.svg" alt="data"></div>
+				  </div>
+				  <figcaption>The switch that we used as our model</figcaption>
+				</figure>
 
 				<p>Equations1,2,3</p>
+				\begin{eqnarray}
+				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \\
+				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \\
+				\frac{d\lambda}{d\tau} = \frac{\alpha_\gamma}{1+x_2^n} - \gamma_\lambda \lambda
+				\end{eqnarray}
 
         <p>These 3 equations encapsulate the core nature of our system. Note that all the parameters and variables have no dimensions, so our results may be generalized to other light activated systems of the same structure. Mapping our abstracted variables back to our system we see that:</p>
 

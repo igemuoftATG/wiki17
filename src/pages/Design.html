@@ -13,181 +13,86 @@
 {{Toronto/navbar-dark-cyan}}
 <html>
 
+<!-- Header div -->
 <div class="section">
-	<div class="container header" id="design">
+	<div class="container header" id="dark-cyan">
 		<h1>Design</h1>
 	</div>
 </div>
+
+<!-- Content div -->
 <div class="section bg-white">
 	<div class="container content-page row">
 		<div class="block content">
-			<div id="content-red" class="subsection">
-				<h2 class="text-red">content-red</h2>
-				<p>
 
-					Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque <b>illum</b>nobis, <i>non </i>neque reprehenderit consequatur ipsam ullam perferendis magni.<sup><a href="#ref1">[1]</a></sup>
-				</p>
-				<div class="audio audio-player">
-					<div class="loading">
-						<div class="spinner"></div>
-					</div>
-					<div class="play-pause-btn">
-						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewbox="0 0 18 24">
-							<path id="playPause" fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon"></path>
-						</svg>
-					</div>
-					<div class="controls"><span class="current-time">0:00</span>
-						<div data-direction="horizontal" class="slider">
-							<div class="progress">
-								<div id="progress-pin" data-method="rewind" class="pin"></div>
-							</div>
-						</div><span class="total-time">0:00</span>
-					</div>
-					<div class="volume">
-						<div class="volume-btn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
-								<path id="speaker" fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"></path>
-							</svg>
-						</div>
-						<div class="volume-controls hidden">
-							<div data-direction="vertical" class="slider">
-								<div class="progress">
-									<div id="volume-pin" data-method="changeVolume" class="pin"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<audio>
-						<source src="http://www.sample-videos.com/audio/mp3/crowd-cheering.mp3" type="audio/mpeg">
-					</audio>
-				</div>
-				<audio controls>
-					<source src="http://www.sample-videos.com/audio/mp3/crowd-cheering.mp3" type="audio/mpeg">
-				</audio>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<div lang="latex">1+sin(x)^2+3</div>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<figure>
-					<div class="figures">
-						<div id="container-01" class="mol-container"></div>
-						<div id="container-02" class="mol-container"></div>
-					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
-				</figure>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
+			<!-- subsection 1 -->
+			<div class="subsection">
+
+				<h2>Part I: All you need is LOV: Expanding the synthetic biology toolbox using LacILOV</h2>
+
+				<h3>LacILOV:</h3>
+
+				<p>LacILOV is a novel, photoactive fusion protein of the LacI repressor DNA binding domain from the lactose operon of E. coli and the Light Oxygen Voltage (LOV)-Sensing domain from Avena sativa (oats) [1]. The LOV domain is derived from asLOV2 and activated in the presence of blue light through a flavin mononucleotide (FMN). FMN transfers energy to a catalytic cysteine and induces a conformational change in the protein. In the absence of light, it is hypothesized that LacILOV behaves much like the lac repressor, dimerizing and binding to the lacO promoter sequence, Ptrc-2. However, in the presence of light, specifically of wavelength 465 nm [2], the repressor monomerizes and no longer blocks the promoter site allowing RNA polymerase to start transcription.</p>
 			</div>
-			<div id="content-cyan" class="subsection">
-				<h2 class="text-cyan">content-cyan</h2>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<blockquote class="regular">Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</blockquote>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<blockquote class="sequence">
-					<pre>>SEQUENCE THAT CREATES THE ALPHA HELIX
-	--------10--------20--------30--------40--------50
-1 MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKA
-51 LVSVKVSDDFTILSYEDLDMTF<span class="text-red">AAMRPSY</span>VENEYKALVAELEKENEERR
-101 IPQFASRKQLSDAILKEAEEKIKEELKAQGKPEKIWDNIIPGKMNSFIA
-151 MGQFYVMDDKKTVEQVIAEKEKEFGGKIKIVEFICFEVGEGLEKKTEDA</pre>
-				</blockquote>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<blockquote class="code">
-					<pre>// Some dry lab code?
-function setActive(elem) {
-var sideNav = document.getElementsByClassName('sidebar-minibox');
-// console.log(sideNav);
-var ul = sideNav[0].getElementsByTagName('ul');
-console.log(ul);
-var li = ul[0].getElementsByTagName('li');
-for (i=0; i < li.length; i++) {
-	li[i].classList.remove('active');
-}
-elem.classList.add('active');
-}</pre>
-				</blockquote>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
+			<!-- subsection 3 END -->
+
+			<!-- subsection 1 -->
+			<div class="subsection">
+
+				<h2>General Lab Safety</h2>
+
+				<p>LacILOV is a novel, photoactive fusion protein of the LacI repressor DNA binding domain from the lactose operon of E. coli and the Light Oxygen Voltage (LOV)-Sensing domain from Avena sativa (oats) [1]. The LOV domain is derived from asLOV2 and activated in the presence of blue light through a flavin mononucleotide (FMN). FMN transfers energy to a catalytic cysteine and induces a conformational change in the protein. In the absence of light, it is hypothesized that LacILOV behaves much like the lac repressor, dimerizing and binding to the lacO promoter sequence, Ptrc-2. However, in the presence of light, specifically of wavelength 465 nm [2], the repressor monomerizes and no longer blocks the promoter site allowing RNA polymerase to start transcription.</p>
 			</div>
-			<div id="one" class="subsection">
-				<h2 class="text-yellow">content-yellow</h2>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<figure>
-					<div class="figures">
-						<div class="image"><img src="http://www.excel-easy.com/data-analysis/images/charts/column-chart.png" alt="data"></div>
-					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
-				</figure>
-				<figure>
-					<div class="figures">
-						<div class="image"><img src="http://www.excel-easy.com/data-analysis/images/charts/column-chart.png" alt="data"></div>
-					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
-				</figure>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<figure>
-					<div class="figures">
-						<div class="image"><img src="https://zippy.gfycat.com/MedicalAdventurousCanine.gif" alt="data" width="200px"></div>
-						<div class="image"><img src="https://media.giphy.com/media/R6vXyeo7NA0gg/giphy.gif" alt="data" width="200px"></div>
-					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
-				</figure>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.						</p>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p>
-				<figure>
-					<div class="figures">
-						<table>
-							<thead>
-								<tr>
-									<th>Time</th>
-									<th>Quantity</th>
-									<th>iunno</th>
-								</tr>
-							</thead>
-							<tbody class="table-hover">
-								<tr>
-									<td>Hello</td>
-									<td>9adsf asd</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2 ads fads fdsa s </td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>Hello</td>
-									<td>911 asd afd </td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>2</td>
-									<td>2 ads fads fdsa s </td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<figcaption>Figure 1.1: Wildlife population is wildlife population is wildlife population is wildlife population</figcaption>
-				</figure>
-				<p>Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam, aspernatur aperiam optio odit deleniti eaque illum nobis, non neque reprehenderit consequatur ipsam ullam perferendis magni.</p><a>
-					<button class="btn-primary red">More Info</button></a>
+			<!-- subsection 3 END -->
+
+			<!-- subsection 1 -->
+			<div class="subsection">
+
+				<h2>General Lab Safety</h2>
+
+				<p>LacILOV is a novel, photoactive fusion protein of the LacI repressor DNA binding domain from the lactose operon of E. coli and the Light Oxygen Voltage (LOV)-Sensing domain from Avena sativa (oats) [1]. The LOV domain is derived from asLOV2 and activated in the presence of blue light through a flavin mononucleotide (FMN). FMN transfers energy to a catalytic cysteine and induces a conformational change in the protein. In the absence of light, it is hypothesized that LacILOV behaves much like the lac repressor, dimerizing and binding to the lacO promoter sequence, Ptrc-2. However, in the presence of light, specifically of wavelength 465 nm [2], the repressor monomerizes and no longer blocks the promoter site allowing RNA polymerase to start transcription.</p>
 			</div>
+			<!-- subsection 3 END -->
+
+
+			<!-- subsection 1 -->
+			<div class="subsection">
+
+				<h2>General Lab Safety</h2>
+
+				<p>LacILOV is a novel, photoactive fusion protein of the LacI repressor DNA binding domain from the lactose operon of E. coli and the Light Oxygen Voltage (LOV)-Sensing domain from Avena sativa (oats) [1]. The LOV domain is derived from asLOV2 and activated in the presence of blue light through a flavin mononucleotide (FMN). FMN transfers energy to a catalytic cysteine and induces a conformational change in the protein. In the absence of light, it is hypothesized that LacILOV behaves much like the lac repressor, dimerizing and binding to the lacO promoter sequence, Ptrc-2. However, in the presence of light, specifically of wavelength 465 nm [2], the repressor monomerizes and no longer blocks the promoter site allowing RNA polymerase to start transcription.</p>
+			</div>
+			<!-- subsection 3 END -->
+
+
+
+			<!-- subsection 1 -->
+			<div class="subsection">
+
+				<h2>General Lab Safety</h2>
+
+				<p>LacILOV is a novel, photoactive fusion protein of the LacI repressor DNA binding domain from the lactose operon of E. coli and the Light Oxygen Voltage (LOV)-Sensing domain from Avena sativa (oats) [1]. The LOV domain is derived from asLOV2 and activated in the presence of blue light through a flavin mononucleotide (FMN). FMN transfers energy to a catalytic cysteine and induces a conformational change in the protein. In the absence of light, it is hypothesized that LacILOV behaves much like the lac repressor, dimerizing and binding to the lacO promoter sequence, Ptrc-2. However, in the presence of light, specifically of wavelength 465 nm [2], the repressor monomerizes and no longer blocks the promoter site allowing RNA polymerase to start transcription.</p>
+			</div>
+			<!-- subsection 3 END -->
+
+
+
 			<hr>
+			<!-- Reference Subsection -->
 			<div id="content-yellow" class="subsection">
 				<h2 class="text-cyan">References</h2>
 				<ol>
-					<li id="ref1">Lorem is haha ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quibusdam, adipisci ipsum quisquam</li>
+					<li id="ref1">Canadian Biosafety Standards and Guidelines - <a href="https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html">https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html</a></li>
+					<li id="ref2">Biosafety Team in the Office of Environmental Health and Safety - <a href="https://ehs.utoronto.ca/our-services/biosafety/">https://ehs.utoronto.ca/our-services/biosafety/</a></li>
+					<li id="ref3">NIH Guidelines - <a href="https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html">https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html</a></li>
+					<li id="ref4">iGEM Risk Groups - <a href="http://2017.igem.org/Safety/Risk_Groups">http://2017.igem.org/Safety/Risk_Groups</a></li>
 				</ol>
 			</div>
+			<!-- Reference Subsection END -->
+
 		</div>
+
+		<!-- Sidebar -->
 		<div class="block sidebar">
 			<div id="sidebar-box">
 				<h3>Contents</h3>
@@ -203,6 +108,8 @@ elem.classList.add('active');
 				</div>
 			</div>
 		</div>
+		<!-- Sidebar END -->
+
 	</div>
 </div>
 

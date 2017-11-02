@@ -289,10 +289,7 @@ function insertStructure(container, structureUrl, settingsFunction){
 
 var settingsList = {
   settings1: function(v){
-    v.setStyle(
-    {},
-    {cartoon: {color: 'yellow'}
-    );
+    v.setStyle({}, {cartoon: {color: 'yellow'});
     v.setStyle(
     {resi:["1-58"]},
     {cartoon: {color: 'aqua'}

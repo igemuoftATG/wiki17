@@ -30,7 +30,7 @@
 			<div id="problem" class="subsection">
 				<h2 class="text-yellow">Rationale</h2>
 				<p>
-          In the lab, we used a photo-reporter(provide link to describing such assay) assay to measure gene expression activity under the control of LacILOV. We transformed <i>E.coli</i> expressing mCherry as a reporter gene under the control of LacILOV. However, significant expression levels of the reporter gene required 12 hours of stimulation with blue light. Investigating the structural mechanisms of how LacILOV binds to DNA could provide insights to engineering a LacILOV variant with greater gene expression efficacy. Using state of the art protein modeling tools, we computationally produced a protein structure of LacILOV and identified a critical &alpha;-helix that stabilizes its DNA binding domain. We were able to show that deletion of specific amino acid residues in this critical &alpha;-helix region led to destabilization of the DNA binding domain. By targeting these amino acid residues, we could potentially engineer a more efficient LacILOV in the future.
+          In the lab, we used a photo-reporter assay to measure gene expression activity under the control of LacILOV. We transformed <i>E.coli</i> expressing mCherry as a reporter gene under the control of LacILOV. However, significant expression levels of the reporter gene required 12 hours of stimulation with blue light. Investigating the structural mechanisms of how LacILOV binds to DNA could provide insights to engineering a LacILOV variant with greater gene expression efficacy. Using state of the art protein modeling tools, we computationally produced a protein structure of LacILOV and identified a critical &alpha;-helix that stabilizes its DNA binding domain. We were able to show that deletion of specific amino acid residues in this critical &alpha;-helix region led to destabilization of the DNA binding domain. By targeting these amino acid residues, we could potentially engineer a more efficient LacILOV in the future.
         </p>
       </div>
 			<div id="prediction" class="subsection">
@@ -61,23 +61,19 @@
       </div>
       <div id="results" class="subsection">
 				<h2 class="text-yellow">Results</h2>
-        <p>Using Foldit Standalone, we have identified six residues within the α-helix that were forming H-bonds thereby contributing to the stability of the α-helix. Then, we have generated a series of single point mutations of the selected residues, including substitutions and deletions, and fed through I-TASSER to check if any of these point mutations changed the stability of the α-helix and if we could get any insights on the function of LacILOV. A library of mutant LacILOV sequences can be found here: [provide link to all the structures that will be uploaded].
+        <p>Using Foldit Standalone, we have identified six residues within the α-helix that were forming H-bonds thereby contributing to the stability of the α-helix. Then, we have generated a series of single point mutations of the selected residues, including substitutions and deletions, and fed through I-TASSER to check if any of these point mutations changed the stability of the α-helix and if we could get any insights on the function of LacILOV. A library of mutant LacILOV sequences can be found in Supplementary Materials.
         </p>
         <p>After assessing different permutations via I-TASSER, we have determined that G58 and T60-T61 are the key residues to the stabilization of the α-helix. When either G58 or T60-T61 was deleted from the LacILOV sequence, I-TASSER predicted a disrupted alpha-helix. Interesting, these deletions have also resulted in a more disordered DNA-binding domain.
         </p>
 				<figure>
 				  <div class="figures">
-				    <div id="container-03" class="mol-container"></div>
-				    <div id="container-04" class="mol-container"></div>
+				    <div class="image"><img src="http://2017.igem.org/wiki/images/4/40/T--Toronto--2017_final_lacilov1.png" alt="data"></div>
+						<figcaption>Figure 2.a: I-TASSER predicted structure of LacILOV. Formation of many &alpha;-helical loops in the N-terminus.</figcaption>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/0/04/T--Toronto--2017_final_lacilov_G58_del.png" alt="data"></div>
+						<figcaption>Figure 2.b: I-TASSER predicted structure of LacILOV with G58 deletion. G58 deletion disrupted  &alpha;-helical formation.</figcaption>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/a/aa/T--Toronto--2017_final_lacilov_T60T61_del.png" alt="data"></div>
+						<figcaption>Figure 2.c: I-TASSER predicted structure of LacILOV with T60-T61 deletion. G58 deletion disrupted  &alpha;-helical formation.</figcaption>
 				  </div>
-				  <figcaption>Figure 2: I-TASSER predicted structure of LacILOV without mutations (left) compared to LacILOV with G58 deletion (right). Note the disruption of the &alpha;-helical structure.</figcaption>
-				</figure>
-				<figure>
-				  <div class="figures">
-				    <div id="container-05" class="mol-container"></div>
-				    <div id="container-06" class="mol-container"></div>
-				  </div>
-				  <figcaption>Figure 3: I-TASSER predicted structure of LacILOV without mutations (left) compared to LacILOV with T60-T61 deletions (right). Note stronger disruption of the &alpha;-helical structure.</figcaption>
 				</figure>
 				<p>
 					Collectively, we propose that G58 and T60-T61 contribute to the drastic increase in DNA-binding affinity of LacILOV. Our finding suggests that by deleting these key residues, we can engineer a more efficacious LacILOV that is more sensitive to light,, therefore creating an improved light-inducible gene expression system.
@@ -92,6 +88,10 @@
 				<h2 class="text-yellow">Future Directions</h2>
 				<p>In the future, with the knowledge of these important residues within LacILOV’s structure, we can modify its current sequence to generate new sequences that have either the deletion of residue 58, or the deletions of residues 60-61. We can then perform Photo -Reporter assays on these mutated sequences and compare the results to the original to validate that these mutations can actually improve sensitivity of LacILOV.  We can perform the Photo-Reporter assay to test out whether it is these residues that are critical to LacILOV stability.
         </p>
+			</div>
+			<div id="supplementary" class="subsection">
+				<h2 class="text-yellow">Supplmentary Materials</h2>
+				<p><a href="http://2017.igem.org/wiki/images/1/1d/T--Toronto--2017_pyrosetta.zip">Compressed file</a> contains all ITASSER jobs with master spreadsheet, all figures including computational structure of original LacILOV, its G58 deletion and T60-T61 deletion mutants, and a Python script for generating LacILOV mutants. </p>
 			</div>
 			<div id="ref" class="subsection">
 				<h2 class="text-yellow">References</h2>

@@ -15,9 +15,8 @@
 
 <!-- Header div -->
 <div class="section">
-	<div class="container header" id="dark-cyan">
-		<h1>Safety</h1>
-		<p>Safety is the number one priority</p>
+	<div class="container header" id="yellow">
+		<h1>Model</h1>
 	</div>
 </div>
 
@@ -29,45 +28,30 @@
 			<!-- subsection 1 -->
 			<div class="subsection">
 
-				<h2>General Lab Safety</h2>
+				<h2>Ordinary Differential Equations and Analysis</h2>
 
-				<p>Before starting the project, our team completed the biosafety and the biosecurity trainings provided by the University of Toronto Biosafety office, and our project supervisor, Dr. Radhakrishnan Mahadevan. The training modules completed include lab access and rules, biosafety levels and equipment, emergency procedures etc.</p>
-				<p>Overall, our team adhered to the Canadian Biosafety Standards and Guidelines.<sup><a href="#ref1">[1]</a></sup> The biosafety of our lab was overseen by the University's Institutional Biosafety Committee, with administrative and technical support provided by the Biosafety Team in the Office of Environmental Health and Safety.<sup><a href="#ref2">[2]</a></sup></p>
+				<p>We developed a set of Ordinary Differential Equations (ODE’s ) to understand the fundamental nature of our genetic switch. Our method to this problem was rooted in fundamental and rigorous design philosophies in systems engineering which resulted in a set of simple equations which depicts the dynamic interactions within our system. Our equations also give insight to a novel light-activated promoter protein LacILov, describing its activation and interaction with other genetic components, and characterizing its ability to be a control switch. Afterwards we took these ODE’s and modelled them with the MathWorks Simbio to get obtain graphical solutions to view how changes within key parameters influence the stability and over-arching behaviour of Anti-CRISPR, sgrna and LacILOV. Lastly using R we used classical regression methods to deduce a key parameter in our system; the equilibrium value of LacILOV.</p>
+
+				<a href="http://2017.igem.org/Team:Toronto/ODE"><button class="btn-primary yellow">More on ODE</button></a>
+				<a href="http://2017.igem.org/Team:Toronto/Analysis"><button class="btn-primary yellow">More on Analysis</button></a>
+
 			</div>
 			<!-- subsection 3 END -->
 
-			<hr>
-			<!-- Reference Subsection -->
-			<div id="content-yellow" class="subsection">
-				<h2 class="text-cyan">References</h2>
-				<ol>
-					<li id="ref1">Canadian Biosafety Standards and Guidelines - <a href="https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html">https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html</a></li>
-					<li id="ref2">Biosafety Team in the Office of Environmental Health and Safety - <a href="https://ehs.utoronto.ca/our-services/biosafety/">https://ehs.utoronto.ca/our-services/biosafety/</a></li>
-					<li id="ref3">NIH Guidelines - <a href="https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html">https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html</a></li>
-					<li id="ref4">iGEM Risk Groups - <a href="http://2017.igem.org/Safety/Risk_Groups">http://2017.igem.org/Safety/Risk_Groups</a></li>
-				</ol>
+			<!-- subsection 1 -->
+			<div class="subsection">
+
+				<h2>Protein Modelling</h2>
+
+				<p>Since we are working with LacILOV, a novel promoter with the DNA-binding domain of LacI and the photosensitive domain of LOV, we modeled its protein structure using a software called ITASSER. In doing so, our model not only approached the crystal structure of LacI and the LOV domain but also exposed undesirable interactions between the linker region and the functional domains. We then iteratively mutated the linker computationally and devised a set of substitutions that would improve the sensitivity of LacILOV to light.</p>
+
+				<a href="http://2017.igem.org/Team:Toronto/Protein-Modelling"><button class="btn-primary yellow">More on Protein Modelling</button></a>
+
 			</div>
-			<!-- Reference Subsection END -->
+			<!-- subsection 3 END -->
 
 		</div>
 
-		<!-- Sidebar -->
-		<div class="block sidebar">
-			<div id="sidebar-box">
-				<h3>Contents</h3>
-				<div class="sidebar-minibox">
-					<ul></ul>
-				</div>
-				<h3>Related Pages</h3>
-				<div class="sidebar-minibox">
-					<ul>
-						<li> <a href="#">Content 1</a></li>
-						<li> <a href="#">Content 2</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- Sidebar END -->
 
 	</div>
 </div>

@@ -289,16 +289,23 @@ function insertStructure(container, structureUrl, settingsFunction){
 
 var settingsList = {
   settings1: function(v){
-    v.setStyle({}, {cartoon: {color: 'yellow'}});
+    v.setStyle({}, {cartoon: {color: 'yellow'});
+    v.setStyle(
+    {resi:["1-58"]},
+    {cartoon: {color: 'aqua'}
+    );
   },
   settings2: function(v){
     v.setStyle({}, {cartoon: {color: 'spectrum'}});
   }
+  settings3: function(v){
+    v.setStyle({}, {cartoon: {color: 'aqua'}})
+  }
 };
 
-insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
+insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings1);
 
-insertStructure("#container-02", 'http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_2v1a.txt', settingsList.settings2);
+insertStructure("#container-02", 'http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_2v1a.txt', settingsList.settings3);
 
 insertStructure("#container-03", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
 

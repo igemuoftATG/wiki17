@@ -479,8 +479,7 @@ blockquote.code {
     color: rgba(15, 65, 92, 0.7) !important; }
 
 figcaption {
-  font-size: 1.3rem !important;
-  color: rgba(15, 65, 92, 0.7) !important; }
+  color: #0f415c !important; }
 
 ul {
   padding: 0 5px;

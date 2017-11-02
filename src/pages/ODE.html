@@ -1,0 +1,76 @@
+<html>
+<!-- ####################################################### -->
+<!-- #  This html was produced by the igemwiki generator   # -->
+<!-- #  https://github.com/igemuoftATG/generator-igemwiki  # -->
+<!-- ####################################################### -->
+
+<!-- repo for this wiki: https://github.com/igemuoftATG/wiki17 -->
+
+</html>
+{{Toronto/head}}
+<html>
+</html>
+{{Toronto/navbar-dark-cyan}}
+<html>
+
+<!-- Header div -->
+<div class="section">
+	<div class="container header" id="yellow">
+		<h1>Description</h1>
+	</div>
+</div>
+
+<!-- Content div -->
+<div class="section bg-white">
+	<div class="container content-page row">
+		<div class="block content">
+
+			<!-- subsection 1 -->
+			<div class="subsection">
+
+				<h2 class="text-yellow">Summary</h2>
+
+        <p>Our project this year is to quantitatively model out lacILov system with ODE’s. It follows the methodology applied in Timoth S gardners paper “A genetic toggle switch in ecoli” 2005. We began by abstracting away the details of specific promoters and repressors (figure 1) to get a simplified view of the interactions of our system. Afterwards we modeled the interactions through a set of first order ordinary differential equations. Using various assumptions to reduce the number of equations and parameters, along with the application of nondimensionalization we obtained our final result:</p>
+
+				<p>iunno.svg</p>
+
+				<p>Equations1,2,3</p>
+
+        <p>These 3 equations encapsulate the core nature of our system. Note that all the parameters and variables have no dimensions, so our results may be generalized to other light activated systems of the same structure. Mapping our abstracted variables back to our system we see that:</p>
+
+				<h3>Equation 1</h3>
+				<p>Represents the rate of change of the CI repressor, whose activation depends on whether or not light is on and exhibits linear scaling with respect to its promoter strength.</p>
+
+				<h3>Equation 2</h3>
+				<p>Is the rate of change of sgrna and it is important to note that from the equations, its expression is indirectly linked to the CI repressor via the psi term.</p>
+
+				<h3>Equation 3</h3>
+				<p>Is the key result of our system, it represents the rate of change of Anti-CRISPR. Our model confirms that the nature of Anti-CRISPR activation is inversely proportional to LacILov activation.</p>
+
+      </div>
+
+		</div>
+
+		<!-- Sidebar -->
+		<div class="block sidebar">
+			<div id="sidebar-box">
+				<h3>Contents</h3>
+				<div class="sidebar-minibox">
+					<ul></ul>
+				</div>
+				<h3>Related Pages</h3>
+				<div class="sidebar-minibox">
+					<ul>
+						<li> <a href="#">Content 1</a></li>
+						<li> <a href="#">Content 2</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Sidebar END -->
+
+	</div>
+</div>
+
+</html>
+{{Toronto/footer}}

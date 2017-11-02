@@ -510,7 +510,7 @@ ol {
   padding: 0 30px !important; }
   ol li {
     font-size: 1.5rem !important;
-    color: rgba(15, 65, 92, 0.7) !important; }
+    color: #0f415c !important; }
 
 th, td {
   font-size: 1.5rem !important; }
@@ -1110,3 +1110,5 @@ svg, img {
   100% {
     background: url(http://2017.igem.org/wiki/images/2/2b/T--Toronto--2017_home-background.svg), #40b2bc;
     background-size: cover; } }
+
+/*# sourceMappingURL=styles_min_css.map */

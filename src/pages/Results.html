@@ -16,8 +16,8 @@
 <!-- Header div -->
 <div class="section">
 	<div class="container header" id="dark-cyan">
-		<h1>Safety</h1>
-		<p>Safety is the number one priority</p>
+		<h1>Results</h1>
+		<p></p>
 	</div>
 </div>
 
@@ -27,49 +27,95 @@
 		<div class="block content">
 
 			<!-- subsection 1 -->
-			<div class="subsection">
+			<div id='reporter-switch' class="subsection">
 
-				<h2>General Lab Safety</h2>
+                <h2>Results: Reporter Switch</h2>
 
-				<p>Before starting the project, our team completed the biosafety and the biosecurity trainings provided by the University of Toronto Biosafety office, and our project supervisor, Dr. Radhakrishnan Mahadevan. The training modules completed include lab access and rules, biosafety levels and equipment, emergency procedures etc.</p>
-				<p>Overall, our team adhered to the Canadian Biosafety Standards and Guidelines.<sup><a href="#ref1">[1]</a></sup> The biosafety of our lab was overseen by the University's Institutional Biosafety Committee, with administrative and technical support provided by the Biosafety Team in the Office of Environmental Health and Safety.<sup><a href="#ref2">[2]</a></sup></p>
-			</div>
-			<!-- subsection 3 END -->
+                <p> A fluorescence assay was conducted to test the efficiency of our reporter construct, measuring the fluorescence of mCherry and YFP after cell growth in either the presence of blue light or dark. With LacILOV as a part in our toolbox, we were inspired by the bistable switch design created by Gardner et al. (2000) to develop a light-sensitive switch by coupling two different repressible promoters - LacILOV-repressed Ptrc-2, and BBa_R0051, modulated by the viral repressor, cI. This switch mechanism is under the control of the LacI-LOV, in which it is dimerized and bound to DNA in darkness, and monomerizes in light. Thus, with light the construct can switch from YFP expression to mCherry expression. To demonstrate this outcome in this experiment, overnight cultures of MG1655 ΔLacI cells containing the reporter construct were diluted and further cultivated in 5 mL of culture in 15 mL falcon tubes either in the presence of blue light or darkness. Optical density (OD) of the cells, along with YFP and mCherry fluorescence, were measured at hourly times points. Ideally the samples growing in darkness should have low expression of mCherry and high expression of YFP, while those growing in the presence of blue light would have high expression of mCherry and lower levels of YFP fluorescence. To control for fluorescence LB media was used as a negative control.</p>
 
-			<hr>
-			<!-- Reference Subsection -->
-			<div id="content-yellow" class="subsection">
-				<h2 class="text-cyan">References</h2>
-				<ol>
-					<li id="ref1">Canadian Biosafety Standards and Guidelines - <a href="https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html">https://www.canada.ca/en/public-health/services/canadian-biosafety-standards-guidelines.html</a></li>
-					<li id="ref2">Biosafety Team in the Office of Environmental Health and Safety - <a href="https://ehs.utoronto.ca/our-services/biosafety/">https://ehs.utoronto.ca/our-services/biosafety/</a></li>
-					<li id="ref3">NIH Guidelines - <a href="https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html">https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment.html</a></li>
-					<li id="ref4">iGEM Risk Groups - <a href="http://2017.igem.org/Safety/Risk_Groups">http://2017.igem.org/Safety/Risk_Groups</a></li>
-				</ol>
-			</div>
-			<!-- Reference Subsection END -->
+<figure>
+  <div class='figures'>
+   <div class='image'><img src=' http://2017.igem.org/wiki/images/e/e7/T--Toronto--2017_Results0.jpg' alt='data'></div>  </div>
+<p> Significant difference in mCherry fluorescence between cells grown in blue light (465 nm) and those in darkness, however it is only seen in the last measurement. This could be due to the small dynamic range of LacI-LOV, the growth rate of the cells is faster than the expression rate and create the lag in fluorescence seen in the graph. Large error bars could be due to not subcultureing to standardize OD. mCherry measurements were done with excitation wavelength of 585 nm and emission wavelength of 610 nm. YFP measurements settings were not established on the plate reader and data is not included.</p>
+</div>
+<div id='anti-crispr' class="subsection">
 
+<h2>Results: Anti-CRISPR Assay</h2>
+
+<p>To test the efficacy of the anti-CRISPR for suppressing Cas9 activity, a CRISPRi metabolite challenge assay developed by Soumaya Zlitni was executed with an sgRNA targeting the araC gene. araC is one of the major regulators of arabinose metabolism, controlling at least six genes involved in the utilization and transport of arabinose for energy. [1] Glucose is preferentially utilized as a source of carbon for growing cells, but when glucose is not available, cells can switch to alternative sources of carbon for metabolism such as arabinose. [2] In this experiment, the growth of cells containing a CRISPRi system targeting the araC gene were challenged with M9-arabinose media. CRISPRi was used rather than the CRISPR-Cas9 system as E. coli does not have a NHEJ pathway, so double stranded breaks in the genome results in cell death. For this assay, the catalytically dead S. pyogenes Cas9 (pdCas9) inhibition of transcription of the araBAD operon should reduce the cell’s ability to shift to the new carbon source. Slow growth or a reduction of optical density (OD) should therefore be seen. To demonstrate that our antiCRISPR correctly targets our pdCas9, these results are compared against MG1655 ∆lacI cells with the same CRISPRi system and the anti-CRISPR protein AcrIIA4. If our construct functions as expected, the anti-CRISPR protein should bind to pdCas9 and prohibit it from silencing the araBAD operon. The operon would therefore be fully accessible to RNA polymerase and the cells should grow normally in M9-arabinose, with a steady increase in OD over time. To ensure that cell growth is not impacted by the switch to M9-arabinose media, 'wildtype' cells with similar plasmid burden are included as a control.</p>
+
+
+<p>Cells were first grown overnight in M9-glucose media and subsequently subcultured in an Erlenmeyer flask of M9-glucose. Cells were grown to an OD of ~0.5 (i.e. mid-log phase), then diluted back to an OD of 0.1 in M9-arabinose to standardize cell growth. Four technical replicates of MG1655 ∆lacI cells containing the following plasmids were then compared spectrophotometrically in a 96 well plate at 600 nm:</p>
+
+<ul>
+<li> MG1655 ∆lacI pdCas9 + pKDLO71-cI-mCherry </li>
+<li> MG1655 ∆lac pdCas9 + pKDLO71-cI-mCherry-sgRNA</li>
+<li> MG1655 ∆lacI pdCas9 + pKDLO71-cI-mCherry-sgRNA-AcrIIA4 </li>
+</ul>
+
+<p>Cell growth was compared across a range of anhydrotetracycline (aTc) conditions from 3.125 nM to 400 nM aTc for differential induction of the CRISPRi system. Measurements were taken every hour for five hours from the initiation of the assay. Preliminary data suggests that the anti-CRISPR restores growth of the cells to MG1655 ∆lacI cells containing the pdCas9 plasmid. By contrast, the cells containing the sgRNA targeting AraC display a much slower growth rate over time. As OD is a proxy for cell growth (or rather, cell death when OD is decreasing), this result is expected if the sgRNA successfully targets the araBAD operon. 50 nM aTc appears to be the optimal induction concentration, with the growth rate of the cells containing the anti-CRISPR slightly outpacing the growth of 'wildtype' cells. Potentially, this is the induction concentration at which the pdCas9 protein and anti-CRISPR protein are in stoichiometric ratio, allowing maximal transcription of the araBAD operon.</p>
+
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.4 uM aTc'>
+   <div class='image'><img src='http://2017.igem.org/wiki/images/c/cb/T--Toronto--2017_Results1.pn' alt='data'></div>  </div>
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.2 uM aTc'>
+   <div class='image'><img src=' http://parts.igem.org/wiki/images/1/1b/T--Toronto--2017_Results2.png' alt='data'></div>  </div>
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.1 uM aTc'>
+   <div class='image'><img src=' http://parts.igem.org/wiki/images/1/1b/T--Toronto--2017_Results3.png' alt='data'></div>  </div>
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.05 uM aTc'>
+   <div class='image'><img src=' http://parts.igem.org/wiki/images/1/1b/T--Toronto--2017_Results4.png' alt='data'></div>  </div>
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.025 uM aTc'>
+   <div class='image'><img src=' http://parts.igem.org/wiki/images/1/1b/T--Toronto--2017_Results5.png' alt='data'></div>  </div>
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.0125 uM aTc'>
+   <div class='image'><img src=' http://parts.igem.org/wiki/images/1/1b/T--Toronto--2017_Results6.png' alt='data'></div>  </div>
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.00625 uM aTc'>
+   <div class='image'><img src=' http://parts.igem.org/wiki/images/1/1b/T--Toronto--2017_Results7.png' alt='data'></div>  </div>
+
+<figure>
+  <div class='MG1655 ∆lacI Growth Profile at 0.003125 uM aTc'>
+   <div class='image'><img src=' http://parts.igem.org/wiki/images/1/1b/T--Toronto--2017_Results8.png' alt='data'></div>  </div>
+
+<p>Improvements to the assay include the use of a nonsense sgRNA to better represent the cellular burden of sgRNA transcription, improved standardization of cellular growth , and repetition of the experiment to ensure reproducibility of results.</p>
+</div>
+<div id='references' class="subsection">
+
+<h2> References </h2>
+
+<p> Desai, T. A. and Rao, C. V. (2009). Regulation of Arabinose and Xylose Metabolism in Escherichia coli. American Society for Microbiology: Applied and Environmental Microbiology. 76(5): 1524-1532. doi: 10.1128/AEM.01970-09 </p>
+
+
+<p> Entry araC from The UniProt Consortium. (2017). UniProt: the universal protein knowledgebase. Nucleic Acids Research. 45: D158-169. doi: 10.1093/nar/gkw1099 </p>
+</div>
+
+<div class="block sidebar">
+	<div id="sidebar-box">
+		<h3>Contents</h3>
+		<div class="sidebar-minibox">
+			<ul></ul>
 		</div>
-
-		<!-- Sidebar -->
-		<div class="block sidebar">
-			<div id="sidebar-box">
-				<h3>Contents</h3>
-				<div class="sidebar-minibox">
-					<ul></ul>
-				</div>
-				<h3>Related Pages</h3>
-				<div class="sidebar-minibox">
-					<ul>
-						<li> <a href="#">Content 1</a></li>
-						<li> <a href="#">Content 2</a></li>
-					</ul>
-				</div>
-			</div>
+		<h3>Related Pages</h3>
+		<div class="sidebar-minibox">
+			<ul>
+				<li> <a href="#">Content 1</a></li>
+				<li> <a href="#">Content 2</a></li>
+			</ul>
 		</div>
-		<!-- Sidebar END -->
-
 	</div>
+</div>
+</div>
 </div>
 
 

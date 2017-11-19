@@ -58,3 +58,12 @@ http://2017.igem.org/wiki/images/f/f8/T--Toronto--2017_victoria.jpg
 http://2017.igem.org/wiki/images/0/0a/T--Toronto--2017_umar.jpg
 http://2017.igem.org/wiki/images/a/a9/T--Toronto--2017_mark.jpg
 http://2017.igem.org/wiki/images/a/a7/T--Toronto--2017_kat.jpg
+
+
+uploaded[6267ms] ./src/images/pnp-header.png -> http://2017.igem.org/wiki/images/b/b3/T--Toronto--2017_pnp-header.png
+uploaded[7109ms] ./src/images/wetlab-header.png -> http://2017.igem.org/wiki/images/4/4a/T--Toronto--2017_wetlab-header.png
+uploaded[5236ms] ./src/images/header-yellow.png -> http://2017.igem.org/wiki/images/2/25/T--Toronto--2017_header-yellow.png
+uploaded[5251ms] ./src/images/header-red.png -> http://2017.igem.org/wiki/images/d/d2/T--Toronto--2017_header-red.png
+uploaded[5081ms] ./src/images/header-dark-cyan.png -> http://2017.igem.org/wiki/images/6/61/T--Toronto--2017_header-dark-cyan.png
+uploaded[3891ms] ./src/images/header-cyan.png -> http://2017.igem.org/wiki/images/c/cb/T--Toronto--2017_header-cyan.png
+uploaded[5174ms] ./src/images/drylab-header.png -> http://2017.igem.org/wiki/images/f/f5/T--Toronto--2017_drylab-header.png

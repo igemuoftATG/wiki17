@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, p, a, blockquote, figcaption, li, th, td {
   -webkit-margin-after: 0 !important;
   -webkit-margin-start: 0 !important;
   -webkit-margin-end: 0 !important;
+  line-height: normal;
 }
 
 h1 {
@@ -38,6 +39,7 @@ h4 {
 p {
   font-size: 1.7rem !important;
   margin: 1em 0 !important;
+  line-height: 1.5em;
 }
 
 a {

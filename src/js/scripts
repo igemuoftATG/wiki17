@@ -19,7 +19,6 @@ pages = [
   "gold integrated",
   "hardware",
   "home",
-  "hp gold",
   "hp silver",
   "human practices",
   "icon-a-thon",
@@ -58,10 +57,9 @@ link = [
   "http://2017.igem.org/Team:Toronto/Engagement",
   "http://2017.igem.org/Team:Toronto/Entrepreneurship",
   "http://2017.igem.org/Team:Toronto/Experiments",
-  "http://2017.igem.org/Team:Toronto/Gold_Integrated",
+  "http://2017.igem.org/Team:Toronto/HP/Gold_Integrated",
   "http://2017.igem.org/Team:Toronto/Hardware",
   "http://2017.igem.org/Team:Toronto",
-  "http://2017.igem.org/Team:Toronto/HP/Gold",
   "http://2017.igem.org/Team:Toronto/HP/Silver",
   "http://2017.igem.org/Team:Toronto/PnP",
   "http://2017.igem.org/Team:Toronto/Icon-a-thon",
@@ -246,7 +244,7 @@ function buildNav() {
 }
 
 function sidebarFixed() {
-	var sidebarOffset = $("#sidebar-box").offset().top - 50;
+	var sidebarOffset = $("#sidebar-box").offset().top - 120;
 	$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
 			 //console.log(scroll);
@@ -289,32 +287,16 @@ function insertStructure(container, structureUrl, settingsFunction){
 
 var settingsList = {
   settings1: function(v){
-    v.setStyle({}, {cartoon: {color: 'yellow'});
-    v.setStyle(
-    {resi:["1-58"]},
-    {cartoon: {color: 'aqua'}
-    );
+    v.setStyle({}, {cartoon: {color: 'spectrum'}})
   },
   settings2: function(v){
-    v.setStyle({}, {cartoon: {color: 'spectrum'}});
-  }
-  settings3: function(v){
-    v.setStyle({}, {cartoon: {color: 'aqua'}})
-  }
-};
+    v.setStyle({}, {cartoon: {color: 'spectrum'}})
+  },
+}
 
 insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings1);
 
-insertStructure("#container-02", 'http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_2v1a.txt', settingsList.settings3);
-
-insertStructure("#container-03", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
-
-insertStructure("#container-04", 'http://2017.igem.org/wiki/images/5/58/T--Toronto--2017_final_lacilov_g58_del.txt', settingsList.settings2);
-
-insertStructure("#container-05", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings2);
-
-insertStructure("#container-06", 'http://2017.igem.org/wiki/images/1/1c/T--Toronto--2017_final_lacilov_t60t61_del.txt', settingsList.settings2);
-
+insertStructure("#container-02", 'http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_2v1a.txt', settingsList.settings2);
 
 'use strict';
 

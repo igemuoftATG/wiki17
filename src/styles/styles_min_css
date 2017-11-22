@@ -592,8 +592,8 @@ body {
         .container.main-page .block.image {
           order: 0; } }
       .container.main-page .block.image img {
-        max-height: 100%;
-        max-width: 100%; }
+        max-height: 80%;
+        max-width: 80%; }
     .container.main-page .block.content {
       flex: 2;
       display: flex;

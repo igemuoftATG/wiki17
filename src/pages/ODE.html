@@ -25,6 +25,18 @@
 	<div class="container content-page row">
 		<div class="block content">
 
+			<div id="introduction" class="subsection">
+				<h2 class="text-yellow">Derivation</h2>
+				<p>We use the following notations for the wiki: [X] denotes the concentration of substance X</p>
+				<h3>0.1 ODEs under transcription equilibrium assumption</h3>
+				<p>We first derive the ordinary differential equations for protein concentrations under two scenarios: constitutive expression and repressed expression. In deriving these equations, we use the assumption that mRNA concentration is always at equilibrium, as transcription is many orders of magnitude faster than translation.</p>
+				<p>For the first scenario, the gene is constitutively expressed. Transcription and translation are con- stantly active, and there are no repressors in the system (see [1]). In this case, the equations are:</p>
+				\begin{eqnarray}
+				\[\dot{m} = k_1 - d_1 m\]
+				\dot{p} = k_2 m  - d_2 p\]
+				\end{eqnarray}
+			</div>
+
 			<!-- subsection 1 -->
 			<div class="subsection">
 
@@ -39,7 +51,7 @@
 				  <figcaption>The switch that we used as our model</figcaption>
 				</figure>
 
-				<p>Equations1,2,3</p>
+				<p>Equations 1, 2, 3</p>
 				\begin{eqnarray}
 				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \\
 				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \\

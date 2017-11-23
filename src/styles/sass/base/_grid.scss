@@ -93,6 +93,34 @@ body {
       }
     }
   }
+  &.footer {
+    padding: 40px 6% 10px 12%;
+    .block.content {
+      flex: 1;
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+  &.footer-bottom{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    .block.content {
+      flex: 1;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      hr {
+        margin: 15px 30px;
+        border-bottom: 2px solid #424d57 !important;
+      }
+      p {
+        margin: 0 0 15px 0 !important;
+        font-size: 1.2rem !important;
+        font-weight: 400;
+      }
+    }
+  }
   &.content-page {
     min-height: 400px;
     justify-content: center;

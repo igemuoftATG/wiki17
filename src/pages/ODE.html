@@ -28,7 +28,7 @@
 			<div id="introduction" class="subsection">
 				<h2 class="text-yellow">Derivation</h2>
 				<p>We use the following notations for the wiki: [X] denotes the concentration of substance X</p>
-				<h3>0.1 ODEs under transcription equilibrium assumption</h3>
+				<h3>0.1   ODEs under transcription equilibrium assumption</h3>
 				<p>We first derive the ordinary differential equations for protein concentrations under two scenarios: constitutive expression and repressed expression. In deriving these equations, we use the assumption that mRNA concentration is always at equilibrium, as transcription is many orders of magnitude faster than translation.</p>
 				<p>For the first scenario, the gene is constitutively expressed. Transcription and translation are constantly active, and there are no repressors in the system<sup><a href="#ref1">[1]</a></sup>. In this case, the equations are:</p>
 				\begin{eqnarray}
@@ -62,7 +62,7 @@
 				\end{equation}
 				<p>Since the LacI:LOV system only contains these two types of pathways, we will use these derived results to formulate the ODEs that characterizes our system.</p>
 
-				<h3>0.2 ODEs of LacI:LOV system</h3>
+				<h3>0.2   ODEs of LacI:LOV system</h3>
 				<p>The production of LacI:LOV is constitutive, so the equation is:</p>
 				\begin{eqnarray}
 				\frac{dR_1}{dt} = \alpha_1 - d_{R1}R_1
@@ -78,11 +78,11 @@
 				<p>We can substitute this value of <i>R<sub>1</sub></i> into the other equations.</p>
 				<p>We model the other key pathways: cI:LVA, mCherry, and YFP. All of them are inhibited transcription. We get the following equations:</p>
 				\begin{eqnarray}
-				\frac{dR_2}{dt} &= \frac{\alpha_2}{K^n_1 + R^n_1} - d_{R2}R_2\\
-				\frac{d\Lambda}{dt} &= \frac{\alpha_\Lambda}{K_2^n + R_2^n} - d_{\Lambda} \Lambda\\
-				\frac{d\Theta}{dt} &= \frac{\alpha_\Theta}{K^n_1 + R_1^n} - d_{\Theta} \Theta\\
+				\frac{dR_2}{dt} = \frac{\alpha_2}{K^n_1 + R^n_1} - d_{R2}R_2\\
+				\frac{d\Lambda}{dt} = \frac{\alpha_\Lambda}{K_2^n + R_2^n} - d_{\Lambda} \Lambda\\
+				\frac{d\Theta}{dt} = \frac{\alpha_\Theta}{K^n_1 + R_1^n} - d_{\Theta} \Theta\\
 				\end{eqnarray}
-				<p>where <i>R<sub>2/sub></i> is the concentration of cI:LVA, &Lambda; is the concentration of YFP, &Theta; is the concentration of mCherry, and</p>
+				<p>where <i>R<sub>2</sub></i> is the concentration of cI:LVA, &Lambda; is the concentration of YFP, &Theta; is the concentration of mCherry, and</p>
 			</div>
 
 			<!-- subsection 1 -->

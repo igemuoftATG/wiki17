@@ -28,7 +28,8 @@
 			<div id="introduction" class="subsection">
 				<h2 class="text-yellow">Derivation</h2>
 				<p>We use the following notations for the wiki: [X] denotes the concentration of substance X</p>
-				<h3>0.1   ODEs under transcription equilibrium assumption</h3>
+
+				<h3>ODEs under transcription equilibrium assumption</h3>
 				<p>We first derive the ordinary differential equations for protein concentrations under two scenarios: constitutive expression and repressed expression. In deriving these equations, we use the assumption that mRNA concentration is always at equilibrium, as transcription is many orders of magnitude faster than translation.</p>
 				<p>For the first scenario, the gene is constitutively expressed. Transcription and translation are constantly active, and there are no repressors in the system<sup><a href="#ref1">[1]</a></sup>. In this case, the equations are:</p>
 				\begin{eqnarray}
@@ -62,7 +63,7 @@
 				\end{equation}
 				<p>Since the LacI:LOV system only contains these two types of pathways, we will use these derived results to formulate the ODEs that characterizes our system.</p>
 
-				<h3>0.2   ODEs of LacI:LOV system</h3>
+				<h3>ODEs of LacI:LOV system</h3>
 				<p>The production of LacI:LOV is constitutive, so the equation is:</p>
 				\begin{eqnarray}
 				\frac{dR_1}{dt} = \alpha_1 - d_{R1}R_1
@@ -125,7 +126,7 @@
 				\end{equation}
 				<p>where <i>&mu;</i> is the state of the light toggle: <i>&mu;</i>=0 for off, <i>&mu;</i>=1 for on.</p>
 
-				<h3>1   Final Results</h3>
+				<h3>Final Results</h3>
 				<p>The ODEs that characterizes the systems are:</p>
 				\begin{eqnarray}
 				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \tag{24} \\
@@ -168,7 +169,7 @@
 				\begin{eqnarray}
 				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \\
 				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \\
-				\frac{d\lambda}{d\tau} = \frac{\alpha_\gamma}{1+x_2^n} - \gamma_\lambda \lambda
+				\frac{d\lambda}{d\tau} = \frac{\alpha_\lambda}{1+x_2^n} - \gamma_\lambda \lambda
 				\end{eqnarray}
 
         <p>These 3 equations encapsulate the core nature of our system. Note that all the parameters and variables have no dimensions, so our results may be generalized to other light activated systems of the same structure. Mapping our abstracted variables back to our system we see that:</p>
@@ -183,15 +184,17 @@
 				<p>Is the key result of our system, it represents the rate of change of Anti-CRISPR. Our model confirms that the nature of Anti-CRISPR activation is inversely proportional to LacILov activation.</p>
 
       </div>
+
 			<div id="ref" class="subsection">
 				<h2 class="text-yellow">References</h2>
 				<ol>
 					<li id="ref1">http://www.bg.ic.ac.uk/research/g.stan/2010_Course_MiB_article.pdf</li>
 				</ol>
 			</div>
-		</div>
 
 		</div>
+	</div>
+</div>
 
 
 		<!-- Sidebar -->

@@ -45,6 +45,14 @@ p {
 a {
   font-size: 1.7rem !important;
   text-decoration: none !important;
+  &.dashed {
+    border-bottom: 1px dashed !important;
+    font-size: 1.4rem !important;
+    color: inherit;
+    &:visited {
+      color: inherit !important;
+    }
+  }
   &:visited {
     color: inherit !important;
   }
@@ -53,6 +61,9 @@ a {
 sup a {
   color: $red !important;
   font-size: 1.1rem !important;
+  &:visited {
+    color: $red !important;
+  }
 }
 
 button {

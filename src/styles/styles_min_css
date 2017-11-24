@@ -451,12 +451,20 @@ p {
 a {
   font-size: 1.7rem !important;
   text-decoration: none !important; }
+  a.dashed {
+    border-bottom: 1px dashed !important;
+    font-size: 1.4rem !important;
+    color: inherit; }
+    a.dashed:visited {
+      color: inherit !important; }
   a:visited {
     color: inherit !important; }
 
 sup a {
   color: #e94c54 !important;
   font-size: 1.1rem !important; }
+  sup a:visited {
+    color: #e94c54 !important; }
 
 button {
   font-size: 1.5rem !important; }

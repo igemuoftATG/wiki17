@@ -25,6 +25,66 @@
 	<div class="container content-page row">
 		<div class="block content">
 
+			<div id="introduction" class="subsection">
+				<h2 class="text-yellow">Derivation</h2>
+				<p>We use the following notations for the wiki: [X] denotes the concentration of substance X</p>
+				<h3>0.1   ODEs under transcription equilibrium assumption</h3>
+				<p>We first derive the ordinary differential equations for protein concentrations under two scenarios: constitutive expression and repressed expression. In deriving these equations, we use the assumption that mRNA concentration is always at equilibrium, as transcription is many orders of magnitude faster than translation.</p>
+				<p>For the first scenario, the gene is constitutively expressed. Transcription and translation are constantly active, and there are no repressors in the system<sup><a href="#ref1">[1]</a></sup>. In this case, the equations are:</p>
+				\begin{eqnarray}
+				\dot{m} = k_1 - d_1 m \\
+				\dot{p} = k_2 m  - d_2 p
+				\end{eqnarray}
+				<p>where <i>m</i> = [mRNA], <i>p</i> = [Protein], <i>k<sub>1</sub></i> = constitutive transcription rate (constant), <i>d<sub>1</sub></i> = mRNA degradation rate, <i>k<sub>2</sub></i> = translation rate, <i>d<sub>2</sub></i> = protein degradation rate<sup><a href="#ref1">[1]</a></sup>.</p>
+				<p>According to the transcription equilibrium assumption,</p>
+				\begin{eqnarray}
+				\dot{m} = 0 \Rightarrow m = \frac{k_1}{d_1}
+				\end{eqnarray}
+				<p>Substituting this value of <i>m</i> into the equation for <i>p</i>, we get:</p>
+				\begin{equation}
+				\dot{p} = \frac{k_1 k_2}{d_1} - d_2 p \tag{1}
+				\end{equation}
+				<p>For the second scenario, a repressor is inhibiting transcription<sup><a href="#ref1">[1]</a></sup>. In this case, the equations are:</p>
+				\begin{eqnarray}
+				\dot{m} = k_1 \frac{K^n}{K^n + R^n} - d_1 m \\
+				\end{eqnarray}
+				\begin{eqnarray}
+				\dot{p} = k_2 m  - d_2 p
+				\end{eqnarray}
+				<p>where <i>m</i> = [mRNA], <i>p</i> = [Protein], <i>R</i> = [Repressor], <i>k<sub>1</sub></i> = maximum transcription rate, <i>K</i> = repression coefficient, <i>n</i> = Hill coefficient<sup><a href="#ref1">[1]</a></sup>.</p>
+				<p>According to the transcription equilibrium assumption,</p>
+				\begin{eqnarray}
+				\dot{m} = 0 \Rightarrow m = \frac{k_1}{d_1} \frac{K^n}{K^n + R^n}
+				\end{eqnarray}
+				<p>Substituting this:</p>
+				\begin{equation}
+				\dot{p} = \frac{k_1 k_2}{d_1} \frac{K^n}{K^n + R^n} - d_2 p \tag{2}
+				\end{equation}
+				<p>Since the LacI:LOV system only contains these two types of pathways, we will use these derived results to formulate the ODEs that characterizes our system.</p>
+
+				<h3>0.2   ODEs of LacI:LOV system</h3>
+				<p>The production of LacI:LOV is constitutive, so the equation is:</p>
+				\begin{eqnarray}
+				\frac{dR_1}{dt} = \alpha_1 - d_{R1}R_1
+				\end{eqnarray}
+				<p>where <i>R<sub>1</sub></i> is the concentration of LacI:LOV and</p>
+				\begin{eqnarray}
+				\alpha_1=\frac{k_{rbs4}k_{LacI:LOV}}{d_{rbs4}}
+				\end{eqnarray}
+				<p>Since it is constantly active and is unaffected by light activation, we assume that the reaction reaches equilibrium extremely quickly. So,</p>
+				\begin{eqnarray}
+				\frac{dR_1}{dt}=0 \Rightarrow R_1=\frac{\alpha_1}{d_{R1}}
+				\end{eqnarray}
+				<p>We can substitute this value of <i>R<sub>1</sub></i> into the other equations.</p>
+				<p>We model the other key pathways: cI:LVA, mCherry, and YFP. All of them are inhibited transcription. We get the following equations:</p>
+				\begin{eqnarray}
+				\frac{dR_2}{dt} = \frac{\alpha_2}{K^n_1 + R^n_1} - d_{R2}R_2\\
+				\frac{d\Lambda}{dt} = \frac{\alpha_\Lambda}{K_2^n + R_2^n} - d_{\Lambda} \Lambda\\
+				\frac{d\Theta}{dt} = \frac{\alpha_\Theta}{K^n_1 + R_1^n} - d_{\Theta} \Theta\\
+				\end{eqnarray}
+				<p>where <i>R<sub>2</sub></i> is the concentration of cI:LVA, &Lambda; is the concentration of YFP, &Theta; is the concentration of mCherry, and</p>
+			</div>
+
 			<!-- subsection 1 -->
 			<div class="subsection">
 
@@ -39,7 +99,7 @@
 				  <figcaption>The switch that we used as our model</figcaption>
 				</figure>
 
-				<p>Equations1,2,3</p>
+				<p>Equations 1, 2, 3</p>
 				\begin{eqnarray}
 				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \\
 				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \\

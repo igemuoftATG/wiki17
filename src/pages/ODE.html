@@ -24,6 +24,131 @@
 <div class="section bg-white">
 	<div class="container content-page row">
 		<div class="block content">
+			<div id="introduction" class="subsection">
+				<h2 class="text-yellow">Derivation</h2>
+				<p>We use the following notations for the wiki: [X] denotes the concentration of substance X</p>
+
+				<h3>ODEs under transcription equilibrium assumption</h3>
+				<p>We first derive the ordinary differential equations for protein concentrations under two scenarios: constitutive expression and repressed expression. In deriving these equations, we use the assumption that mRNA concentration is always at equilibrium, as transcription is many orders of magnitude faster than translation.</p>
+				<p>For the first scenario, the gene is constitutively expressed. Transcription and translation are constantly active, and there are no repressors in the system<sup><a href="#ref1">[1]</a></sup>. In this case, the equations are:</p>
+				\begin{eqnarray}
+				\dot{m} = k_1 - d_1 m \\
+				\dot{p} = k_2 m  - d_2 p
+				\end{eqnarray}
+				<p>where <i>m</i> = [mRNA], <i>p</i> = [Protein], <i>k<sub>1</sub></i> = constitutive transcription rate (constant), <i>d<sub>1</sub></i> = mRNA degradation rate, <i>k<sub>2</sub></i> = translation rate, <i>d<sub>2</sub></i> = protein degradation rate<sup><a href="#ref1">[1]</a></sup>.</p>
+				<p>According to the transcription equilibrium assumption,</p>
+				\begin{eqnarray}
+				\dot{m} = 0 \Rightarrow m = \frac{k_1}{d_1}
+				\end{eqnarray}
+				<p>Substituting this value of <i>m</i> into the equation for <i>p</i>, we get:</p>
+				\begin{equation}
+				\dot{p} = \frac{k_1 k_2}{d_1} - d_2 p \tag{1}
+				\end{equation}
+				<p>For the second scenario, a repressor is inhibiting transcription<sup><a href="#ref1">[1]</a></sup>. In this case, the equations are:</p>
+				\begin{eqnarray}
+				\dot{m} = k_1 \frac{K^n}{K^n + R^n} - d_1 m \\
+				\end{eqnarray}
+				\begin{eqnarray}
+				\dot{p} = k_2 m  - d_2 p
+				\end{eqnarray}
+				<p>where <i>m</i> = [mRNA], <i>p</i> = [Protein], <i>R</i> = [Repressor], <i>k<sub>1</sub></i> = maximum transcription rate, <i>K</i> = repression coefficient, <i>n</i> = Hill coefficient<sup><a href="#ref1">[1]</a></sup>.</p>
+				<p>According to the transcription equilibrium assumption,</p>
+				\begin{eqnarray}
+				\dot{m} = 0 \Rightarrow m = \frac{k_1}{d_1} \frac{K^n}{K^n + R^n}
+				\end{eqnarray}
+				<p>Substituting this:</p>
+				\begin{equation}
+				\dot{p} = \frac{k_1 k_2}{d_1} \frac{K^n}{K^n + R^n} - d_2 p \tag{2}
+				\end{equation}
+				<p>Since the LacI:LOV system only contains these two types of pathways, we will use these derived results to formulate the ODEs that characterizes our system.</p>
+
+				<h3>ODEs of LacI:LOV system</h3>
+				<p>The production of LacI:LOV is constitutive, so the equation is:</p>
+				\begin{eqnarray}
+				\frac{dR_1}{dt} = \alpha_1 - d_{R1}R_1
+				\end{eqnarray}
+				<p>where <i>R<sub>1</sub></i> is the concentration of LacI:LOV and</p>
+				\begin{eqnarray}
+				\alpha_1=\frac{k_{rbs4}k_{LacI:LOV}}{d_{rbs4}}
+				\end{eqnarray}
+				<p>Since it is constantly active and is unaffected by light activation, we assume that the reaction reaches equilibrium extremely quickly. So,</p>
+				\begin{eqnarray}
+				\frac{dR_1}{dt}=0 \Rightarrow R_1=\frac{\alpha_1}{d_{R1}}
+				\end{eqnarray}
+				<p>We can substitute this value of <i>R<sub>1</sub></i> into the other equations.</p>
+				<p>We model the other key pathways: cI:LVA, mCherry, and YFP. All of them are inhibited transcription. We get the following equations:</p>
+				\begin{eqnarray}
+				\frac{dR_2}{dt} = \frac{\alpha_2}{K^n_1 + R^n_1} - d_{R2}R_2 \tag{3} \\
+				\frac{d\Lambda}{dt} = \frac{\alpha_\Lambda}{K_2^n + R_2^n} - d_{\Lambda} \Lambda \tag{4} \\
+				\frac{d\Theta}{dt} = \frac{\alpha_\Theta}{K^n_1 + R_1^n} - d_{\Theta} \Theta \tag{5}
+				\end{eqnarray}
+				<p>where <i>R<sub>2</sub></i> is the concentration of cI:LVA, &Lambda; is the concentration of YFP, &Theta; is the concentration of mCherry, and</p>
+				\begin{eqnarray}
+				\alpha_2=\frac{k_{rbs1}k_{cI:LVA}}{d_{rbs1}} \tag{6} \\
+				\alpha_\Lambda=\frac{k_{rbs6}k_{\Lambda}}{d_{rbs6}} \tag{7} \\
+				\alpha_\Theta=\frac{k_{rbs3}k_{mCherry}}{d_{rbs3}} \tag{8}
+				\end{eqnarray}
+				<p>and <i>K<sub>1</sub></i>, <i>K<sub>2</sub></i> are the repression coefficient for each reaction, and <i>d<sub>R2</sub></i>, <i>d<sub>&Lambda;</sub></i>, <i>d<sub>&Theta;</sub></i> are the respective degradation rates.</p>
+				<p>We substitute in the value for <i>R<sub>1</sub></i> into the equations, resulting in:</p>
+				\begin{eqnarray}
+				\frac{dR_2}{dt} =& \frac{\alpha_2}{K^n_1 + \frac{\alpha_1}{d_{R1}}^n} - d_{R2}R_2 \tag{9} \\
+				\frac{d\Lambda}{dt} =& \frac{\alpha_\Lambda}{K_2^n + R_2^n} - d_{\Lambda} \Lambda \tag{10} \\
+				\frac{d\Theta}{dt} =& \frac{\alpha_\Theta}{K^n_1 + \frac{\alpha_1}{d_{R1}}^n} - d_{\Theta} \Theta \tag{11}
+				\end{eqnarray}
+				<p>We then nondimensionalize the 3 equations in order to simulate them. We scale all protein concentrations in terms of <i>K<sub>2</sub></i>, and scale the degradation rates and the time period in terms of growth rate (<i>g</i>). So, we make the following substitutions:</p>
+				\begin{eqnarray}
+				\tau=tg \tag{12} \\
+				x_2=\frac{R_2}{K_2} \tag{13} \\
+				\theta=\frac{\Theta}{K_2} \tag{14} \\
+				\lambda=\frac{\Lambda}{K_2} \tag{15} \\
+				\gamma_2=d_{R2}g \tag{16} \\
+				\gamma_\theta=d_{\Theta}g \tag{17} \\
+				\gamma_\lambda=d_{\Lambda}g \tag{18}
+				\end{eqnarray}
+				<p>We also incorporate the light switch, which activates the repression LacI:LOV when it is turned on. So, the production of cI:LVA and mCherry is constitutive when light is off, and repressed when light is on. We can model all of the above with the following system:</p>
+				\begin{eqnarray}
+				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \tag{19} \\
+				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \tag{20} \\
+				\frac{d\lambda}{d\tau} = \frac{\alpha_\lambda}{1+x_2^n} - \gamma_\lambda \lambda \tag{21}
+				\end{eqnarray}
+				<p>where:</p>
+				\begin{equation}
+				\psi_1 = \tag{22}
+				\begin{cases}
+					\alpha_2 & \text{if lights are on} \\
+					\frac{\alpha_2}{\frac{K_1}{K_2}+\frac{x_1}{K_2}^n} & \text{if lights are off}
+				\end{cases}
+				\end{equation}
+				<p>or,</p>
+				\begin{equation}
+				\psi_1 = \frac{\alpha_2}{(\frac{K_1}{K_2}+\frac{x_1}{K_2}^n)^{1-\mu}} \tag{23}
+				\end{equation}
+				<p>where <i>&mu;</i> is the state of the light toggle: <i>&mu;</i>=0 for off, <i>&mu;</i>=1 for on.</p>
+
+				<h3>Final Results</h3>
+				<p>The ODEs that characterizes the systems are:</p>
+				\begin{eqnarray}
+				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \tag{24} \\
+				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \tag{25} \\
+				\frac{d\lambda}{d\tau} = \frac{\alpha_\lambda}{1+x_2^n} - \gamma_\lambda \lambda \tag{26}
+				\end{eqnarray}
+				<p>where:</p>
+				\begin{equation}
+				\psi_1 = \frac{\alpha_2}{(\frac{K_1}{K_2}+\frac{x_1}{K_2}^n)^{1-\mu}} \tag{27}
+				\end{equation}
+				<p>or,</p>
+				\begin{equation}
+				\psi_1 = \tag{28}
+				\begin{cases}
+					\alpha_2 & \text{if lights are on} \\
+					\frac{\alpha_2}{\frac{K_1}{K_2}+\frac{x_1}{K_2}^n} & \text{if lights are off}
+				\end{cases}
+				\end{equation}
+				<p>and <i>x</i><sub>2</sub>, <i>&theta;</i>, <i>&lambda;</i> are the protein concentrations scaled in terms of <i>K<sub>2</sub></i>,</p>
+				<p><i>&gamma;</i><sub>2</sub>, <i>&gamma;</i><sub>&theta;</sub>, <i>&gamma;</i><sub>&lambda;</sub> are degradation rates scaled to the cell growth rates and <i>K<sub>2</sub></i>,</p>
+				<p><i>&alpha;</i><sub>2</sub>, <i>&alpha;</i><sub>&theta;</sub>, <i>&alpha;</i><sub>&lambda;</sub> are the maximal transcription rates,</p>
+				<p><i>k</i>= <i>&alpha;</i><sub>&theta;</sub> &frasl; <i>&alpha;</i><sub>2</sub> (ratio of maximal transcription rates of <i>&theta;</i> and <i>x<sub>2</sub></i>)</p>
+			</div>
 
 			<!-- subsection 1 -->
 			<div class="subsection">
@@ -39,11 +164,11 @@
 				  <figcaption>The switch that we used as our model</figcaption>
 				</figure>
 
-				<p>Equations1,2,3</p>
+				<h3>Equations 1, 2, 3</h3>
 				\begin{eqnarray}
 				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \\
 				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \\
-				\frac{d\lambda}{d\tau} = \frac{\alpha_\gamma}{1+x_2^n} - \gamma_\lambda \lambda
+				\frac{d\lambda}{d\tau} = \frac{\alpha_\lambda}{1+x_2^n} - \gamma_\lambda \lambda
 				\end{eqnarray}
 
         <p>These 3 equations encapsulate the core nature of our system. Note that all the parameters and variables have no dimensions, so our results may be generalized to other light activated systems of the same structure. Mapping our abstracted variables back to our system we see that:</p>
@@ -56,10 +181,16 @@
 
 				<h3>Equation 3</h3>
 				<p>Is the key result of our system, it represents the rate of change of Anti-CRISPR. Our model confirms that the nature of Anti-CRISPR activation is inversely proportional to LacILov activation.</p>
-
       </div>
 
+			<div id="ref" class="subsection">
+				<h2 class="text-yellow">References</h2>
+				<ol>
+					<li id="ref1">http://www.bg.ic.ac.uk/research/g.stan/2010_Course_MiB_article.pdf</li>
+				</ol>
+			</div>
 		</div>
+
 
 		<!-- Sidebar -->
 		<div class="block sidebar">

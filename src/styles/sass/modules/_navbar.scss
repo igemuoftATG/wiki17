@@ -1,9 +1,14 @@
-$font-size: 16px;
 .navigation {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 5%;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 
 #logo, #navigation {
@@ -27,7 +32,13 @@ $font-size: 16px;
     display: inline-block;
     padding: 5px 0.75em 0 0.75em;
     margin-top: 5px;
-    font-size: $font-size;
+    a {
+      transition: color 200ms linear;
+      -webkit-transition: color 200ms linear;
+      &:hover {
+        font-weight: normal !important;
+      }
+    }
   }
 }
 #navbarSearch {
@@ -35,19 +46,20 @@ $font-size: 16px;
   margin: 10px 0;
   position: relative;
   a {
-    color: $white;
-    &:visited {color: $white !important;}
+    color: $dark-cyan;
+    &:visited {color: $dark-cyan !important;}
     &:hover {color: $white !important;}
+    padding: 10px 15px;
   }
   input {
     display: block;
-    padding: 5px 10px;
+    padding: 10px;
     padding-left: 30px;
     border-radius: 50px 50px;
     border: 3px solid $dark-grey;
     color: $dark-torquoise;
     font-size: 2rem;
-    width: 75%;
+    width: 80%;
     background: #fff url('http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png') no-repeat 5px center;
     outline: none;
     margin: auto;
@@ -56,50 +68,54 @@ $font-size: 16px;
   &.navbar-animation {
     input{
       display: block;
-      width: 10px;
+      width: 35px;
       padding: 5px 10px;
-      &[type=text] {
-        transition: 0.5s;
-        &:focus {
-          width: 400px;
-          padding-left: 30px;
-        }
-      }
+      padding-left: 0px;
+      // &[type=text] {
+      //   transition: 0.5s;
+      //   &:focus {
+      //     width: 300px;
+      //     padding-left: 30px;
+      //   }
+      // }
     }
   }
 }
 
 #search {
   text-align: left;
-  z-index: 20;
+  z-index: 1000;
   display: none;
-  background: $dark-cyan;
+  background: $white;
   opacity: 0.9;
   border-radius: 5px;
   position: absolute;
   width: 100%;
   max-height: 200px;
   overflow-y: scroll;
+  overflow-x: hidden;
   padding: 0;
   margin: 1px 0;
   ul {margin:0; padding:0;}
 
-  li {
+  #auto-suggest {
+    li {
     display: block;
-    color: #fff;
-    padding: 10px 15px;
+    color: $dark-cyan;
+    padding: 0;
     margin: 0;
     border-bottom: 1px solid #666;
     &:hover {
       background: $cyan;
     }
   }
-  a {
-    display: inline-block;
-    color: #fff;
-    width: 100%;
-    &:visited {color: $white;}
-    &:hover {color: $white;}
+    a {
+      display: inline-block;
+      color: $dark-cyan;
+      width: 100%;
+      &:visited {color: $dark-cyan;}
+      &:hover {color: $dark-cyan;}
+    }
   }
   &::-webkit-scrollbar {width: 5px;}
   &::-webkit-scrollbar-track-piece {background: none;}

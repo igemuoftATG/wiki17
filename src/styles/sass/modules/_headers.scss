@@ -1,36 +1,23 @@
 .container.header{
 	&#wetlab {
-    background: url("https://www.aiche.org/sites/default/files/images/courses/lab_safety_ssk_33970144.jpg");
+    background: url("http://2017.igem.org/wiki/images/4/4a/T--Toronto--2017_wetlab-header.png");
+	}
+	&#drylab {
+		background: url("http://2017.igem.org/wiki/images/f/f5/T--Toronto--2017_drylab-header.png");
+	}
+	&#pnp {
+		background: url("http://2017.igem.org/wiki/images/b/b3/T--Toronto--2017_pnp-header.png");
 	}
 	&#red {
-		background: $red;
+    background: url("http://2017.igem.org/wiki/images/d/d2/T--Toronto--2017_header-red.png");
 	}
 	&#dark-cyan {
-		background: $dark-cyan;
+		background: url("http://2017.igem.org/wiki/images/6/61/T--Toronto--2017_header-dark-cyan.png");
 	}
 	&#cyan {
-		background: $cyan;
+		background: url("http://2017.igem.org/wiki/images/c/cb/T--Toronto--2017_header-cyan.png");
 	}
 	&#yellow {
-		background: $yellow;
-	}
-
-	&#pnp {
-		background: $cyan;
-	}
-	&#safety {
-		background: $red;
-	}
-	&#design {
-		background: $red;
-	}
-	&#experiments {
-		background: $red;
-	}
-	&#bioinformatics-workshop {
-		background: $cyan;
-	}
-	&#icon-a-thon {
-		background: $cyan;
+		background: url("http://2017.igem.org/wiki/images/2/25/T--Toronto--2017_header-yellow.png");
 	}
 }

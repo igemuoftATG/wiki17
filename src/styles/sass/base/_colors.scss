@@ -11,6 +11,7 @@ $dark-torquoise: #367b8c;
 $grey: #f6f6f6;
 $light-grey: #fdfdfd;
 $dark-grey: darken($grey, 5%);
+$black: #1a2936;
 
 // MEDIA SIZES
 $media_width: 800px;
@@ -38,6 +39,21 @@ $media_width: 800px;
 
 .bg-red {
   background: $red;
+}
+
+.bg-black {
+  background: $black;
+  color: rgba(255, 255, 255, 0.9);
+  p {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  li a {
+    color: rgba(255, 255, 255, 0.6);
+    &:hover {
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: inherit;
+    }
+  }
 }
 
 // FONT COLOR CLASSES

@@ -16,7 +16,7 @@
 <!-- Header div -->
 <div class="section">
 	<div class="container header" id="yellow">
-		<h1>ODE</h1>
+		<h1>Analysis</h1>
 	</div>
 </div>
 
@@ -29,6 +29,17 @@
 			<div id ='a' class="subsection">
 				<h2 class="text-yellow">Introduction</h2>
         <p>Using the previously derived expressions from the ODE team we use the Mathworks Simulink package to derive solutions to our system for a range of parameters. </p>
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/8/88/T--Toronto--2017_simulation.svg" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/8/8a/T--Toronto--2017_x2_light_on.svg" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_x2_light_off.svg" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/d/d3/T--Toronto--2017_lambda_light_on.svg" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/3/39/T--Toronto--2017_lambda_light_off.svg" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/f/ff/T--Toronto--2017_theta_light_on.svg" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_theta_light_off.svg" alt="data"></div>
+					</div>
+				</figure>
 			</div>
 			<div id ='b' class="subsection">
 				<h2 class="text-yellow">ODE Solution</h2>
@@ -119,12 +130,11 @@ lm2 <- exp(predict(fit,list(time=time_val)))
 lines(time_val, lm2[c(1:39)], col="red")</pre>
 				</blockquote>
 				<figure>
-				  <div class="figures">
-				    <div class="image"><img src="http://2017.igem.org/wiki/images/4/42/T--Toronto--2017_mcherry-reg-norm.png" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/6/66/T--Toronto--2017_mcherr_reg_log.png" alt="data"></div>
-				  </div>
-				</figure>
+					<div class="figures">
+				<div class="image"><img src="http://2017.igem.org/wiki/images/4/42/T--Toronto--2017_mcherry-reg-norm.png" alt="data"></div>
+				<div class="image"><img src="http://2017.igem.org/wiki/images/6/66/T--Toronto--2017_mcherr_reg_log.png" alt="data"></div>
 			</div>
+		</figure>
 			<div id ='a' class="subsection">
 				<h2 class="text-yellow">R Analysis</h2>
 				<blockquote class="code">
@@ -146,8 +156,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 0.2935 on 37 degrees of freedom
 Multiple R-squared:  0.8285,	Adjusted R-squared:  0.8238
 F-statistic: 178.7 on 1 and 37 DF,  p-value: 9.741e-16
-
-				}</pre>
+</pre>
 				</blockquote>
 				<p>Intercept represents the equilibrium value of LacILov, our intercept:</p>
 				<figure>
@@ -155,5 +164,8 @@ F-statistic: 178.7 on 1 and 37 DF,  p-value: 9.741e-16
 				    <div class="image"><img src="http://2017.igem.org/wiki/images/f/f4/T--Toronto--2017_intercept.png" alt="data"></div>
 				</figure>
 			</div>
+		</div>
+	</div>
+</div>
 </html>
 {{Toronto/footer}}

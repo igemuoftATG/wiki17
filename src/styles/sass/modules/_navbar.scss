@@ -1,3 +1,4 @@
+$font-size: 16px;
 .navigation {
   display: flex;
   flex-direction: row;
@@ -26,13 +27,7 @@
     display: inline-block;
     padding: 5px 0.75em 0 0.75em;
     margin-top: 5px;
-    a {
-      transition: color 200ms linear;
-      -webkit-transition: color 200ms linear;
-      &:hover {
-        font-weight: normal !important;
-      }
-    }
+    font-size: $font-size;
   }
 }
 #navbarSearch {
@@ -46,13 +41,13 @@
   }
   input {
     display: block;
-    padding: 10px;
+    padding: 5px 10px;
     padding-left: 30px;
     border-radius: 50px 50px;
     border: 3px solid $dark-grey;
     color: $dark-torquoise;
     font-size: 2rem;
-    width: 80%;
+    width: 75%;
     background: #fff url('http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png') no-repeat 5px center;
     outline: none;
     margin: auto;
@@ -61,12 +56,12 @@
   &.navbar-animation {
     input{
       display: block;
-      width: 35px;
+      width: 10px;
       padding: 5px 10px;
       &[type=text] {
         transition: 0.5s;
         &:focus {
-          width: 300px;
+          width: 400px;
           padding-left: 30px;
         }
       }

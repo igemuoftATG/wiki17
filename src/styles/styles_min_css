@@ -453,7 +453,7 @@ a {
   text-decoration: none !important; }
   a.dashed {
     border-bottom: 1px dashed !important;
-    font-size: 1.4rem !important;
+    font-size: 1.7rem !important;
     color: inherit; }
     a.dashed:visited {
       color: inherit !important; }
@@ -512,9 +512,9 @@ ul {
     list-style-type: circle;
     margin-left: 20px; }
   ul li {
-    padding: 5px 0; }
+    padding: 5px 0;
+    font-size: 1.7rem !important; }
     ul li a {
-      font-size: 1.4rem !important;
       text-decoration: none;
       color: #0f415c; }
       ul li a:hover {
@@ -531,7 +531,7 @@ table tbody tr td a {
 ol {
   padding: 0 30px !important; }
   ol li {
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
     color: #0f415c !important; }
 
 th, td {
@@ -879,6 +879,38 @@ a button.btn-primary {
     a button.btn-primary.yellow:hover {
       background: #fae79f; }
 
+button.tab-item {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid white;
+  transition: border 0.2s linear; }
+  button.tab-item:hover {
+    border-bottom: 2px solid yellow;
+    border-bottom-color: red; }
+  button.tab-item.active {
+    border-bottom: 2px solid yellow;
+    border-bottom-color: red; }
+  button.tab-item:focus {
+    outline: 0; }
+
+.tabs {
+  display: none !important;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 audio {
   width: 80%; }
 

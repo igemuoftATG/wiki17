@@ -47,7 +47,7 @@ a {
   text-decoration: none !important;
   &.dashed {
     border-bottom: 1px dashed !important;
-    font-size: 1.4rem !important;
+    font-size: 1.7rem !important;
     color: inherit;
     &:visited {
       color: inherit !important;
@@ -122,8 +122,8 @@ ul {
   }
   li {
     padding: 5px 0;
+    font-size: 1.7rem !important;
     a {
-      font-size: 1.4rem !important;
       text-decoration: none;
       color: $dark-cyan;
       &:hover {
@@ -148,7 +148,7 @@ table tbody tr td a {
 ol {
   padding: 0 30px !important;
   li {
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
     color: $dark-cyan !important;
   }
 }

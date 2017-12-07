@@ -477,3 +477,20 @@ function directionAware() {
     volumeControls.style.left = '-3px';
   }
 }
+
+
+// tabs
+var opentabs = function(event, tabId){
+	var i, tabs, tab_items;
+	tabs = document.getElementsByClassName("tabs");
+	for (i=0; i<tabs.length; i++){
+		tabs[i].style.display = "none";
+	}
+	tab_items = document.getElementsByClassName("tab-item");
+	for (i=0; i<tab_items.length; i++){
+		console.log(tab_items[i].className);
+		tab_items[i].className = tab_items[i].className.replace(" active", "");
+	}
+	event.currentTarget.className += " active";
+	document.getElementById(tabId).style.display = "block";
+}

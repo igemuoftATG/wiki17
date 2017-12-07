@@ -1071,9 +1071,10 @@ svg, img {
   margin: 10px 0;
   position: relative; }
   #navbarSearch a {
-    color: white; }
+    color: #0f415c;
+    padding: 10px 15px; }
     #navbarSearch a:visited {
-      color: white !important; }
+      color: #0f415c !important; }
     #navbarSearch a:hover {
       color: white !important; }
   #navbarSearch input {
@@ -1093,45 +1094,42 @@ svg, img {
   #navbarSearch.navbar-animation input {
     display: block;
     width: 35px;
-    padding: 5px 10px; }
-    #navbarSearch.navbar-animation input[type=text] {
-      transition: 0.5s; }
-      #navbarSearch.navbar-animation input[type=text]:focus {
-        width: 300px;
-        padding-left: 30px; }
+    padding: 5px 10px;
+    padding-left: 0px; }
 
 #search {
   text-align: left;
-  z-index: 20;
+  z-index: 1000;
   display: none;
-  background: #0f415c;
+  background: white;
   opacity: 0.9;
   border-radius: 5px;
   position: absolute;
   width: 100%;
   max-height: 200px;
   overflow-y: scroll;
+  overflow-x: hidden;
   padding: 0;
   margin: 1px 0; }
   #search ul {
     margin: 0;
     padding: 0; }
-  #search li {
+  #search #auto-suggest li {
     display: block;
-    color: #fff;
-    padding: 10px 15px;
+    color: #0f415c;
+    padding: 0;
     margin: 0;
     border-bottom: 1px solid #666; }
-    #search li:hover {
+    #search #auto-suggest li:hover {
       background: #40b2bc; }
-  #search a {
+  #search #auto-suggest a {
     display: inline-block;
-    color: #fff;
+    color: #0f415c;
     width: 100%; }
-    #search a:visited {
-      color: white; }
-    #search a:hover {
-      color: white; }
+    #search #auto-suggest a:visited {
+      color: #0f415c; }
+    #search #auto-suggest a:hover {
+      color: #0f415c; }
   #search::-webkit-scrollbar {
     width: 5px; }
   #search::-webkit-scrollbar-track-piece {

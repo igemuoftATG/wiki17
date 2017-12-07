@@ -1,133 +1,137 @@
 // Autocomplete ================================================================
 
 function start_autocomplete() {
-pages = [
-  "applied design",
-  "attributions",
-  "basic part",
-  "bioinformatics workshop",
-  "collection",
-  "composite part",
-  "contribution",
-  "demonstrate",
-  "description",
-  "design",
-  "drylab",
-  "engagement",
-  "entrepreneurship",
-  "expirements",
-  "gold integrated",
-  "hardware",
-  "home",
-  "hp silver",
-  "human practices",
-  "icon-a-thon",
-  "improve",
-  "integrated practices",
-  "interlab",
-  "interviews",
-  "measurement",
-  "model",
-  "notebook",
-  "parts",
-  "parts collection",
-  "plant",
-  "podcasts",
-  "proof",
-  "results",
-  "saftey",
-  "silver",
-  "software",
-  "team",
-  "wetlab"
-]
+  pages = [
+    "Analysis",
+    "Attributions",
+    "Basic Part",
+    "Collaborations",
+    "Demonstrate",
+    "Description",
+    "Design",
+    "Drylab",
+    "Engagement",
+    "Experiments",
+    "Genetic Code Workshop",
+    "Guide",
+    "Gold Integrated",
+    "HP Silver",
+    "Hardware",
+    "Home",
+    "Human Practices",
+    "Icon-a-thon",
+    "Improve",
+    "InterLab",
+    "Interviews",
+    "Model",
+    "Notebook",
+    "ODE",
+    "Parts",
+    "Podcast",
+    "Protein Modelling",
+    "Results",
+    "Safety",
+    "Team",
+    "Wetlab"
+  ]
 
-link = [
-  "http://2017.igem.org/Team:Toronto/Applied_Design",
-  "http://2017.igem.org/Team:Toronto/Attributions",
-  "http://2017.igem.org/Team:Toronto/Basic_Part",
-  "http://2017.igem.org/Team:Toronto/Bioinformatics-Workshop",
-  "http://2017.igem.org/Team:Toronto/Part_Collection",
-  "http://2017.igem.org/Team:Toronto/Composite_Part",
-  "http://2017.igem.org/Team:Toronto/Contribution",
-  "http://2017.igem.org/Team:Toronto/Demonstrate",
-  "http://2017.igem.org/Team:Toronto/Description",
-  "http://2017.igem.org/Team:Toronto/Design",
-  "http://2017.igem.org/Team:Toronto/Drylab",
-  "http://2017.igem.org/Team:Toronto/Engagement",
-  "http://2017.igem.org/Team:Toronto/Entrepreneurship",
-  "http://2017.igem.org/Team:Toronto/Experiments",
-  "http://2017.igem.org/Team:Toronto/HP/Gold_Integrated",
-  "http://2017.igem.org/Team:Toronto/Hardware",
-  "http://2017.igem.org/Team:Toronto",
-  "http://2017.igem.org/Team:Toronto/HP/Silver",
-  "http://2017.igem.org/Team:Toronto/PnP",
-  "http://2017.igem.org/Team:Toronto/Icon-a-thon",
-  "http://2017.igem.org/Team:Toronto/Improve",
-  "http://2017.igem.org/Team:Toronto/Integrated_Practices",
-  "http://2017.igem.org/Team:Toronto/InterLab",
-  "http://2017.igem.org/Team:Toronto/Interviews",
-  "http://2017.igem.org/Team:Toronto/Measurement",
-  "http://2017.igem.org/Team:Toronto/Model",
-  "http://2017.igem.org/Team:Toronto/Notebook",
-  "http://2017.igem.org/Team:Toronto/Parts",
-  "http://2017.igem.org/Team:Toronto/Part_Collection",
-  "http://2017.igem.org/Team:Toronto/Plant",
-  "http://2017.igem.org/Team:Toronto/Podcast",
-  "http://2017.igem.org/Team:Toronto/Proof",
-  "http://2017.igem.org/Team:Toronto/Results",
-  "http://2017.igem.org/Team:Toronto/Safety",
-  "http://2017.igem.org/Team:Toronto/Silver",
-  "http://2017.igem.org/Team:Toronto/Software",
-  "http://2017.igem.org/Team:Toronto/Team",
-  "http://2017.igem.org/Team:Toronto/Wetlab"
-]
+  link = [
+    "http://2017.igem.org/Team:Toronto/Analysis",
+    "http://2017.igem.org/Team:Toronto/Attributions",
+    "http://2017.igem.org/Team:Toronto/Basic_Part",
+    "http://2017.igem.org/Team:Toronto/Collaborations",
+    "http://2017.igem.org/Team:Toronto/Demonstrate",
+    "http://2017.igem.org/Team:Toronto/Description",
+    "http://2017.igem.org/Team:Toronto/Design",
+    "http://2017.igem.org/Team:Toronto/Drylab",
+    "http://2017.igem.org/Team:Toronto/Engagement",
+    "http://2017.igem.org/Team:Toronto/Experiments",
+    "http://2017.igem.org/Team:Toronto/Genetic_Code_Workshop",
+    "http://2017.igem.org/Team:Toronto/Guide",
+    "http://2017.igem.org/Team:Toronto/HP/Gold_Integrated",
+    "http://2017.igem.org/Team:Toronto/HP/Silver",
+    "http://2017.igem.org/Team:Toronto/Hardware",
+    "http://2017.igem.org/Team:Toronto",
+    "http://2017.igem.org/Team:Toronto/Human_Practices",
+    "http://2017.igem.org/Team:Toronto/Icon-a-thon",
+    "http://2017.igem.org/Team:Toronto/Improve",
+    "http://2017.igem.org/Team:Toronto/InterLab",
+    "http://2017.igem.org/Team:Toronto/Interviews",
+    "http://2017.igem.org/Team:Toronto/Model",
+    "http://2017.igem.org/Team:Toronto/Notebook",
+    "http://2017.igem.org/Team:Toronto/ODE",
+    "http://2017.igem.org/Team:Toronto/Parts",
+    "http://2017.igem.org/Team:Toronto/Podcast",
+    "http://2017.igem.org/Team:Toronto/Protein-Modelling",
+    "http://2017.igem.org/Team:Toronto/Results",
+    "http://2017.igem.org/Team:Toronto/Safety",
+    "http://2017.igem.org/Team:Toronto/Team",
+    "http://2017.igem.org/Team:Toronto/Wetlab"
+  ]
 
-  function autocomplete() {
-    console.log('Autocomplete has loaded');
-    var input = document.getElementById('autocomplete');
-    var suggest = document.getElementById("auto-suggest");
-    var search = document.getElementById("search")
+    function autocomplete() {
+      // console.log('Autocomplete has loaded');
+      var input = document.getElementById('autocomplete');
+      var suggest = document.getElementById("auto-suggest");
+      var search = document.getElementById("search");
+      var navbarSearch = document.getElementById("navbarSearch");
 
-    input.addEventListener('blur', function() {
-      input.value = '';
-      setTimeout(function() {
-        suggest.innerHTML = '';
-      }, 100);
-    });
+      // Opens up the input bar
+      input.addEventListener('focus', function() {
+        if (input.classList.contains('no-collapse')) {
 
-    input.addEventListener("keyup", function() {
-
-      matches = [];
-      pages.forEach(function(elem, i) {
-        if (elem.includes(input.value.toLowerCase()) && input.value != '') {
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          var text = document.createTextNode(elem.toUpperCase())
-
-          a.setAttribute('href', link[i])
-          a.appendChild(text)
-          li.appendChild(a)
-
-          matches.push(li);
-          // console.log(matches);
+        } else {
+          input.style.transition = '0.5s';
+          input.style.width = '300px';
+          input.style.paddingLeft = '30px';
         }
       });
-      // console.log(suggest)
-      suggest.innerHTML='';
-      if (matches.length == 0) {
-        search.style.display = 'none';
-      } else {
-        search.style.display = 'block';
-        matches.forEach(function(elem) {
-          suggest.appendChild(elem)
-        });
-      }
-      // console.log(pages.includes(input.value));
-    });
-  }
 
-  autocomplete();
+      // Closes input and auto-suggest at click event
+      input.addEventListener('blur', function() {
+        input.value = '';
+        setTimeout(function() {
+        suggest.innerHTML = '';
+        if (input.classList.contains('no-collapse')) {
+
+        } else {
+          input.style.width = '35px';
+          input.style.padding = '5px 10px';
+        }
+      }, 750);
+      });
+
+      // Add keyboard scrolling functionality
+
+      input.addEventListener("keyup", function() {
+
+        matches = [];
+        pages.forEach(function(elem, i) {
+          if (elem.toLowerCase().includes(input.value.toLowerCase()) && input.value != '') {
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            var text = document.createTextNode(elem.toUpperCase())
+
+            a.setAttribute('href', link[i])
+            a.appendChild(text)
+            li.appendChild(a)
+
+            matches.push(li);
+          }
+        });
+        suggest.innerHTML='';
+        if (matches.length == 0) {
+          search.style.display = 'none';
+        } else {
+          search.style.display = 'block';
+          matches.forEach(function(elem) {
+            suggest.appendChild(elem)
+          });
+        }
+      });
+    }
+
+    autocomplete();
 }
 
 start_autocomplete();

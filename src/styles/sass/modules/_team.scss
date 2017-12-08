@@ -1,0 +1,69 @@
+.subsection.team {
+	text-align: center;
+}
+
+.teams-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 10px 0;
+	h4 {
+		margin-bottom: 2px !important;
+	}
+	p {
+		margin: 0 !important;
+		color: $cyan;
+	}
+}
+
+.image-box{
+	height: 310px;
+	width: 233px;
+	background-position: center;
+	background-size: contain;
+	margin: 10px;
+}
+
+#kat{
+	background-image: url("http://2017.igem.org/wiki/images/7/72/T--Toronto--2017_kat.gif");
+}
+
+#umar{
+	background-image: url("http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_umar.gif");
+}
+
+#adele{
+	background-image: url("http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_adele.jpg");
+}
+
+#carla{
+	background-image: url("http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_carla.gif");
+}
+
+#ahmed{
+	background-image: url("http://2017.igem.org/wiki/images/7/7f/T--Toronto--2017_ahmed.gif");
+}
+
+#mark{
+	background-image: url("http://2017.igem.org/wiki/images/1/17/T--Toronto--2017_mark.gif");
+}
+
+#amy{
+	background-image: url("http://2017.igem.org/wiki/images/d/d5/T--Toronto--2017_amy.jpg");
+}
+
+#victoria{
+	background-image: url("http://2017.igem.org/wiki/images/c/cc/T--Toronto--2017_vic.gif");
+}
+
+#ali{
+	background-image: url("http://2017.igem.org/wiki/images/c/cc/T--Toronto--2017_vic.gif");
+}
+
+#estee{
+	background-image: url("http://2017.igem.org/wiki/images/f/f1/T--Toronto--2017_estee.jpg");
+}
+
+#celine{
+	background-image: url("http://2017.igem.org/wiki/images/f/f7/T--Toronto--2017_celine.gif");
+}

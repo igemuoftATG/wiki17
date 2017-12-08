@@ -127,7 +127,6 @@ var interlab = function() {
 	Plotly.newPlot('interlab', data, layout);
 }
 
-interlab();
 
 
 // mcherry1
@@ -174,4 +173,388 @@ var mcherry1 = function() {
 	};
 
   Plotly.newPlot('mcherry1', data, layout);
+}
+
+
+
+// results1
+var results1 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+	    y: [0.431455654, 0.486018799, 0.451166937, 0.412544754, 0.446801074, 0.431628187],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.393061353, 0.461130378, 0.420842868, 0.367656727, 0.357478349, 0.301070788],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.468340088,0.519079993,0.537926389,0.530572262,0.514394667,0.524926408],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+	Plotly.newPlot('results1', data, layout);
+}
+
+// results2
+var results2 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+	    y: [0.42241975, 0.515455624, 0.576661944, 0.664565353, 0.813306988, 0.890564698]
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.400165237, 0.473048181, 0.526565832, 0.580779848, 0.640704276, 0.613198026],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.468340088, 0.519079993, 0.537926389, 0.530572262, 0.514394667, 0.524926408],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+  Plotly.newPlot('results2', data, layout);
+}
+
+
+// results3
+var results3 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+	    y: [0.419086271, 0.518929382, 0.608628189, 0.759234146, 0.922562892, 1.036413806],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.398351209, 0.499043957, 0.594720753, 0.624802121, 0.660468132, 0.671495103],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.456333966, 0.53086805, 0.671138521, 0.826984583, 1.000156359, 1.143534583],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+  Plotly.newPlot('results3', data, layout);
+}
+
+
+// results4
+var results4 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+	    y: [0.416618907, 0.515152665, 0.612156353, 0.758404066, 0.916987563, 0.966861139],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.420491935, 0.537194735, 0.65084616, 0.666125065, 0.703033484, 0.724947661],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.466054844, 0.538072598, 0.671138503, 0.822394943, 1.033440947, 1.15686506],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+  Plotly.newPlot('results4', data, layout);
+}
+
+
+// results5
+var results5 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+	    y: [0.483158933, 0.570574303, 0.665645563, 0.775817024, 0.950739267, 1.040110697],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.391777945, 0.502298102, 0.614497747, 0.639206605, 0.655979528, 0.683853645],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.458984685, 0.536315673, 0.664565353, 0.824272227, 1.036009236, 1.179441082],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+  Plotly.newPlot('results5', data, layout);
+}
+
+
+// results6
+var results6 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+			y: [0.439003581, 0.540262053, 0.634440843, 0.743489127, 0.91454835, 1.029773548],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.458488511, 0.572656104, 0.680112333, 0.717246059, 0.74444477, 0.765631256],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.457329254, 0.53086805, 0.662037802, 0.810248919, 1.01718744, 1.167400175],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+  Plotly.newPlot('results6', data, layout);
+}
+
+
+// results7
+var results7 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+	    y: [0.427127297, 0.547794997, 0.633180798, 0.75298228, 0.892759355, 1.019198437],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.400346364, 0.503996124, 0.602969037, 0.639581356, 0.645300289, 0.66648448],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.467035237, 0.535582185, 0.663723938, 0.807368739, 1.019336898, 1.149556184],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+  Plotly.newPlot('results7', data, layout);
+}
+
+
+// results8
+var results8 = function() {
+	var pdCas9_cI_mCherry = {
+	    x: [0, 1, 2, 3, 4, 5],
+	    y: [0.458157508, 0.576110896, 0.675050421, 0.772778194, 0.92912647, 1.015936072],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + cI/mCherry',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var pdCas9_sgRNA = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.444776036, 0.562038236, 0.669113955, 0.700766377, 0.728220311, 0.709787214],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+		var pdCas9_sgRNA_AcrIIA4 = {
+			x: [0, 1, 2, 3, 4, 5],
+			y: [0.464745334, 0.536755343, 0.650600685, 0.802345678, 0.989441615, 1.103383296],
+	    mode: 'lines+markers',
+	    name: 'pdCas9 + sgRNA + AcrIIA4',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [pdCas9_cI_mCherry, pdCas9_sgRNA, pdCas9_sgRNA_AcrIIA4];
+
+
+	var layout = {
+	  title: 'MG1655 ∆lacI Growth Profile at 0.4 uM aTc',
+	  xaxis: {
+	    title: 'Timepoint(hours)',
+	  },
+	  yaxis: {
+	    title: 'Optical Density',
+			range: [0, 1.5],
+			autorange: false
+	  }
+	};
+
+  Plotly.newPlot('results8', data, layout);
 }

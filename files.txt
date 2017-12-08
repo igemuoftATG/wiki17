@@ -67,3 +67,27 @@ uploaded[5251ms] ./src/images/header-red.png -> http://2017.igem.org/wiki/images
 uploaded[5081ms] ./src/images/header-dark-cyan.png -> http://2017.igem.org/wiki/images/6/61/T--Toronto--2017_header-dark-cyan.png
 uploaded[3891ms] ./src/images/header-cyan.png -> http://2017.igem.org/wiki/images/c/cb/T--Toronto--2017_header-cyan.png
 uploaded[5174ms] ./src/images/drylab-header.png -> http://2017.igem.org/wiki/images/f/f5/T--Toronto--2017_drylab-header.png
+
+http://2017.igem.org/wiki/images/7/72/T--Toronto--2017_kat.gif
+http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_umar.gif
+http://2017.igem.org/wiki/images/0/03/T--Toronto--2017_kat-hover.gif
+http://2017.igem.org/wiki/images/6/6b/T--Toronto--2017_kat-hover-umar.gif
+http://2017.igem.org/wiki/images/4/45/T--Toronto--2017_umar-hover.gif
+http://2017.igem.org/wiki/images/0/0f/T--Toronto--2017_umar-hover-kat.gif
+
+http://2017.igem.org/wiki/images/7/7f/T--Toronto--2017_ahmed.gif
+http://2017.igem.org/wiki/images/0/08/T--Toronto--2017_ahmed-hover.gif
+http://2017.igem.org/wiki/images/e/e9/T--Toronto--2017_ahmed-hover-carla.gif
+http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_carla.gif
+http://2017.igem.org/wiki/images/9/95/T--Toronto--2017_carla-hover.gif
+http://2017.igem.org/wiki/images/7/75/T--Toronto--2017_carla-hover-ahmed.gif
+
+http://2017.igem.org/wiki/images/1/17/T--Toronto--2017_mark.gif
+http://2017.igem.org/wiki/images/6/62/T--Toronto--2017_mark-hover.gif
+http://2017.igem.org/wiki/images/c/cc/T--Toronto--2017_vic.gif
+http://2017.igem.org/wiki/images/d/da/T--Toronto--2017_vic-hover.gif
+
+http://2017.igem.org/wiki/images/f/f7/T--Toronto--2017_celine.gif
+http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_celine-hover.gif
+
+http://2017.igem.org/wiki/images/a/aa/T--Toronto--2017_amy-hover.gif

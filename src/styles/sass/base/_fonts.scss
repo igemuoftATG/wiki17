@@ -124,11 +124,9 @@ ul {
     padding: 5px 0;
     font-size: 1.7rem !important;
     a {
+      font-size: 1.3rem !important;
       text-decoration: none;
       color: $dark-cyan;
-      &:hover {
-        font-weight: 700;
-      }
       &:visited {
         color: $dark-cyan;
       }

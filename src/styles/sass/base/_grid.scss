@@ -137,6 +137,21 @@ body {
       flex: 1;
     }
   }
+  &.description-page {
+    min-height: 400px;
+    justify-content: center;
+    .block.content {
+      flex: 3;
+      padding-right: 20px;
+      .subsection {
+        margin-bottom: 50px;
+      }
+    }
+    .block.sidebar {
+      max-width: 200px;
+      flex: 1;
+    }
+  }
   &.suggestions {
     .block.suggestions-header {
       text-align: center;
@@ -173,5 +188,30 @@ body {
   }
   .block.content {
     flex: 5;
+  }
+}
+
+
+/* Description */
+.relative-div {
+  position: relative;
+  width: 100%;
+  span#span1 {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 50%;
+  }
+  span#span2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 50%;
+  }
+  span#span3 {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 45%;
   }
 }

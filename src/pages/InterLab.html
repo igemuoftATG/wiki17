@@ -191,6 +191,135 @@
 </div>
 
 <script>
+// Interlab graph
+var interlab = function() {
+	var negativeControl = {
+		x: [0, 2, 4, 6],
+		y: [-0.27, -0.04, -0.01, 0.00],
+		error_y: {
+			type: 'data',
+			array: [0.26, 0.01, 0.00, 0.00],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Negative Control',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var positiveControl = {
+		x: [0, 2, 4, 6],
+		y: [0.06, 0.49, 0.30, 0.27],
+		error_y: {
+			type: 'data',
+			array: [0.08, 0.05, 0.01, 0.01],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Positive Control',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var testDevice1 = {
+		x: [0, 2, 4, 6],
+		y: [0.23, 0.67, 0.40, 0.41],
+		error_y: {
+			type: 'data',
+			array: [0.18, 0.16, 0.02, 0.01],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Test Device 1',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var testDevice2 = {
+		x: [0, 2, 4, 6],
+		y: [0.37, 0.78, 0.49, 0.47],
+		error_y: {
+			type: 'data',
+			array: [0.16, 0.09, 0.03, 0.01],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Test Device 2',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var testDevice3 = {
+		x: [0, 2, 4, 6],
+		y: [-0.13, -0.01, 0.00, 0.01],
+		error_y: {
+			type: 'data',
+			array: [0.08, 0.01, 0.00, 0.00],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Test Device 3',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var testDevice4 = {
+		x: [0, 2, 4, 6],
+		y: [-0.04, 0.45, 0.38, 0.36],
+		error_y: {
+			type: 'data',
+			array: [0.18, 0.06, 0.02, 0.02],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Test Device 4',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var testDevice5 = {
+		x: [0, 2, 4, 6],
+		y: [-0.10, 0.23, 0.13, 0.12],
+		error_y: {
+			type: 'data',
+			array: [0.09, 0.02, 0.01, 0.00],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Test Device 5',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var testDevice6 = {
+		x: [0, 2, 4, 6],
+		y: [-0.12, -0.02, 0.00, 0.00],
+		error_y: {
+			type: 'data',
+			array: [0.05, 0.01, 0.00, 0.00],
+			visible: true
+		},
+		mode: 'lines+markers',
+		name: 'Test Device 6',
+		line: {shape: 'spline'},
+		type: 'scatter'
+	};
+
+	var data = [negativeControl, positiveControl, testDevice1, testDevice2, testDevice3, testDevice4, testDevice5, testDevice6];
+
+	var layout = {
+		title: 'iGEM Interlab Data 2017',
+		xaxis: {
+			title: 'Hour'
+		},
+		yaxis: {
+			title: 'uM Fluorescein / OD600'
+		}
+	};
+
+	Plotly.newPlot('interlab', data, layout);
+}
+
 	interlab();
 </script>
 </html>

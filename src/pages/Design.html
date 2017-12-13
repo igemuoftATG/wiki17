@@ -28,7 +28,7 @@
 			<!-- subsection 1 -->
 			<div class="subsection">
 
-				<h2>Part I: All you need is LOV</h2>
+				<h2 class="text-red">Part I: All you need is LOV</h2>
 
 				<h3>Expanding the synthetic biology toolbox using LacILOV</h3>
 
@@ -73,10 +73,6 @@ mCherry was added downstream of Ptrc-2: LacILOV-mCherry was submitted as BBa_K24
 </li>
 				</ul>
 
-				<p>To test the activity of the basic switch mechanism, samples were grown in either dark or light conditions using our hardware devices, with the following expectations:</p>
-				<p>In the dark: LacILOV is bound to the Ptrc-2 promoters. Since mCherry and cI:LVA are both controlled by Ptrc-2, no mCherry or cI:LVA is transcribed. Therefore no fluorescence is measured at 610nm for mCherry. Additionally, since no cI:LVA is produced, YFP is transcribed and fluorescence is measured at 528 nm.</p>
-				<p>In the light: LacILOV unbinds from the Ptrc-2 promoter and mCherry and cI:LVA are both expressed. mCherry reporter fluorescence is measured at 610nm. Since cI:LVA is expressed, the BBa_R0051 promoter is repressed and prevents downstream expression of YFP. </p>
-
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/8/8d/T--Toronto--2017_results4.png" alt="data"></div>
@@ -84,13 +80,32 @@ mCherry was added downstream of Ptrc-2: LacILOV-mCherry was submitted as BBa_K24
 					<figcaption>Figure 4. YFP/mCherry Switch part  BBa_K2469004</figcaption>
 				</figure>
 
+				<p>To test the activity of the basic switch mechanism, samples were grown in either dark or light conditions using our hardware devices, with the following expectations:</p>
+
+				<p>In the dark: LacILOV is bound to the Ptrc-2 promoters. Since mCherry and cI:LVA are both controlled by Ptrc-2, no mCherry or cI:LVA is transcribed. Therefore no fluorescence is measured at 610nm for mCherry. Additionally, since no cI:LVA is produced, YFP is transcribed and fluorescence is measured at 528 nm.</p>
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/f/fc/T--Toronto--2017_off.gif" alt="data"></div>
+					</div>
+					<figcaption>Figure 5. Animated model for the switch in the dark.</figcaption>
+				</figure>
+
+				<p>In the light: LacILOV unbinds from the Ptrc-2 promoter and mCherry and cI:LVA are both expressed. mCherry reporter fluorescence is measured at 610nm. Since cI:LVA is expressed, the BBa_R0051 promoter is repressed and prevents downstream expression of YFP. </p>
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/2/27/T--Toronto--2017_on.gif" alt="data"></div>
+					</div>
+					<figcaption>Figure 6. Animated model for the switch in the light.</figcaption>
+				</figure>
+
+
 				<p>In order to optimize the design of our switch, we modelled the interactions of each component using ordinary differential equations (ODEs). Through Quasi steady-state assumption, we combined and simplified the model down to four equations. We then simulated the model through the MATLAB tool, Simbiology. In order to validate the accuracy of our models, we compared our predicted results for LacILOV-mCherry (BBa_K2469003) to the data from our aforementioned characterization assay of LacILOV and calculated the fit.</p>
 
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/4/42/T--Toronto--2017_mcherry-reg-norm.png" alt="data"></div>
 					</div>
-					<figcaption>Figure 5. Fitting the mCherry reporter assay results from wet lab to our predicted ODE model</figcaption>
+					<figcaption>Figure 7. Fitting the mCherry reporter assay results from wet lab to our predicted ODE model</figcaption>
 				</figure>
 
 				<p>Similar to the activity of the LacILOV mCherry construct, the assays for assessing reporter construct use the same hardware devices for delivery of light and dark conditions. The fluorescence output of mCherry and YFP were measured. It is expected that mCherry expression would increase and YFP would decrease in light conditions.</p>
@@ -98,7 +113,7 @@ mCherry was added downstream of Ptrc-2: LacILOV-mCherry was submitted as BBa_K24
 				</p>
 			</div>
 			<div class="subsection">
-				<h2>Part II: The Future of Gene Editing is Lit</h2>
+				<h2 class="text-red">Part II: The Future of Gene Editing is Lit</h2>
 				<h3>Employing LacILOV & Anti-CRISPR to Regulate Gene Editing</h3>
 				<p>The CRISPR-Cas9 technology holds tremendous promise for human gene therapy. The technology has already been applied to various human diseases, from Duchenne muscular dystrophy to the congenital heart disorder that results from a mutation in MYBPC3. However, despite the potential of these initial studies, off-targeting editing remains a concern, particularly during different phases of the cell cycle. This is often exacerbated by the relative efficiency of the error-prone Non-Homologous End-Joining (NHEJ) pathway over Homology-Directed Repair (HDR), which are both activated upon Cas9’s creation of a double-stranded break in DNA. If the technology is to be employed in the clinic for human gene therapy in the future, a dramatic improvement in our control of Cas9 is desperately needed. To address this problem, we designed a switch for the sgRNA of the CRISPR-Cas9 system using one of the recently discovered anti-CRISPR proteins, AcrIIA4.</p>
 
@@ -112,7 +127,7 @@ mCherry was added downstream of Ptrc-2: LacILOV-mCherry was submitted as BBa_K24
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/0/08/T--Toronto--2017_results6.png" alt="data"></div>
 					</div>
-					<figcaption>Figure 6. The layout of our CRISPR/anti-CRISPR switch is depicted above</figcaption>
+					<figcaption>Figure 8. The layout of our CRISPR/anti-CRISPR switch is depicted above</figcaption>
 				</figure>
 
 				<p>The basic states of our switch are as follows:</p>
@@ -125,7 +140,7 @@ mCherry was added downstream of Ptrc-2: LacILOV-mCherry was submitted as BBa_K24
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/2/20/T--Toronto--2017_results7.png" alt="data"></div>
 					</div>
-					<figcaption>Figure 7. outline of the constructs that were used to test our AcrIIA4 part BBa_K2469002. A) Construct constitutively expressing cI:LVA and mCherry B) Construct constitutively expressing cI:LVA, mCherry and sgRNA and C) Construct constitutively expressing cI:LVA,  mCherry, sgRNA, and HIS tagged AcrIIA4.</figcaption>
+					<figcaption>Figure 9. outline of the constructs that were used to test our AcrIIA4 part BBa_K2469002. A) Construct constitutively expressing cI:LVA and mCherry B) Construct constitutively expressing cI:LVA, mCherry and sgRNA and C) Construct constitutively expressing cI:LVA,  mCherry, sgRNA, and HIS tagged AcrIIA4.</figcaption>
 				</figure>
 
 				<p>In order to test the activity of our sgRNA and our HIS:AcrIIA4 we designed a quantitative growth assay, as shown below.</p>
@@ -134,7 +149,7 @@ mCherry was added downstream of Ptrc-2: LacILOV-mCherry was submitted as BBa_K24
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/f/f7/T--Toronto--2017_results8.png" alt="data"></div>
 					</div>
-					<figcaption>Figure 8. Quantitative Growth Assay for parts in figure 7</figcaption>
+					<figcaption>Figure 10. Quantitative Growth Assay for parts in figure 9</figcaption>
 				</figure>
 
 			</div>
@@ -149,9 +164,9 @@ mCherry was added downstream of Ptrc-2: LacILOV-mCherry was submitted as BBa_K24
 					<li id="ref2">AN ACTION SPECTRUM IN THE BLUE and ULTRAVIOLET FOR PHOTOTROPISM IN ALFALFA (Baskin and Iino, 1987)</li>
 					<li id="ref3">Gardner, T. S., Cantor, C. R. & Collins, J. J. Construction of a genetic toggle switch in Escherichia coli. Nature 403, 339–342 (2000).</li>
 					<li id="ref4">Mendel, J. R. and Rodino-Klapac, L. R. (2016). Duchenne-Muscular Dystrophy: CRISPR/Cas9 Treatment. Cell Research. 26: 513-514. doi: 10.1038/cr.2016.28</li>
-					<li id="ref4">Ma, H. et al. (2017). Correction of a pathogenic gene mutation in human embryos. Nature. 548: 413-419. doi: 10.1038/nature23305</li>
-					<li id="ref4">Schaefer, K. A. et al. (2017). Unexpected mutations after CRISPR-Cas9 gene editing in vivo. Nature Methods. 14: 547-548. doi: 10.1038/nmeth.4293.</li>
-					<li id="ref4">Dong, D. et al. (2017). Structural Basis of CRISPR-SpyCas9 Inhibition by an Anti-CRISPR Protein. Nature. 546: 436-439. Doi: 10.1038/nature22377.</li>
+					<li id="ref5">Ma, H. et al. (2017). Correction of a pathogenic gene mutation in human embryos. Nature. 548: 413-419. doi: 10.1038/nature23305</li>
+					<li id="ref6">Schaefer, K. A. et al. (2017). Unexpected mutations after CRISPR-Cas9 gene editing in vivo. Nature Methods. 14: 547-548. doi: 10.1038/nmeth.4293.</li>
+					<li id="ref7">Dong, D. et al. (2017). Structural Basis of CRISPR-SpyCas9 Inhibition by an Anti-CRISPR Protein. Nature. 546: 436-439. Doi: 10.1038/nature22377.</li>
 
 				</ol>
 			</div>

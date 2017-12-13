@@ -98,3 +98,7 @@ http://2017.igem.org/wiki/images/f/f2/T--Toronto--2017_description2.svg
 http://2017.igem.org/wiki/images/6/6e/T--Toronto--2017_description3.svg
 http://2017.igem.org/wiki/images/d/dc/T--Toronto--2017_description4.svg
 http://2017.igem.org/wiki/images/5/5d/T--Toronto--2017_description5.svg
+
+
+http://2017.igem.org/wiki/images/2/27/T--Toronto--2017_on.gif
+http://2017.igem.org/wiki/images/f/fc/T--Toronto--2017_off.gif

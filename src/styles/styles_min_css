@@ -792,6 +792,8 @@ body {
     margin: 10px 0 20px 0;
     background: white;
     padding: 5px 10px; }
+    .sidebar #sidebar-box .sidebar-minibox ul li {
+      padding: 1px 0 !important; }
     .sidebar #sidebar-box .sidebar-minibox ul li a:hover {
       color: #40b2bc !important; }
   .sidebar #sidebar-box.fixed {
@@ -837,8 +839,7 @@ figure .figures {
     figure .figures .image img {
       min-width: 300px !important;
       max-width: 100% !important;
-      object-fit: contain !important;
-      box-shadow: 2px 2px 0 #f6f6f6 !important; }
+      object-fit: contain !important; }
       @media (max-width: 800px) {
         figure .figures .image img {
           width: 100% !important; } }
@@ -1223,8 +1224,11 @@ svg, img {
   .teams-row h4 {
     margin-bottom: 2px !important; }
   .teams-row p {
-    margin: 0 !important;
-    color: #40b2bc; }
+    margin: 0 auto !important;
+    color: #40b2bc;
+    max-width: 550px; }
+    .teams-row p.list {
+      color: #1b2a36; }
 
 .image-box {
   height: 310px;

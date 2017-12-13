@@ -32,7 +32,6 @@ figure .figures {
       min-width: 300px !important;
       max-width: 100% !important;
       object-fit: contain !important;
-      box-shadow: 2px 2px 0 $grey !important;
       @media (max-width: $media_width) {
         width: 100% !important;
       }

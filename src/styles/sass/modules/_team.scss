@@ -11,8 +11,12 @@
 		margin-bottom: 2px !important;
 	}
 	p {
-		margin: 0 !important;
+		margin: 0 auto !important;
 		color: $cyan;
+		max-width: 550px;
+		&.list {
+			color: #1b2a36;
+		}
 	}
 }
 

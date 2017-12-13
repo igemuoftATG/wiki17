@@ -16,6 +16,9 @@
       margin: 10px 0 20px 0;
       background: white;
       padding: 5px 10px;
+      ul li {
+        padding: 1px 0 !important;
+      }
       ul li a {
         &:hover {
           color: $cyan !important;

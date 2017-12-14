@@ -34,10 +34,8 @@
         <p> A fluorescence assay was conducted to test the efficiency of our reporter construct, measuring the fluorescence of mCherry and YFP after cell growth in either the presence of blue light or dark. With LacILOV as a part in our toolbox, we were inspired by the bistable switch design created by Gardner et al. (2000) to develop a light-sensitive switch by coupling two different repressible promoters - LacILOV-repressed Ptrc-2, and BBa_R0051, modulated by the viral repressor, cI. This switch mechanism is under the control of the LacI-LOV, in which it is dimerized and bound to DNA in darkness, and monomerizes in light. Thus, with light the construct can switch from YFP expression to mCherry expression. To demonstrate this outcome in this experiment, overnight cultures of MG1655 ΔLacI cells containing the reporter construct were diluted and further cultivated in 5 mL of culture in 15 mL falcon tubes either in the presence of blue light or darkness. Optical density (OD) of the cells, along with YFP and mCherry fluorescence, were measured at hourly times points. Ideally the samples growing in darkness should have low expression of mCherry and high expression of YFP, while those growing in the presence of blue light would have high expression of mCherry and lower levels of YFP fluorescence. To control for fluorescence LB media was used as a negative control.</p>
 
 				<div class="plotly-chart" id="mcherry1"></div>
+				<div class="plotly-chart" id="mcherry2"></div>
 
-				<figure>
-				  <div class='figures'>
-				   <div class='image'><img src=' http://2017.igem.org/wiki/images/e/e7/T--Toronto--2017_Results0.jpg' alt='data'></div>  </div>
 				<p> Significant difference in mCherry fluorescence between cells grown in blue light (465 nm) and those in darkness, however it is only seen in the last measurement. This could be due to the small dynamic range of LacI-LOV, the growth rate of the cells is faster than the expression rate and create the lag in fluorescence seen in the graph. Large error bars could be due to not subcultureing to standardize OD. mCherry measurements were done with excitation wavelength of 585 nm and emission wavelength of 610 nm. YFP measurements settings were not established on the plate reader and data is not included.</p>
 
 			</div>
@@ -194,18 +192,65 @@ var mcherry1 = function() {
 	  var data = [lightControl, darkControl];
 
 
-	var layout = {
-	  title: 'Normalized Fluorescence over Time',
-	  xaxis: {
-	    title: 'Hours'
-	  },
-	  yaxis: {
-	    title: 'RFU / OD600'
-	  }
-	};
+		var layout = {
+		  title: 'Normalized Fluorescence over Time for LacILOV_mCherry in Light and Dark Conditions',
+		  xaxis: {
+		    title: 'Time (hours)'
+		  },
+		  yaxis: {
+		    title: 'Normalized Fluorescence (RFU/OD)'
+		  }
+		};
 
   Plotly.newPlot('mcherry1', data, layout);
 }
+
+// mcherry2
+var mcherry2 = function() {
+	var lightControl = {
+	    x: [0, 4, 7, 13, 14, 15, 16, 21],
+	    y: [-1.294540444, -9.692919081, 3.611918189, 11.3573047, 15.03456563, 24.90670505, 36.75209986, 128.9582564],
+	    error_y: {
+	      type: 'data',
+	      array: [3.378651343, 3.048387455, 0.719902505, 5.453645455, 10.09950287, 18.24882782, 31.22984792, 108.6758844],
+	      visible: true
+	    },
+	    mode: 'lines+markers',
+	    name: 'Light',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var darkControl = {
+	    x: [0, 4, 7, 13, 14, 15, 16, 21],
+	    y: [-1.648023915, -8.817799296, 4.524041471, 7.311774167, 7.770023968, 12.40841325, 12.38815543, 36.43784746],
+	    error_y: {
+	      type: 'data',
+	      array: [1.810196814, 2.725863166, 0.685487813, 0.826650439, 1.744502651, 0.677324399, 0.810865313, 2.329010953],
+	      visible: true
+	    },
+	    mode: 'lines+markers',
+	    name: 'Dark',
+	    line: {shape: 'spline'},
+	    type: 'scatter'
+	  };
+
+	  var data = [lightControl, darkControl];
+
+
+	var layout = {
+	  title: 'Normalized Fluorescence over Time for Reporter Construct in Light and Dark Conditions',
+	  xaxis: {
+	    title: 'Time (hours)'
+	  },
+	  yaxis: {
+	    title: 'Normalized Fluorescence (RFU/OD)'
+	  }
+	};
+
+  Plotly.newPlot('mcherry2', data, layout);
+}
+
 
 // results1
 var results1 = function() {
@@ -590,6 +635,7 @@ var results8 = function() {
 }
 
 	mcherry1();
+	mcherry2();
 	results1();
 	results2();
 	results3();

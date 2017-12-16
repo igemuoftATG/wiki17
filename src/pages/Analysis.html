@@ -30,9 +30,9 @@
 				<h2 class="text-yellow">MathWorks Simulations</h2>
 				<h3>Equations 1, 2, 3</h3>
 				\begin{eqnarray}
-				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \tag{(1), Fig. 1.A}\\
-				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \tag{(2), Fig. 1.B}\\
-				\frac{d\lambda}{d\tau} = \frac{\alpha_\lambda}{1+x_2^n} - \gamma_\lambda \lambda \tag{(3), Fig. 1.C}
+				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \tag{Fig. 1.A}\\
+				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \tag{Fig. 1.B}\\
+				\frac{d\lambda}{d\tau} = \frac{\alpha_\lambda}{1+x_2^n} - \gamma_\lambda \lambda \tag{Fig. 1.C}
 				\end{eqnarray}
 
         <p>Using the previously derived expressions from our ODEs, restated above, we simulated our equations for cI Protein, sgRNA and anti-CRISPR, shown in Figure 1. </p>
@@ -54,20 +54,24 @@
 				<p> We then used the Mathworks Simulink package to derive solutions to our system and model our system for a range of parameters.</p>
 				<figure>
 					<div class="figures">
-							<div class="image"><img src="http://2017.igem.org/wiki/images/8/8a/T--Toronto--2017_x2_light_on.svg" alt="data" width="400px"></div>
-							<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_x2_light_off.svg" alt="data" width="400px"></div>
-							<div class="image"><img src="http://2017.igem.org/wiki/images/f/ff/T--Toronto--2017_theta_light_on.svg" alt="data" width="400px"></div>
-							<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_theta_light_off.svg" alt="data" width="400px"></div>
-							<div class="image"><img src="http://2017.igem.org/wiki/images/d/d3/T--Toronto--2017_lambda_light_on.svg" alt="data" width="400px"></div>
-							<div class="image"><img src="http://2017.igem.org/wiki/images/3/39/T--Toronto--2017_lambda_light_off.svg" alt="data" width="400px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/8/8a/T--Toronto--2017_x2_light_on.svg" alt="data" width="350px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_x2_light_off.svg" alt="data" width="350px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/f/ff/T--Toronto--2017_theta_light_on.svg" alt="data" width="350px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_theta_light_off.svg" alt="data" width="350px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/d/d3/T--Toronto--2017_lambda_light_on.svg" alt="data" width="350px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/3/39/T--Toronto--2017_lambda_light_off.svg" alt="data" width="350px"></div>
 						<figcaption>Figure 2:<br>
 							<i>x<sub>2</sub></i> = cI Protein,
 							<i>&alpha;</i> = maximum transcription rate,
 							<i>&gamma;</i> = degradation rate,
-							<i>&lambda;</i> = anti-CRISPR, 
-							<i>&theta;</i> = sgRNA</figcaption>
+							<i>&theta;</i> = sgRNA,
+							<i>&lambda;</i> = anti-CRISPR</figcaption>
 					</div>
 				</figure>
+
+				<p>In the first two plots, cI Protein is represented by the parameter <i>x<sub>2</sub></i>. When light is on, we see that CI protein is at maximum when degradation rate is at 0 and maximum transcription rate is at the highest. There is no transcription when degradation rate is highest and maximum transcription rate is at the lowest. </p>
+				<p>In the second row of plots, sgRNA is represented by the parameter <i>&theta;</i>. When light is on, we get maximum concentration of sgRNA when degradation is at 0 and notably, when CI protein is high, sgRNA is also high as they are both not repressed.</p>
+				<p>For the last row of plots, anti-CRISPR is represented by the parameter <i>&lambda;</i>. Anti-CRISPR expression is high when CI concentration is low, as CI represses anti-crispr.</p>
 			</div>
 
 			<div id="subsection-solution" class="subsection">

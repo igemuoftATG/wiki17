@@ -28,16 +28,13 @@
 			<!-- subsection 1 -->
 			<div id="subsection-Introduction" class="subsection">
 				<h2 class="text-yellow">Introduction</h2>
-        <p>Using the previously derived expressions from the ODE team we use the Mathworks Simulink package to derive solutions to our system for a range of parameters. </p>
+        <p>Using the previously derived expressions from our ODEs, we use the Mathworks Simulink package to derive solutions to our system for a range of parameters. </p>
 				<figure>
 					<div class="figures">
-						<div class="image"><img src="http://2017.igem.org/wiki/images/8/88/T--Toronto--2017_simulation.svg" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/8/8a/T--Toronto--2017_x2_light_on.svg" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_x2_light_off.svg" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/d/d3/T--Toronto--2017_lambda_light_on.svg" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/3/39/T--Toronto--2017_lambda_light_off.svg" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/f/ff/T--Toronto--2017_theta_light_on.svg" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_theta_light_off.svg" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_CI.png" alt="data"></div>
+				    <div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_sgRNA.png" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_anti_crispr.png" alt="data"></div>
+				    <div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_ci_anti.png" alt="data"></div>
 					</div>
 				</figure>
 			</div>
@@ -45,100 +42,36 @@
 			<div id="subsection-solution" class="subsection">
 				<h2 class="text-yellow">ODE Solution</h2>
         <p>Solving: </p>
-				<figure>
-				  <div class="figures">
-				    <div class="image"><img src="http://2017.igem.org/wiki/images/4/4c/T--Toronto--2017_eq1.png" alt="data"></div>
-				  </div>
-				</figure>
+				\begin{eqnarray}
+				\frac{x_2}{dt} = \alpha - \gamma x_2 \\
+				\frac{x_2}{dt} + \gamma x_2 = = \alpha
+				\end{eqnarray}
 				<p>Integrating Factor: </p>
-				<figure>
-				  <div class="figures">
-				    <div class="image"><img src="http://2017.igem.org/wiki/images/e/e9/T--Toronto--2017_if.png" alt="data"></div>
-				  </div>
-				</figure>
+				\begin{eqnarray}
+				e^(\int \gamma dt) = e^(\gamma t)
+				\end{eqnarray}
 				<p>Multiplying both sides by our integrating factor: </p>
-				<figure>
-				  <div class="figures">
-				    <div class="image"><img src="http://2017.igem.org/wiki/images/4/48/T--Toronto--2017_eq2.png" alt="data"></div>
-				  </div>
-				</figure>
+				\begin{eqnarray}
+				(\frac{x_2}{dt} + \gamma x_2)e^(\gamma t) =  \alpha e^(\gamma t) \\
+				\int (\frac{x_2}{dt} + \gamma x_2)e^(\gamma t) =  \int \alpha e^(\gamma t) \\
+				x_2 = \frac{\alpha}{\gamma} + ce^(-\gamma t)
+				\end{eqnarray}
 			</div>
 
 			<div id="subsection-Plots" class="subsection">
 				<h2 class="text-yellow">R plots</h2>
-
-				<blockquote class="code">
-				  <pre>// #reading data
-table <- read_excel("C:/Users/Ali/Desktop/igem/Wiki Files/table2.xlsx")
-
-#Vectorizing Data
-
-time <- table$`RFU/OD600`[c(3:15)]
-
-time <- as.numeric(time)
-
-
-x1 <-table$X__1[c(3:15)]
-
-x1 <- as.numeric(x1)
-
-
-x2 <- table$X__2[c(3:15)]
-x2 <- as.numeric(x2)
-
-
-x3 <- table$X__3[c(3:15)]
-x3 <- as.numeric(x3)
-
-x <- c(x1,x2,x3)
-
-time_ <- c(time,time,time)
-#plotting data vs time
-#plot(c(time,time,time), c(x1,x2,x3), xlab = 'Time', ylab = 'RFU/OD600')
-
-#Transforming variable
-
-log_x = log(x)
-
-
-
-plot(c(time,time,time), log_x, xlab = 'Time', ylab = 'log(RFu/OD600)')
-
-#regression model
-
-fit <- lm(log(x) ~ c(time,time,time))
-
-#regression information
-summary(fit)
-
-
-#graphing best fit line
-abline(fit, col='red')
-
-
-#orginal data points
-
-plot(c(time,time,time), x, xlab='Time', ylab='RFu/OD600')
-
-#transformed prediction line
-
-time_val <- seq(min(time),max(time), by = 13/38)
-
-#prediction
-lm2 <- exp(predict(fit,list(time=time_val)))
-
-
-#plotting prediction
-
-lines(time_val, lm2[c(1:39)], col="red")
-				</pre>
-				</blockquote>
-
+				Visit our <a href="https://github.com/igemuoftATG/drylab-matlab">GitHub repository</a> for our code.
+				<figure>
+					<div class="figures">
+						<div class="image"><img src="http://2017.igem.org/wiki/images/6/66/T--Toronto--2017_mcherr_reg_log.png" alt="data"></div>
+					</div>
+					<figcaption>Figure 1.1: Log Linear transformation of RFU/OD600 vs Time, Regression Line (red) fitted to data</figcaption>
+				</figure>
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/4/42/T--Toronto--2017_mcherry-reg-norm.png" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/wiki/images/6/66/T--Toronto--2017_mcherr_reg_log.png" alt="data"></div>
 					</div>
+					<figcaption>Figure 1.1: RFU/OD600 vs Time with Transfromed Regression Line (red)</figcaption>
 				</figure>
 			</div>
 

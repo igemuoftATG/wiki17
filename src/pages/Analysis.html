@@ -28,8 +28,14 @@
 			<!-- subsection 1 -->
 			<div id="subsection-Introduction" class="subsection">
 				<h2 class="text-yellow">MathWorks Simulations</h2>
-        <p>Using the previously derived expressions from our ODEs, we use the Mathworks Simulink package to derive solutions to our system and model our system for a range of parameters.
-				We simulated our equations for cI Protein, sgRNA and anti-CRISPR, shown in Figure 1. </p>
+        <p>Using the previously derived expressions from our ODEs, we simulated our equations for cI Protein, sgRNA and anti-CRISPR, shown in Figure 1. </p>
+				<h3>Equations 1, 2, 3</h3>
+				\begin{eqnarray}
+				\frac{dx_2}{d\tau} = \psi_1 - \gamma_2 x_2 \\
+				\frac{d\theta}{d\tau} = k\psi_1 - \gamma_\theta \theta \\
+				\frac{d\lambda}{d\tau} = \frac{\alpha_\lambda}{1+x_2^n} - \gamma_\lambda \lambda
+				\end{eqnarray}
+
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_CI.png" alt="data" width="300px"></div>
@@ -41,6 +47,24 @@
 							B) <b>sgRNA Simulation</b> Lower sgRNA protein concentrations in the dark (LacILOV is bound, Eq. 2)<br>
 							C) <b>anti-CRISPR Simulation</b> Anti-CRISPR expression inversely proportional to LacILOV activation, Eq. 3)<br>
 							D) <b>anti-CRISPR vs cI Protein</b>Anti-CRISPR protein concentration increases in lower cI concentration</figcaption>
+					</div>
+				</figure>
+
+				<p> We then used the Mathworks Simulink package to derive solutions to our system and model our system for a range of parameters.</p>
+				<figure>
+					<div class="figures">
+							<div class="image"><img src="http://2017.igem.org/wiki/images/8/8a/T--Toronto--2017_x2_light_on.svg" alt="data" width="300px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_x2_light_off.svg" alt="data" width="300px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/f/ff/T--Toronto--2017_theta_light_on.svg" alt="data" width="300px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/7/7a/T--Toronto--2017_theta_light_off.svg" alt="data" width="300px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/d/d3/T--Toronto--2017_lambda_light_on.svg" alt="data" width="300px"></div>
+							<div class="image"><img src="http://2017.igem.org/wiki/images/3/39/T--Toronto--2017_lambda_light_off.svg" alt="data" width="300px"></div>
+						<figcaption>Figure 2 Legend:<br>
+							x_2 = cI Protein <br>
+							\alpha = maximum transcription rate <br>
+							\gamma = degradation rate <br>
+							\lambda = anti-CRISPR <br>
+							\theta = sgRNA</figcaption>
 					</div>
 				</figure>
 			</div>
@@ -66,18 +90,18 @@
 
 			<div id="subsection-Plots" class="subsection">
 				<h2 class="text-yellow">R plots</h2>
-				<p><a href="https://github.com/igemuoftATG/drylab-matlab">GitHub repository</a> contains all our code for the following R analysis, as well as for generating the above simulations. </p>
+				<p>Our <a href="https://github.com/igemuoftATG/drylab-matlab">GitHub repository</a> contains all our code for the following R plots and R analysis, as well as for generating the above simulations. </p>
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/6/66/T--Toronto--2017_mcherr_reg_log.png" alt="data"></div>
 					</div>
-					<figcaption>Figure 2.a: Log Linear transformation of RFU/OD600 vs Time, Regression Line (red) fitted to data</figcaption>
+					<figcaption>Figure 3.a: Log Linear transformation of RFU/OD600 vs Time, Regression Line (red) fitted to data</figcaption>
 				</figure>
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/4/42/T--Toronto--2017_mcherry-reg-norm.png" alt="data"></div>
 					</div>
-					<figcaption>Figure 2.b: RFU/OD600 vs Time with Transformed Regression Line (red)</figcaption>
+					<figcaption>Figure 3.b: RFU/OD600 vs Time with Transformed Regression Line (red)</figcaption>
 				</figure>
 			</div>
 

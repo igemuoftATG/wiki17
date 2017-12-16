@@ -28,7 +28,8 @@
 			<!-- subsection 1 -->
 			<div id="subsection-Introduction" class="subsection">
 				<h2 class="text-yellow">MathWorks Simulations</h2>
-        <p>Using the previously derived expressions from our ODEs, we use the Mathworks Simulink package to derive solutions to our system and model our system for a range of parameters. </p>
+        <p>Using the previously derived expressions from our ODEs, we use the Mathworks Simulink package to derive solutions to our system and model our system for a range of parameters.
+				We simulated our equations for cI Protein, sgRNA and anti-CRISPR, shown in Figure 1. </p>
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_CI.png" alt="data" width="200px"></div>
@@ -36,9 +37,9 @@
 						<div class="image"><img src="http://2017.igem.org/wiki/images/5/54/T--Toronto--2017_anti_crispr.png" alt="data" width="200px"></div>
 				    <div class="image"><img src="http://2017.igem.org/wiki/images/2/23/T--Toronto--2017_ci_anti.png" alt="data" width="200px"></div>
 						<figcaption>Figure 1:<br>
-							A)<b>cI Protein Simulation</b> Lower cI protein concentrations in the dark (LacILOV is bound, Eq. 1)<br>
-							B)<b>sgRNA Simulation</b> Lower sgRNA protein concentrations in the dark (LacILOV is bound, Eq. 2)<br>
-							C)<b>anti-CRISPR Simulation</b> Anti-CRISPR expression inversely proportional to LacILOV activation, Eq. 3)<br>
+							A) <b>cI Protein Simulation</b> Lower cI protein concentrations in the dark (LacILOV is bound, Eq. 1)<br>
+							B) <b>sgRNA Simulation</b> Lower sgRNA protein concentrations in the dark (LacILOV is bound, Eq. 2)<br>
+							C) <b>anti-CRISPR Simulation</b> Anti-CRISPR expression inversely proportional to LacILOV activation, Eq. 3)<br>
 							D) <b>anti-CRISPR vs cI Protein</b>Anti-CRISPR protein concentration increases in lower cI concentration</figcaption>
 					</div>
 				</figure>
@@ -82,15 +83,8 @@
 
 			<div id="subsection-Analysis" class="subsection">
 				<h2 class="text-yellow">R Analysis</h2>
+				<p>Analyzed in R for this model, and got the following values with adjusted R-squared and p-value: </p>
 				<blockquote class="code">
-				  <pre>R Analysis:
-Call:
-lm(formula = log(x) ~ c(time, time, time))
-
-Residuals:
-     Min       1Q   Median       3Q      Max
--0.58853 -0.15536  0.01303  0.19867  0.44055
-
 Coefficients:
                     Estimate Std. Error t value Pr(>|t|)
 (Intercept)          2.87199    0.21773   13.19 1.47e-15 ***
@@ -104,11 +98,10 @@ F-statistic: 178.7 on 1 and 37 DF,  p-value: 9.741e-16
 </pre>
 				</blockquote>
 				<p>Intercept represents the equilibrium value of LacILov, our intercept:</p>
-				<figure>
-				  <div class="figures">
-				    <div class="image"><img src="http://2017.igem.org/wiki/images/f/f4/T--Toronto--2017_intercept.png" alt="data"></div>
-					</div>
-				</figure>
+				\begin{eqnarray}
+				2.879199 \pm (0.21773)(2.026) \\
+				2.879199 \pm 0.44112098
+				\end{eqnarray}
 			</div>
 		</div>
 

@@ -31,10 +31,10 @@
         <p>Using the previously derived expressions from our ODEs, we use the Mathworks Simulink package to derive solutions to our system for a range of parameters. </p>
 				<figure>
 					<div class="figures">
-						<div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_CI.png" alt="data"></div>
-				    <div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_sgRNA.png" alt="data"></div>
-						<div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_anti_crispr.png" alt="data"></div>
-				    <div class="image"><img src="http://2017.igem.org/File:T--Toronto--2017_ci_anti.png" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_CI.png" alt="data"></div>
+				    <div class="image"><img src="http://2017.igem.org/wiki/images/c/c3/T--Toronto--2017_sgRNA.png" alt="data"></div>
+						<div class="image"><img src="http://2017.igem.org/wiki/images/5/54/T--Toronto--2017_anti_crispr.png" alt="data"></div>
+				    <div class="image"><img src="http://2017.igem.org/wiki/images/2/23/T--Toronto--2017_ci_anti.png" alt="data"></div>
 					</div>
 				</figure>
 			</div>
@@ -44,23 +44,23 @@
         <p>Solving: </p>
 				\begin{eqnarray}
 				\frac{x_2}{dt} = \alpha - \gamma x_2 \\
-				\frac{x_2}{dt} + \gamma x_2 = = \alpha
+				\frac{x_2}{dt} + \gamma x_2 = \alpha
 				\end{eqnarray}
 				<p>Integrating Factor: </p>
 				\begin{eqnarray}
-				e^(\int \gamma dt) = e^(\gamma t)
+				e^{\int \gamma dt} = e^{\gamma t}
 				\end{eqnarray}
 				<p>Multiplying both sides by our integrating factor: </p>
 				\begin{eqnarray}
-				(\frac{x_2}{dt} + \gamma x_2)e^(\gamma t) =  \alpha e^(\gamma t) \\
-				\int (\frac{x_2}{dt} + \gamma x_2)e^(\gamma t) =  \int \alpha e^(\gamma t) \\
-				x_2 = \frac{\alpha}{\gamma} + ce^(-\gamma t)
+				(\frac{x_2}{dt} + \gamma x_2)e^{\gamma t} =  \alpha e^{\gamma t}\\
+				\int (\frac{x_2}{dt} + \gamma x_2)e^{\gamma t} =  \int \alpha e^{\gamma t} \\
+				x_2 = \frac{\alpha}{\gamma} + ce^{-\gamma t}
 				\end{eqnarray}
 			</div>
 
 			<div id="subsection-Plots" class="subsection">
 				<h2 class="text-yellow">R plots</h2>
-				Visit our <a href="https://github.com/igemuoftATG/drylab-matlab">GitHub repository</a> for our code.
+				<p>Visit our <a href="https://github.com/igemuoftATG/drylab-matlab">GitHub repository</a> for our code.</p>
 				<figure>
 					<div class="figures">
 						<div class="image"><img src="http://2017.igem.org/wiki/images/6/66/T--Toronto--2017_mcherr_reg_log.png" alt="data"></div>

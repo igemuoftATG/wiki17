@@ -107,3 +107,56 @@
 #team {
 	background-image: url("http://2017.igem.org/wiki/images/c/c8/T--Toronto--2017_team.jpg");
 }
+
+#fahim {
+	background-image: url("http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_fahim.gif");
+}
+
+#wiki-header {
+}
+
+.wiki-force {
+	animation: use-force 2s 0.5s cubic-bezier(0,1.02,.84,1.1) forwards;
+}
+
+@keyframes use-force {
+	40% {
+		transform: none;
+	}
+	44% {
+		transform: translateX(-1px);
+	}
+	48% {
+		transform: translateX(1px);
+	}
+	52% {
+		transform: translateX(-3px);
+	}
+	56% {
+		transform: translateX(3px);
+	}
+	60% {
+		transform: translateX(0px);
+	}
+	64% {
+		transform: translateX(10px);
+	}
+	68% {
+		transform: translateX(-3px);
+	}
+	72% {
+		transform: translateX(3px);
+	}
+	82% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(-30vw);
+	}
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+	animation-play-state: paused !important;
+}

@@ -1,264 +1,264 @@
 // Autocomplete ================================================================
 
 function start_autocomplete() {
-  pages = [
-    "Analysis",
-    "Attributions",
-    "Basic Part",
-    "Collaborations",
-    "Demonstrate",
-    "Description",
-    "Design",
-    "Drylab",
-    "Engagement",
-    "Experiments",
-    "Genetic Code Workshop",
-    "Guide",
-    "Gold Integrated",
-    "HP Silver",
-    "Hardware",
-    "Home",
-    "Human Practices",
-    "Icon-a-thon",
-    "Improve",
-    "InterLab",
-    "Interviews",
-    "Model",
-    "Notebook",
-    "ODE",
-    "Parts",
-    "Podcast",
-    "Protein Modelling",
-    "Results",
-    "Safety",
-    "Team",
-    "Wetlab"
-  ]
+	pages = [
+		"Analysis",
+		"Attributions",
+		"Basic Part",
+		"Collaborations",
+		"Demonstrate",
+		"Description",
+		"Design",
+		"Drylab",
+		"Engagement",
+		"Experiments",
+		"Genetic Code Workshop",
+		"Guide",
+		"Gold Integrated",
+		"HP Silver",
+		"Hardware",
+		"Home",
+		"Human Practices",
+		"Icon-a-thon",
+		"Improve",
+		"InterLab",
+		"Interviews",
+		"Model",
+		"Notebook",
+		"ODE",
+		"Parts",
+		"Podcast",
+		"Protein Modelling",
+		"Results",
+		"Safety",
+		"Team",
+		"Wetlab"
+	]
 
-  link = [
-    "http://2017.igem.org/Team:Toronto/Analysis",
-    "http://2017.igem.org/Team:Toronto/Attributions",
-    "http://2017.igem.org/Team:Toronto/Basic_Part",
-    "http://2017.igem.org/Team:Toronto/Collaborations",
-    "http://2017.igem.org/Team:Toronto/Demonstrate",
-    "http://2017.igem.org/Team:Toronto/Description",
-    "http://2017.igem.org/Team:Toronto/Design",
-    "http://2017.igem.org/Team:Toronto/Drylab",
-    "http://2017.igem.org/Team:Toronto/Engagement",
-    "http://2017.igem.org/Team:Toronto/Experiments",
-    "http://2017.igem.org/Team:Toronto/Genetic_Code_Workshop",
-    "http://2017.igem.org/Team:Toronto/Guide",
-    "http://2017.igem.org/Team:Toronto/HP/Gold_Integrated",
-    "http://2017.igem.org/Team:Toronto/HP/Silver",
-    "http://2017.igem.org/Team:Toronto/Hardware",
-    "http://2017.igem.org/Team:Toronto",
-    "http://2017.igem.org/Team:Toronto/Human_Practices",
-    "http://2017.igem.org/Team:Toronto/Icon-a-thon",
-    "http://2017.igem.org/Team:Toronto/Improve",
-    "http://2017.igem.org/Team:Toronto/InterLab",
-    "http://2017.igem.org/Team:Toronto/Interviews",
-    "http://2017.igem.org/Team:Toronto/Model",
-    "http://2017.igem.org/Team:Toronto/Notebook",
-    "http://2017.igem.org/Team:Toronto/ODE",
-    "http://2017.igem.org/Team:Toronto/Parts",
-    "http://2017.igem.org/Team:Toronto/Podcast",
-    "http://2017.igem.org/Team:Toronto/Protein-Modelling",
-    "http://2017.igem.org/Team:Toronto/Results",
-    "http://2017.igem.org/Team:Toronto/Safety",
-    "http://2017.igem.org/Team:Toronto/Team",
-    "http://2017.igem.org/Team:Toronto/Wetlab"
-  ]
+	link = [
+		"http://2017.igem.org/Team:Toronto/Analysis",
+		"http://2017.igem.org/Team:Toronto/Attributions",
+		"http://2017.igem.org/Team:Toronto/Basic_Part",
+		"http://2017.igem.org/Team:Toronto/Collaborations",
+		"http://2017.igem.org/Team:Toronto/Demonstrate",
+		"http://2017.igem.org/Team:Toronto/Description",
+		"http://2017.igem.org/Team:Toronto/Design",
+		"http://2017.igem.org/Team:Toronto/Drylab",
+		"http://2017.igem.org/Team:Toronto/Engagement",
+		"http://2017.igem.org/Team:Toronto/Experiments",
+		"http://2017.igem.org/Team:Toronto/Genetic_Code_Workshop",
+		"http://2017.igem.org/Team:Toronto/Guide",
+		"http://2017.igem.org/Team:Toronto/HP/Gold_Integrated",
+		"http://2017.igem.org/Team:Toronto/HP/Silver",
+		"http://2017.igem.org/Team:Toronto/Hardware",
+		"http://2017.igem.org/Team:Toronto",
+		"http://2017.igem.org/Team:Toronto/Human_Practices",
+		"http://2017.igem.org/Team:Toronto/Icon-a-thon",
+		"http://2017.igem.org/Team:Toronto/Improve",
+		"http://2017.igem.org/Team:Toronto/InterLab",
+		"http://2017.igem.org/Team:Toronto/Interviews",
+		"http://2017.igem.org/Team:Toronto/Model",
+		"http://2017.igem.org/Team:Toronto/Notebook",
+		"http://2017.igem.org/Team:Toronto/ODE",
+		"http://2017.igem.org/Team:Toronto/Parts",
+		"http://2017.igem.org/Team:Toronto/Podcast",
+		"http://2017.igem.org/Team:Toronto/Protein-Modelling",
+		"http://2017.igem.org/Team:Toronto/Results",
+		"http://2017.igem.org/Team:Toronto/Safety",
+		"http://2017.igem.org/Team:Toronto/Team",
+		"http://2017.igem.org/Team:Toronto/Wetlab"
+	]
 
-    function autocomplete() {
-      // console.log('Autocomplete has loaded');
-      var input = document.getElementById('autocomplete');
-      var suggest = document.getElementById("auto-suggest");
-      var search = document.getElementById("search");
-      var navbarSearch = document.getElementById("navbarSearch");
+	function autocomplete() {
+		// console.log('Autocomplete has loaded');
+		var input = document.getElementById('autocomplete');
+		var suggest = document.getElementById("auto-suggest");
+		var search = document.getElementById("search");
+		var navbarSearch = document.getElementById("navbarSearch");
 
-      // Opens up the input bar
-      input.addEventListener('focus', function() {
-        if (input.classList.contains('no-collapse')) {
+		// Opens up the input bar
+		input.addEventListener('focus', function() {
+			if (input.classList.contains('no-collapse')) {
 
-        } else {
-          input.style.transition = '0.5s';
-          input.style.width = '300px';
-          input.style.paddingLeft = '30px';
-        }
-      });
+			} else {
+				input.style.transition = '0.5s';
+				input.style.width = '300px';
+				input.style.paddingLeft = '30px';
+			}
+		});
 
-      // Closes input and auto-suggest at click event
-      input.addEventListener('blur', function() {
-        input.value = '';
-        setTimeout(function() {
-        suggest.innerHTML = '';
-        if (input.classList.contains('no-collapse')) {
+		// Closes input and auto-suggest at click event
+		input.addEventListener('blur', function() {
+			input.value = '';
+			setTimeout(function() {
+				suggest.innerHTML = '';
+				if (input.classList.contains('no-collapse')) {
 
-        } else {
-          input.style.width = '35px';
-          input.style.padding = '5px 10px';
-        }
-      }, 750);
-      });
+				} else {
+					input.style.width = '35px';
+					input.style.padding = '5px 10px';
+				}
+			}, 750);
+		});
 
-      // Add keyboard scrolling functionality
+		// Add keyboard scrolling functionality
 
-      input.addEventListener("keyup", function() {
+		input.addEventListener("keyup", function() {
 
-        matches = [];
-        pages.forEach(function(elem, i) {
-          if (elem.toLowerCase().includes(input.value.toLowerCase()) && input.value != '') {
-            var li = document.createElement('li');
-            var a = document.createElement('a');
-            var text = document.createTextNode(elem.toUpperCase())
+			matches = [];
+			pages.forEach(function(elem, i) {
+				if (elem.toLowerCase().includes(input.value.toLowerCase()) && input.value != '') {
+					var li = document.createElement('li');
+					var a = document.createElement('a');
+					var text = document.createTextNode(elem.toUpperCase())
 
-            a.setAttribute('href', link[i])
-            a.appendChild(text)
-            li.appendChild(a)
+					a.setAttribute('href', link[i])
+					a.appendChild(text)
+					li.appendChild(a)
 
-            matches.push(li);
-          }
-        });
-        suggest.innerHTML='';
-        if (matches.length == 0) {
-          search.style.display = 'none';
-        } else {
-          search.style.display = 'block';
-          matches.forEach(function(elem) {
-            suggest.appendChild(elem)
-          });
-        }
-      });
-    }
+					matches.push(li);
+				}
+			});
+			suggest.innerHTML = '';
+			if (matches.length == 0) {
+				search.style.display = 'none';
+			} else {
+				search.style.display = 'block';
+				matches.forEach(function(elem) {
+					suggest.appendChild(elem)
+				});
+			}
+		});
+	}
 
-    autocomplete();
+	autocomplete();
 }
 
 start_autocomplete();
 
 // Set and unset the active class
 function setActive(elem) {
-  var sideNav = document.getElementsByClassName('sidebar-minibox');
-  // console.log(sideNav);
-  var ul = sideNav[0].getElementsByTagName('ul');
-  console.log(ul);
-  var li = ul[0].getElementsByTagName('li');
+	var sideNav = document.getElementsByClassName('sidebar-minibox');
+	// console.log(sideNav);
+	var ul = sideNav[0].getElementsByTagName('ul');
+	console.log(ul);
+	var li = ul[0].getElementsByTagName('li');
 
-  for (i=0; i<li.length; i++) {
-    li[i].classList.remove('active');
-  }
+	for (i = 0; i < li.length; i++) {
+		li[i].classList.remove('active');
+	}
 
-  elem.classList.add('active');
+	elem.classList.add('active');
 }
 
 // Build the list items of the sideNav
 function build(item, id) {
-  var li = document.createElement('li');
-  var anchor = document.createElement('a');
-  var text = document.createTextNode(item.innerText);
+	var li = document.createElement('li');
+	var anchor = document.createElement('a');
+	var text = document.createTextNode(item.innerText);
 
-  anchor.appendChild(text)
-  anchor.setAttribute('href', '#'+id);
-  li.appendChild(anchor);
-  li.setAttribute('onclick', 'setActive(this)');
+	anchor.appendChild(text)
+	anchor.setAttribute('href', '#' + id);
+	li.appendChild(anchor);
+	li.setAttribute('onclick', 'setActive(this)');
 
-  return li;
+	return li;
 }
 
 function scrollWatch(scrollHeights, sectionContent) {
-  var header = document.getElementsByClassName('header')[0];
-  var sideNav = document.getElementsByClassName('sidebar-minibox')[0];
-  var content = document.getElementsByClassName('content-page')[0];
-  var footer = document.getElementsByClassName('footer')[0];
-  var sideNavItems = sideNav.getElementsByTagName('li');
+	var header = document.getElementsByClassName('header')[0];
+	var sideNav = document.getElementsByClassName('sidebar-minibox')[0];
+	var content = document.getElementsByClassName('content-page')[0];
+	var footer = document.getElementsByClassName('footer')[0];
+	var sideNavItems = sideNav.getElementsByTagName('li');
 
-  window.addEventListener('scroll', function() {
-    var mainNavScrollHeight = header.scrollHeight;
-    var windowPageYOffset = window.pageYOffset;
-    var windowInnerHeight = window.innerHeight;
-    var documentBodyHeight = document.body.offsetHeight;
-    // var footerScrollHeight = footer.scrollHeight;
-    var footerScrollHeight = 0;
-    var contentScroll = windowPageYOffset + mainNavScrollHeight;
-    var bottom = documentBodyHeight - windowInnerHeight;
+	window.addEventListener('scroll', function() {
+		var mainNavScrollHeight = header.scrollHeight;
+		var windowPageYOffset = window.pageYOffset;
+		var windowInnerHeight = window.innerHeight;
+		var documentBodyHeight = document.body.offsetHeight;
+		// var footerScrollHeight = footer.scrollHeight;
+		var footerScrollHeight = 0;
+		var contentScroll = windowPageYOffset + mainNavScrollHeight;
+		var bottom = documentBodyHeight - windowInnerHeight;
 
-    // console.log(contentScroll);
+		// console.log(contentScroll);
 
-    var currentView = scrollHeights.filter(function(arr) {
-      // return arr < contentScroll;
-      return arr < windowPageYOffset;
-    });
-    var currentViewLength = currentView.length;
+		var currentView = scrollHeights.filter(function(arr) {
+			// return arr < contentScroll;
+			return arr < windowPageYOffset;
+		});
+		var currentViewLength = currentView.length;
 
-    // Make sure that the seek class is removed from the top element of the
-    // sideNav when the top of the page is scrolled to
-    if (contentScroll > windowPageYOffset) {
-      sideNavItems[0].classList.remove('active');
-    }
+		// Make sure that the seek class is removed from the top element of the
+		// sideNav when the top of the page is scrolled to
+		if (contentScroll > windowPageYOffset) {
+			sideNavItems[0].classList.remove('active');
+		}
 
-    // Add the active class to the list button in sideNav when the corresponding
-    // section is in view. Remove this class when it is not.
-    if (currentViewLength > 0) {
-      var index = currentViewLength - 1;
-      for (i=0; i<scrollHeights.length; i++) {
-        sideNavItems[i].classList.remove('active');
-      }
-      sideNavItems[index].classList.add('active');
-    } else {
+		// Add the active class to the list button in sideNav when the corresponding
+		// section is in view. Remove this class when it is not.
+		if (currentViewLength > 0) {
+			var index = currentViewLength - 1;
+			for (i = 0; i < scrollHeights.length; i++) {
+				sideNavItems[i].classList.remove('active');
+			}
+			sideNavItems[index].classList.add('active');
+		} else {
 
-    }
+		}
 
-    // Fix the sideNav to the top of the page when the mainNav is scrolled past
-    // Unfix otherwise
-    if (windowPageYOffset > mainNavScrollHeight) {
-      sideNav.classList.add('sideNavfixed');
-      content.classList.add('contentScroll');
-    } else {
-      sideNav.classList.remove('sideNavfixed');
-      content.classList.remove('contentScroll');
-    }
-  });
+		// Fix the sideNav to the top of the page when the mainNav is scrolled past
+		// Unfix otherwise
+		if (windowPageYOffset > mainNavScrollHeight) {
+			sideNav.classList.add('sideNavfixed');
+			content.classList.add('contentScroll');
+		} else {
+			sideNav.classList.remove('sideNavfixed');
+			content.classList.remove('contentScroll');
+		}
+	});
 }
 
 function buildNav() {
-  var sections = document.getElementsByClassName('subsection');
-  var numberOfSections = sections.length;
-  var sideNav = document.getElementsByClassName('sidebar-minibox')[0];
-  var titleList = [];
-  var idList = [];
-  var scrollHeights = [];
-  // console.log(sideNav.getElementsByTagName('ul')[0]);
+	var sections = document.getElementsByClassName('subsection');
+	var numberOfSections = sections.length;
+	var sideNav = document.getElementsByClassName('sidebar-minibox')[0];
+	var titleList = [];
+	var idList = [];
+	var scrollHeights = [];
+	// console.log(sideNav.getElementsByTagName('ul')[0]);
 
-  // Make a list of titles and scroll heights
-  for (i=0; i<numberOfSections; i++) {
-    titleList.push(sections[i].getElementsByTagName('h2')[0]);
-    idList.push(sections[i].id);
-    scrollHeights.push(sections[i].offsetTop - 300);
-  }
-  console.log(scrollHeights);
+	// Make a list of titles and scroll heights
+	for (i = 0; i < numberOfSections; i++) {
+		titleList.push(sections[i].getElementsByTagName('h2')[0]);
+		idList.push(sections[i].id);
+		scrollHeights.push(sections[i].offsetTop - 300);
+	}
+	console.log(scrollHeights);
 
-  // Build the sideNav lists
-  for (sec=0; sec<numberOfSections; sec++) {
-    listItem = build(titleList[sec], idList[sec])
-    sideNav.getElementsByTagName('ul')[0].appendChild(listItem);
-  }
+	// Build the sideNav lists
+	for (sec = 0; sec < numberOfSections; sec++) {
+		listItem = build(titleList[sec], idList[sec])
+		sideNav.getElementsByTagName('ul')[0].appendChild(listItem);
+	}
 
-  scrollWatch(scrollHeights, sections);
+	scrollWatch(scrollHeights, sections);
 
 }
 
 function sidebarFixed() {
 	var sidebarOffset = $("#sidebar-box").offset().top - 120;
 	$(window).scroll(function() {
-			var scroll = $(window).scrollTop();
-			 //console.log(scroll);
-			if (scroll >= sidebarOffset) {
-					//console.log('a');
-					$("#sidebar-box").addClass("fixed");
-			} else {
-					//console.log('a');
-					$("#sidebar-box").removeClass("fixed");
-			}
+		var scroll = $(window).scrollTop();
+		//console.log(scroll);
+		if (scroll >= sidebarOffset) {
+			//console.log('a');
+			$("#sidebar-box").addClass("fixed");
+		} else {
+			//console.log('a');
+			$("#sidebar-box").removeClass("fixed");
+		}
 	});
 }
 
@@ -269,33 +269,33 @@ buildNav();
 
 // 3dMOLjs initialization function
 
-function insertStructure(container, structureUrl, settingsFunction){
-  let element = $(container);
-  let config = { backgroundColor: '#0d0d0d' };
-  let viewer = $3Dmol.createViewer( element, config );
-  let pdbUri = structureUrl;
-  jQuery.ajax( pdbUri, {
-    success: function(data) {
-      let v = viewer;
-      v.addModel( data, "pdb" );
-      settingsFunction(v);
-      v.zoomTo();
-      v.zoom(1.2, 1000);
-      v.render();
-    },
-    error: function(hdr, status, err) {
-      console.log( "Failed to load PDB " + pdbUri + ": " + err );
-    }
-  });
+function insertStructure(container, structureUrl, settingsFunction) {
+	let element = $(container);
+	let config = { backgroundColor: '#0d0d0d' };
+	let viewer = $3Dmol.createViewer(element, config);
+	let pdbUri = structureUrl;
+	jQuery.ajax(pdbUri, {
+		success: function(data) {
+			let v = viewer;
+			v.addModel(data, "pdb");
+			settingsFunction(v);
+			v.zoomTo();
+			v.zoom(1.2, 1000);
+			v.render();
+		},
+		error: function(hdr, status, err) {
+			console.log("Failed to load PDB " + pdbUri + ": " + err);
+		}
+	});
 }
 
 var settingsList = {
-  settings1: function(v){
-    v.setStyle({}, {cartoon: {color: 'spectrum'}})
-  },
-  settings2: function(v){
-    v.setStyle({}, {cartoon: {color: 'spectrum'}})
-  },
+	settings1: function(v) {
+		v.setStyle({}, { cartoon: { color: 'spectrum' } })
+	},
+	settings2: function(v) {
+		v.setStyle({}, { cartoon: { color: 'spectrum' } })
+	},
 }
 
 insertStructure("#container-01", 'http://2017.igem.org/wiki/images/5/51/T--Toronto--2017_final_lacilov.txt', settingsList.settings1);
@@ -304,14 +304,14 @@ insertStructure("#container-02", 'http://2017.igem.org/wiki/images/9/99/T--Toron
 
 
 // tabs
-var opentabs = function(event, tabId){
+var opentabs = function(event, tabId) {
 	var i, tabs, tab_items;
 	tabs = document.getElementsByClassName("tabs");
-	for (i=0; i<tabs.length; i++){
+	for (i = 0; i < tabs.length; i++) {
 		tabs[i].style.display = "none";
 	}
 	tab_items = document.getElementsByClassName("tab-item");
-	for (i=0; i<tab_items.length; i++){
+	for (i = 0; i < tab_items.length; i++) {
 		console.log(tab_items[i].className);
 		tab_items[i].className = tab_items[i].className.replace(" active", "");
 	}
@@ -322,15 +322,15 @@ var opentabs = function(event, tabId){
 
 // anchor link offsetTop
 function offsetAnchor() {
-  if (location.hash.length !== 0) {
-    window.scrollTo(window.scrollX, window.scrollY - 100);
-  }
+	if (location.hash.length !== 0) {
+		window.scrollTo(window.scrollX, window.scrollY - 100);
+	}
 }
 
 $(document).on('click', 'a[href^="#"]', function(event) {
-  window.setTimeout(function() {
-    offsetAnchor();
-  }, 0);
+	window.setTimeout(function() {
+		offsetAnchor();
+	}, 0);
 });
 
 window.setTimeout(offsetAnchor, 0);
@@ -352,143 +352,143 @@ window.setTimeout(offsetAnchor, 0);
 
 // team page hover effects
 
+window.addEventListener("load", hovers1, false);
+window.addEventListener("load", hovers2, false);
+
+
 //  kat hover
-$(function() {
-  $('#kat').mouseenter(function() {
-    // on mousein, hover effect gifs
+function hovers1() {
+	$('#kat').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#kat').css('background-image', 'url(http://2017.igem.org/wiki/images/0/03/T--Toronto--2017_kat-hover.gif)');
-    $('#umar').css('background-image', 'url(http://2017.igem.org/wiki/images/6/6b/T--Toronto--2017_kat-hover-umar.gif)');
-  });
-  $('#kat').mouseleave(function() {
-    // on mouseout, originals gifs reset
+		$('#umar').css('background-image', 'url(http://2017.igem.org/wiki/images/6/6b/T--Toronto--2017_kat-hover-umar.gif)');
+	});
+	$('#kat').mouseleave(function() {
+		// on mouseout, originals gifs reset
 		$('#kat').css('background-image', 'url(http://2017.igem.org/wiki/images/7/72/T--Toronto--2017_kat.gif)');
-    $('#umar').css('background-image', 'url(http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_umar.gif)');
-  });
-});
-
-// umar hover
-$(function() {
-  $('#umar').mouseenter(function() {
-    // on mousein, hover effect gifs
-		$('#umar').css('background-image', 'url(http://2017.igem.org/wiki/images/4/45/T--Toronto--2017_umar-hover.gif)');
-    $('#kat').css('background-image', 'url(http://2017.igem.org/wiki/images/0/0f/T--Toronto--2017_umar-hover-kat.gif)');
-  });
-  $('#umar').mouseleave(function() {
-    // on mouseout, originals gifs reset
 		$('#umar').css('background-image', 'url(http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_umar.gif)');
-    $('#kat').css('background-image', 'url(http://2017.igem.org/wiki/images/7/72/T--Toronto--2017_kat.gif)');
-  });
-});
+	});
 
-// carla hover
-$(function() {
-  $('#carla').mouseenter(function() {
-    // on mousein, hover effect gifs
+	// umar hover
+	$('#umar').mouseenter(function() {
+		// on mousein, hover effect gifs
+		$('#umar').css('background-image', 'url(http://2017.igem.org/wiki/images/4/45/T--Toronto--2017_umar-hover.gif)');
+		$('#kat').css('background-image', 'url(http://2017.igem.org/wiki/images/0/0f/T--Toronto--2017_umar-hover-kat.gif)');
+	});
+	$('#umar').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#umar').css('background-image', 'url(http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_umar.gif)');
+		$('#kat').css('background-image', 'url(http://2017.igem.org/wiki/images/7/72/T--Toronto--2017_kat.gif)');
+	});
+
+	// carla hover
+	$('#carla').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#carla').css('background-image', 'url(http://2017.igem.org/wiki/images/9/95/T--Toronto--2017_carla-hover.gif)');
-    $('#ahmed').css('background-image', 'url(http://2017.igem.org/wiki/images/7/75/T--Toronto--2017_carla-hover-ahmed.gif)');
-  });
-  $('#carla').mouseleave(function() {
-    // on mouseout, originals gifs reset
+		$('#ahmed').css('background-image', 'url(http://2017.igem.org/wiki/images/7/75/T--Toronto--2017_carla-hover-ahmed.gif)');
+	});
+	$('#carla').mouseleave(function() {
+		// on mouseout, originals gifs reset
 		$('#carla').css('background-image', 'url(http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_carla.gif)');
-    $('#ahmed').css('background-image', 'url(http://2017.igem.org/wiki/images/7/7f/T--Toronto--2017_ahmed.gif)');
-  });
-});
-
-// ahmed hover
-$(function() {
-  $('#ahmed').mouseenter(function() {
-    // on mousein, hover effect gifs
-		$('#ahmed').css('background-image', 'url(http://2017.igem.org/wiki/images/0/08/T--Toronto--2017_ahmed-hover.gif)');
-    $('#carla').css('background-image', 'url(http://2017.igem.org/wiki/images/e/e9/T--Toronto--2017_ahmed-hover-carla.gif)');
-  });
-  $('#ahmed').mouseleave(function() {
-    // on mouseout, originals gifs reset
 		$('#ahmed').css('background-image', 'url(http://2017.igem.org/wiki/images/7/7f/T--Toronto--2017_ahmed.gif)');
-    $('#carla').css('background-image', 'url(http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_carla.gif)');
-  });
-});
+	});
 
-// mark hover
-$(function() {
-  $('#mark').mouseenter(function() {
-    // on mousein, hover effect gifs
+	// ahmed hover
+	$('#ahmed').mouseenter(function() {
+		// on mousein, hover effect gifs
+		$('#ahmed').css('background-image', 'url(http://2017.igem.org/wiki/images/0/08/T--Toronto--2017_ahmed-hover.gif)');
+		$('#carla').css('background-image', 'url(http://2017.igem.org/wiki/images/e/e9/T--Toronto--2017_ahmed-hover-carla.gif)');
+	});
+	$('#ahmed').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#ahmed').css('background-image', 'url(http://2017.igem.org/wiki/images/7/7f/T--Toronto--2017_ahmed.gif)');
+		$('#carla').css('background-image', 'url(http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_carla.gif)');
+	});
+
+	// mark hover
+	$('#mark').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/a/aa/T--Toronto--2017_amy-hover.gif)');
 		$('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/6/62/T--Toronto--2017_mark-hover.gif)');
-    $('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/d/da/T--Toronto--2017_vic-hover.gif)');
-  });
-  $('#mark').mouseleave(function() {
-    // on mouseout, originals gifs reset
-    $('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/d/d5/T--Toronto--2017_amy.jpg)');
+		$('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/d/da/T--Toronto--2017_vic-hover.gif)');
+	});
+	$('#mark').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/d/d5/T--Toronto--2017_amy.jpg)');
 		$('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/1/17/T--Toronto--2017_mark.gif)');
-    $('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/c/cc/T--Toronto--2017_vic.gif)');
-  });
-});
+		$('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/c/cc/T--Toronto--2017_vic.gif)');
+	});
 
-// victoria hover
-$(function() {
-  $('#victoria').mouseenter(function() {
-    // on mousein, hover effect gifs
+	// victoria hover
+	$('#victoria').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/a/aa/T--Toronto--2017_amy-hover.gif)');
 		$('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/d/da/T--Toronto--2017_vic-hover.gif)');
-    $('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/6/62/T--Toronto--2017_mark-hover.gif)');
-  });
-  $('#victoria').mouseleave(function() {
-    // on mouseout, originals gifs reset
-    $('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/d/d5/T--Toronto--2017_amy.jpg)');
+		$('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/6/62/T--Toronto--2017_mark-hover.gif)');
+	});
+	$('#victoria').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/d/d5/T--Toronto--2017_amy.jpg)');
 		$('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/c/cc/T--Toronto--2017_vic.gif)');
-    $('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/1/17/T--Toronto--2017_mark.gif)');
-  });
-});
+		$('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/1/17/T--Toronto--2017_mark.gif)');
+	});
 
-// amy hover
-$(function() {
-  $('#amy').mouseenter(function() {
-    // on mousein, hover effect gifs
+	// amy hover
+	$('#amy').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/a/aa/T--Toronto--2017_amy-hover.gif)');
 		$('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/d/da/T--Toronto--2017_vic-hover.gif)');
-    $('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/6/62/T--Toronto--2017_mark-hover.gif)');
-  });
-  $('#amy').mouseleave(function() {
-    // on mouseout, originals gifs reset
-    $('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/d/d5/T--Toronto--2017_amy.jpg)');
+		$('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/6/62/T--Toronto--2017_mark-hover.gif)');
+	});
+	$('#amy').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#amy').css('background-image', 'url(http://2017.igem.org/wiki/images/d/d5/T--Toronto--2017_amy.jpg)');
 		$('#victoria').css('background-image', 'url(http://2017.igem.org/wiki/images/c/cc/T--Toronto--2017_vic.gif)');
-    $('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/1/17/T--Toronto--2017_mark.gif)');
-  });
-});
+		$('#mark').css('background-image', 'url(http://2017.igem.org/wiki/images/1/17/T--Toronto--2017_mark.gif)');
+	});
 
-// celine hover
-$(function() {
-  $('#celine').mouseenter(function() {
-    // on mousein, hover effect gifs
+	// celine hover
+	$('#celine').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#celine').css('background-image', 'url(http://2017.igem.org/wiki/images/9/99/T--Toronto--2017_celine-hover.gif)');
-  });
-  $('#celine').mouseleave(function() {
-    // on mouseout, originals gifs reset
-    $('#celine').css('background-image', 'url(http://2017.igem.org/wiki/images/f/f7/T--Toronto--2017_celine.gif)');
-  });
-});
+	});
+	$('#celine').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#celine').css('background-image', 'url(http://2017.igem.org/wiki/images/f/f7/T--Toronto--2017_celine.gif)');
+	});
 
-// adele hover
-$(function() {
-  $('#adele').mouseenter(function() {
-    // on mousein, hover effect gifs
+	// adele hover
+	$('#adele').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#adele').css('background-image', 'url(http://2017.igem.org/wiki/images/7/79/T--Toronto--2017_adele-hover.jpg)');
-  });
-  $('#adele').mouseleave(function() {
-    // on mouseout, originals gifs reset
-    $('#adele').css('background-image', 'url(http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_adele.jpg)');
-  });
-});
+	});
+	$('#adele').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#adele').css('background-image', 'url(http://2017.igem.org/wiki/images/8/85/T--Toronto--2017_adele.jpg)');
+	});
 
 
-// estee hover
-$(function() {
-  $('#estee').mouseenter(function() {
-    // on mousein, hover effect gifs
+	// estee hover
+	$('#estee').mouseenter(function() {
+		// on mousein, hover effect gifs
 		$('#estee').css('background-image', 'url(http://2017.igem.org/wiki/images/2/2c/T--Toronto--2017_estee-hover.gif)');
-  });
-  $('#estee').mouseleave(function() {
-    // on mouseout, originals gifs reset
-    $('#estee').css('background-image', 'url(http://2017.igem.org/wiki/images/f/f1/T--Toronto--2017_estee.jpg)');
-  });
-});
+	});
+	$('#estee').mouseleave(function() {
+		// on mouseout, originals gifs reset
+		$('#estee').css('background-image', 'url(http://2017.igem.org/wiki/images/f/f1/T--Toronto--2017_estee.jpg)');
+	});
+}
+
+// fahim hover
+
+function hovers2() {
+	$('#fahim img').hover(function() {
+		// on mouse enter
+		$(this).attr('src', "http://2017.igem.org/wiki/images/5/52/T--Toronto--2017_fahim-hover.gif");
+		$('#wiki-header').addClass("wiki-force");
+	}, function() {
+		// on mouse leave
+		$(this).attr('src', "http://2017.igem.org/wiki/images/7/7b/T--Toronto--2017_fahim.gif");
+		$('#wiki-header').removeClass("wiki-force");
+	});
+}
